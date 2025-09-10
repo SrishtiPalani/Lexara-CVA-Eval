@@ -1,0 +1,2 @@
+web: gunicorn backend.app:app -k gthread --threads 4 --timeout 0 --graceful-timeout 30 --max-requests 2000 --max-requests-jitter 200 --worker-connections 1000
+worker: bash -lc 'RQ_JOB_TIMEOUT=604800 RQ_RESULT_TTL=604800 exec rq worker -u "${REDIS_TLS_URL:-${REDIS_URL:-$REDISCLOUD_URL}}" eval'

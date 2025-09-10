@@ -1,0 +1,928 @@
+Test Case Number,Description,Requirement ID,Labels,Canonical Utterance,Paraphrase Utterance,Notional Spec Out
+0,filter to <last relative timeframe>,D-248-f3ae333f017d7b95,EncodeRelativeDateTime,filter to <Account Name> whose <Registration Status> in <Registered> in the last quarter <Reg CreatedDate>,what accounts registered over the past quarter,"categoricalFilters:
+- field: Registration Status
+  type: categorical
+  values:
+  - Registered
+chart: text
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Registration Status
+  data: string
+  encoding: y
+  role: dimension
+  type: discrete
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+relativeDateFilters:
+- _tb_wildcards:
+  - field
+  amount: 1
+  direction: previous
+  field: Reg CreatedDate
+  period: quarters
+  type: relative-date
+version: 0.1.0
+"
+0,filter to <last relative timeframe>,D-248-f3ae333f017d7b95,EncodeRelativeDateTime,filter to <Contact Name> who registered for <Certifications> in <Attendee Detail> in the last year <Reg CreatedDate>,only show attendees who registered for Certifications last year,"categoricalFilters:
+- field: Attendee Detail
+  type: categorical
+  values:
+  - Certifications
+chart: text
+fields:
+- caption: Attendee Detail
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Contact Name
+  data: string
+  encoding: y
+  role: dimension
+  type: discrete
+relativeDateFilters:
+- _tb_wildcards:
+  - field
+  amount: 1
+  direction: previous
+  field: Reg CreatedDate
+  period: years
+  type: relative-date
+version: 0.1.0
+"
+10,filter to <specific timeframe>,D-248-8d4bd7bdd1fed34a,InferDateTimeField,show <Event Id> and its <Event Name> and filter to 2019 from <i__Year>,show only the 2019 events,"categoricalFilters:
+- _tb_wildcards:
+  - field
+  field: i__Year
+  type: categorical
+  values:
+  - 2019
+chart: text
+fields:
+- caption: Event Id
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Event Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+version: 0.1.0
+"
+10,filter to <specific timeframe>,D-248-8d4bd7bdd1fed34a,EncodeRelativeDateTime,filter to <Account Name> whose <Registration Status> in <Registered> in this month <Reg CreatedDate>,show only the accounts who registered this month,"categoricalFilters:
+- field: Registration Status
+  type: categorical
+  values:
+  - Registered
+chart: text
+fields:
+- caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+relativeDateFilters:
+- _tb_wildcards:
+  - field
+  amount: 0
+  direction: previous
+  field: Reg CreatedDate
+  period: months
+  type: relative-date
+version: 0.1.0
+"
+20,Date filter - show me dimension since <timeframe>,D-248-7eab01b5903737a2,InferDateTimeField,show count of <Registered> in <Registration Status> since January <Reg CreatedDate>,how many accounts registered since January,"categoricalFilters:
+- field: Registration Status
+  type: categorical
+  values:
+  - Registered
+chart: bar
+dateRangeFilters:
+- _tb_wildcards:
+  - field
+  field: Reg CreatedDate
+  start: '2023-01-01'
+  type: date-range
+fields:
+- aggregation: count
+  caption: Registration Status
+  data: string
+  encoding: x
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+20,Date filter - show me dimension since <timeframe>,D-248-7eab01b5903737a2,"InferOtherField, InferDateTimeField",show count of <Registered> in <Registration Status> up to this quarter <Reg CreatedDate>,how many accounts have registered up to this quarter,"categoricalFilters:
+- field: Registration Status
+  type: categorical
+  values:
+  - Registered
+chart: bar
+dateRangeFilters:
+- _tb_wildcards:
+  - field
+  end: '2023-12-31'
+  field: Reg CreatedDate
+  type: date-range
+fields:
+- aggregation: count
+  caption: Registration Status
+  data: string
+  encoding: x
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+30,nominal filter -include,D-248-b8df43152911f2f3,,filter <Event Id> to <EMEA> in <Theater__Account_Territory_>,show me events in EMEA,"categoricalFilters:
+- _tb_wildcards:
+  - field
+  field: Theater__Account_Territory_
+  type: categorical
+  values:
+  - EMEA
+chart: text
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Event Id
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+version: 0.1.0
+"
+30,nominal filter -include,D-248-b8df43152911f2f3,,filter <Event Id> to <Certifications> and <Training Workshops> in <Attendee Detail>,filter to Certifications and Training Workshops,"categoricalFilters:
+- field: Attendee Detail
+  type: categorical
+  values:
+  - Certifications
+  - Training Workshops
+chart: text
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Event Id
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+version: 0.1.0
+"
+40,nominal filter - exclude,D-248-2e3710ebfdd486d8,InferOtherField,Filter <Event Id> to exclude <Data Leaders Summit> in <Account Detail>,include everything except for Data Leaders Summit,"categoricalFilters:
+- exclude: true
+  field: Attendee Detail
+  type: categorical
+  values:
+  - Data Leaders Summit
+chart: text
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Event Id
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+version: 0.1.0
+"
+50,"sum measure by dimension, filtered based on values",D-248-a1faa3528ae1308a,InferOtherField,sum of <__Items_Per_Opportunity> per <c_Region>,"list the total attendees per region, breakdown attendees by region","chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- _tb_wildcards:
+  - caption
+  aggregation: sum
+  caption: __Items_Per_Opportunity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+50,"sum measure by dimension, filtered based on values",D-248-a1faa3528ae1308a,,show only <c_Region> with sum of <__Items_Per_Opportunity> below 250,only show regions with attendee counts less than 250,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+rangeFilters:
+- _tb_wildcards:
+  - field
+  aggregation: sum
+  end: 250
+  field: __Items_Per_Opportunity
+  includeNull: false
+  type: numeric-range
+version: 0.1.0
+"
+50,"sum measure by dimension, filtered based on values",D-248-a1faa3528ae1308a,,show only <c_Region> with sum of <__Items_Per_Opportunity> between 100 and 400,only show regions with attendee counts between 100 and 400,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+rangeFilters:
+- _tb_wildcards:
+  - field
+  aggregation: sum
+  end: 400
+  field: __Items_Per_Opportunity
+  includeNull: false
+  start: 100
+  type: numeric-range
+version: 0.1.0
+"
+60,"non-sum aggregation of measure by dimension, filtered based on values",D-248-985d6d41172604db,,show only <Account Name> with average <Item Quantity> over 5,only show accounts with average attendees greater than 5,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+rangeFilters:
+- aggregation: avg
+  field: Item Quantity
+  includeNull: false
+  start: 5
+  type: numeric-range
+version: 0.1.0
+"
+60,"non-sum aggregation of measure by dimension, filtered based on values",D-248-985d6d41172604db,,show only <Account Name> with average <Item Quantity> below 2,only show accounts with average attendees less than 2,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+rangeFilters:
+- aggregation: avg
+  end: 2
+  field: Item Quantity
+  includeNull: false
+  type: numeric-range
+version: 0.1.0
+"
+60,"non-sum aggregation of measure by dimension, filtered based on values",D-248-985d6d41172604db,,show only <Account Name> with median <Item Quantity> over 15,only show accounts with median attendees greater than 15,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+rangeFilters:
+- aggregation: median
+  field: Item Quantity
+  includeNull: false
+  start: 15
+  type: numeric-range
+version: 0.1.0
+"
+60,"non-sum aggregation of measure by dimension, filtered based on values",D-248-985d6d41172604db,,show only <Account Name> with min <Item Quantity> below 2,only show accounts with min attendees less than 2,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+rangeFilters:
+- aggregation: min
+  end: 2
+  field: Item Quantity
+  type: numeric-range
+version: 0.1.0
+"
+70,"filter on dimension, remove nulls",D-248-f1f11402d9818a69,InferOtherField,filter to <c_Region> to remove null values,remove empty values,"categoricalFilters:
+- _tb_wildcards:
+  - field
+  exclude: true
+  field: c_Region
+  type: categorical
+  values:
+  - 'Null'
+chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+version: 0.1.0
+"
+80,sort measure,F-248-81bbd4566ff6fbf9,,show only <Account Name> with average <Item Quantity> over 5 and sort by <Item Quantity> in descending,only show accounts with average attendees greater than 5 and sort them in descending order by attendee counts,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+rangeFilters:
+- aggregation: avg
+  field: Item Quantity
+  includeNull: false
+  start: 5
+  type: numeric-range
+sort:
+  _tb_wildcards:
+  - field
+  aggregation: sum
+  by: Item Quantity
+  direction: desc
+  field: Account Name
+version: 0.1.0
+"
+90,top measure by dimension,D-248-a7b86582fd4280f7,"InferBoundariesOrLimit, InferSort",top <Item Quantity> by <Account Name>,show me top accounts by attendees,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+sort:
+  _tb_wildcards:
+  - field
+  aggregation: sum
+  by: Item Quantity
+  direction: desc
+  field: Account Name
+version: 0.1.0
+"
+100,top N measure by dimension,D-250-fe4c8bda2b93a7de,InferSort,top 5 <Item Quantity> by <Account Name>,show me top 5 accounts by attendees,"categoricalFilters:
+- _tb_wildcards:
+  - field
+  field: Account Name
+  limit:
+    aggregation: sum
+    field: Item Quantity
+    limit: 5
+    type: top
+  type: categorical
+chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+sort:
+  _tb_wildcards:
+  - field
+  aggregation: sum
+  by: Item Quantity
+  direction: desc
+  field: Account Name
+version: 0.1.0
+"
+110,change sum to average,D-248-0ed0a715f691396d,InferOtherField,show <Account Name> and change <Item Quantity> to average,change attendee counts to average,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: avg
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+120,trend - registration counts month over month,D-248-cd5ed1d580cd4c3f,"InferDateTimeField, InferOtherField",<Item Quantity> month over month for the year 2018 <Reg CreatedDate>,what are registration counts month over month for the year 2018?,"chart: bar
+dateRangeFilters:
+- _tb_wildcards:
+  - field
+  end: '2018-12-31'
+  field: Reg CreatedDate
+  start: '2018-01-01'
+  type: date-range
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: month
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+130,trend - registration counts by week,D-248-bb9b5ac1affd195a,"InferDateTimeField, InferOtherField",<Item Quantity> per week for the year 2018 <Reg CreatedDate>,what are registration counts per week in 2018?,"chart: bar
+dateRangeFilters:
+- _tb_wildcards:
+  - field
+  end: '2018-12-31'
+  field: Reg CreatedDate
+  start: '2018-01-01'
+  type: date-range
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: week
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+140,trend -registrations over time,D-248-1ed75f1449b52b63,"InferDateTimeField, InferOtherField",<Item Quantity> over time in <Reg CreatedDate>,show me registrations over time,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: year
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+150,trend,D-248-d1fd47f2de0f33af,"InferDateTimeField, InferOtherField",<Item Quantity> over time <Reg CreatedDate> broken down by <c_Region>,what are registrations over time broken down by region,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- _tb_wildcards:
+  - caption
+  aggregation: year
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+160,comparison,D-248-1e28e0f95a2a2476,InferDateTimeField,sum of <Item Quantity> vs sum of <__Items_Per_Opportunity> over time in <Reg CreatedDate>,"how do item quantity and items per opportunity trend over time?, what is the relationship between item quantity and items per opportunity","chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: year
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+- aggregation: sum
+  caption: __Items_Per_Opportunity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+170,geo filter,D-248-bcc5066b4dd57a3f,InferOtherField,<Item Quantity> in <IL> in <State>,registrations near IL,"categoricalFilters:
+- field: State
+  type: categorical
+  values:
+  - IL
+chart: bar
+fields:
+- caption: State
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+180,stacked bar chart - 2 measures by a dimension,F-250-6423a2a14cbb7e5c,Questionable,sum of <Item Quantity> and sum of <__Items_Per_Opportunity> as stacked bar chart by <State>,show me item quantity and items per opportunity by state,"chart: stackedbar
+fields:
+- caption: State
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+- aggregation: sum
+  caption: __Items_Per_Opportunity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+190,aggregation - average measure for last timeframe,D-248-aeb26ffe7e0545dc,"EncodeRelativeDateTime, InferOtherField",average <Item Quantity> for last 3 months in <Reg CreatedDate>,what is the average registration over the last 3 months,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: month
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: avg
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+relativeDateFilters:
+- _tb_wildcards:
+  - field
+  amount: 3
+  direction: previous
+  field: Reg CreatedDate
+  period: months
+  type: relative-date
+version: 0.1.0
+"
+200,aggregation - measure excluding nominal value,D-250-fbd657cffd5370f2,InferOtherField,average <Item Quantity> excluding <EMEA> in <c_Region>,"average registration counts excluding EMEA, median registration counts in EMEA","categoricalFilters:
+- _tb_wildcards:
+  - field
+  exclude: true
+  field: c_Region
+  type: categorical
+  values:
+  - EMEA
+chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: avg
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+210,aggregation,D-248-aeb26ffe7e0545dc,"InferDateTimeField, InferOtherField",median <Item Quantity> in Aug 2018 in <Reg CreatedDate>,median registration counts in Aug 2018,"chart: bar
+dateRangeFilters:
+- _tb_wildcards:
+  - field
+  end: '2018-08-31'
+  field: Reg CreatedDate
+  start: '2018-08-01'
+  type: date-range
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: month
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: median
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+220,aggregation,D-248-aeb26ffe7e0545dc,"InferDateTimeField, EncodeRelativeDateTime, InferOtherField",median <Item Quantity> in last quarter from <Reg CreatedDate>,median registration counts in last quarter,"chart: text
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: qtr
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: median
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+relativeDateFilters:
+- _tb_wildcards:
+  - field
+  amount: 1
+  direction: previous
+  field: Reg CreatedDate
+  period: quarters
+  type: relative-date
+version: 0.1.0
+"
+230,aggregation - max with exclude,D-250-fbd657cffd5370f2,InferOtherField,max <Item Quantity> excluding <APAC> in <c_Region>,max registration counts excluding APAC,"categoricalFilters:
+- _tb_wildcards:
+  - field
+  exclude: true
+  field: c_Region
+  type: categorical
+  values:
+  - APAC
+chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: max
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+240,aggregation -min with exclude,D-250-fbd657cffd5370f2,InferOtherField,min <Item Quantity> excluding <APAC> in <c_Region>,min registration counts excluding APAC,"categoricalFilters:
+- _tb_wildcards:
+  - field
+  exclude: true
+  field: c_Region
+  type: categorical
+  values:
+  - APAC
+chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: min
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+250,breakdown - counts by nominal,D-248-55b4ca4117240925,InferOtherField,count of <c__Account_Id> by <c_Region>,show distribution of c__Account_Id by c_Region,"chart: bar
+fields:
+- caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- caption: c__Account_Id
+  data: string
+  encoding: y
+  role: dimension
+  type: discrete
+version: 0.1.0
+"
+260,breakdown - sum by region,D-248-cd5d4666b729f6fa,,sum of <Item Quantity> by <c_Region>,item quantity by region,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+270,sorting - aggregation of implied measure,D-248-de49330ff1bbbc83,"InferBoundariesOrLimit, InferSort, Questionable",top <Account Name> based on sum of <Item Quantity>,what are my top accounts?,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: Account Name
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- _tb_wildcards:
+  - caption
+  aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+sort:
+  _tb_wildcards:
+  - field
+  - by
+  aggregation: sum
+  by: Item Quantity
+  direction: desc
+  field: Account Name
+version: 0.1.0
+"
+280,sorting -descending,D-248-de49330ff1bbbc83,InferOtherField,sum of <Item Quantity> by <c_Region> in descending order,list attendees by region in descending order,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+sort:
+  _tb_wildcards:
+  - field
+  aggregation: sum
+  by: Item Quantity
+  direction: desc
+  field: c_Region
+version: 0.1.0
+"
+290,sorting - ascending,D-248-de49330ff1bbbc83,InferOtherField,sum of <Item Quantity> by <c_Region> in ascending order,list attendees by region in ascending order,"chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+sort:
+  _tb_wildcards:
+  - field
+  aggregation: sum
+  by: Item Quantity
+  direction: asc
+  field: c_Region
+version: 0.1.0
+"
+300,filter - betwen dates,D-248-f92c0491183e428d,InferOtherField,sum of <Item Quantity> between Q2 2018 and Q3 2018 in <Reg CreatedDate>,show registrations between q2 and q3 of 2018,"chart: bar
+dateRangeFilters:
+- _tb_wildcards:
+  - field
+  end: '2018-09-30'
+  field: Reg CreatedDate
+  start: '2018-04-01'
+  type: date-range
+fields:
+- _tb_wildcards:
+  - caption
+  aggregation: qtr
+  caption: Reg CreatedDate
+  data: date
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"
+310,filter -excluding nominal value - smart aggregation,D-250-7d112d3df1cd4e69,InferSort,sum of <Item Quantity> excluding <EMEA> in <c_Region>,Registrations excluding EMEA,"categoricalFilters:
+- _tb_wildcards:
+  - field
+  exclude: true
+  field: c_Region
+  type: categorical
+  values:
+  - EMEA
+chart: bar
+fields:
+- _tb_wildcards:
+  - caption
+  caption: c_Region
+  data: string
+  encoding: x
+  role: dimension
+  type: discrete
+- aggregation: sum
+  caption: Item Quantity
+  data: number
+  encoding: y
+  role: measure
+  type: continuous
+version: 0.1.0
+"

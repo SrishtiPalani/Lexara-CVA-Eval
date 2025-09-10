@@ -1,0 +1,16 @@
+{
+  "name": "lexara-root",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm --prefix frontend ci && npm --prefix frontend run build"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/xlsx": "^0.0.35"
+  }
+}

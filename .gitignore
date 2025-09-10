@@ -1,0 +1,52 @@
+# --- Virtual environments ---
+.venv*/
+venv*/
+env*/
+
+# --- Python artifacts ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.eggs/
+*.log
+.coverage
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# --- Env files ---
+.env
+.env.*
+!.env.example
+
+# --- macOS / IDE ---
+.DS_Store
+.vscode/
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# --- Monorepo-style fallbacks ---
+node_modules/
+**/node_modules/
+**/build/
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Editors ---
+.idea/
+*.swp
+*.swo
+
+# --- Redis dump ---
+dump.rdb
+
+# --- Jupyter ---
+.ipynb_checkpoints/

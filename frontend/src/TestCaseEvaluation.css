@@ -1,0 +1,386 @@
+.ant-table-cell.top-aligned {
+    vertical-align: top !important;
+}
+
+/* Enhance the appearance of <pre> tags for better readability */
+.top-aligned-table pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0; 
+}
+
+.ant-table .ant-table-cell {
+    vertical-align: top !important;
+}
+
+/* Consistent styling for <pre> tags */
+.scrollable-cell pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0; 
+}
+
+/* Style for added (unequal) properties */
+.diff-added {
+    background-color: lightgrey;
+}
+
+/* Style for removed (missing) properties */
+.diff-removed {
+    background-color: lightgreen;
+}
+
+/* Style for the main <pre> block */
+.diff-container {
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+
+.custom-panel {
+    margin-bottom: 24px;
+    background-color: #fff; 
+    border-radius: 8px;
+    border: none;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .custom-panel:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+/* Style for llm-as-judge explanations */
+.explanation-box {
+    max-height: 100px;
+    max-width: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  /* Example color classes for relevance scores */
+.relevance-score-1 {
+    color: #ff4d4f; /* Red */
+  }
+  .relevance-score-2 {
+    color: #ffa940; /* Orange */
+  }
+  .relevance-score-3 {
+    color: #faad14; /* Yellow/Orange */
+  }
+  .relevance-score-4 {
+    color: #a0d911; /* Light Green */
+  }
+  .relevance-score-5 {
+    color: #52c41a; /* Green */
+  }
+
+.error-message{
+    color: blue;
+    margin-bottom: 4px;
+  }
+
+/* A thick top border to separate test_number groups */
+.chunk-divider > td {
+  border-top: 10px solid #f5f5f5; 
+  padding-top: 16px;
+}
+
+.response-cell-flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px; /* or another suitable minimum */
+}
+.speechbubble-bottom {
+  margin-top: auto; /* push bubble to the bottom */
+}
+
+/* This container might then appear below the bubble */
+.toggle-buttons-container {
+  margin-top: 8px;
+}
+
+/* hover state: solid underline + color darken */
+.subcat-label:hover {
+  border-bottom: 1px solid #333;
+  color: #111;
+}
+
+/* hide all child rows by default */
+.child-row {
+  display: none;
+}
+
+/* when a parent has the .expanded class, show its children */
+.parent-row.expanded + .child-row,
+.parent-row.expanded + .child-row + .child-row {
+  /* if you have exactly two children, you'll need to repeat this selector
+     or use [data-parent="..."] attribute selectors */
+  display: grid; /* or flex, whatever your layout uses */
+}
+
+/* underline cue on hover */
+.parent-row {
+  cursor: pointer;
+}
+.parent-row:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #333;
+}
+
+.subcat-label {
+  text-underline-offset: 1px;
+  font-size: 12px;
+  color: #333;
+}
+
+.subcat-label:hover {
+  border-bottom: 1px solid #333;
+  color: #111;
+   text-underline-offset: 1px;
+}
+
+.bucket-label {
+  text-underline-offset: 2px;
+  /* slightly bolder so it’s obvious you can hover/click */
+  font-weight: 500;
+  color: #111;
+}
+
+.bucket-label:hover {
+  border-bottom: 1px solid #333;
+  color: #000;
+  text-underline-offset: 2px;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.tableWrapper {
+  overflow: auto;
+  max-height: 200px;
+}
+.tableWrapper--expanded {
+  max-height: 600px;
+}
+
+/* --- Natural-Language metric labels --------------------------------- */
+.subcat-label {
+  display: block;          /* keep each label on one row            */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* clip politely if it’s still too long  */
+}
+
+/* Consistent tooltip sizing */
+.ant-tooltip-inner {
+  max-width: 320px;       /* prevents huge empty space on RHS */
+  white-space: normal;    /* allow wrapping */
+}
+
+/* one-liner, no wrapping, small gutter, graceful ellipsis */
+.metricModelHeader {
+  white-space: nowrap;
+  padding: 0 8px;          /* 16 px total gutter between columns */
+  overflow: hidden;
+  text-overflow: ellipsis; /* long names = “…” instead of wrapping */
+}
+
+.metric-expl-popover span:hover {
+  opacity: 0.9;
+}
+
+.metric-info-icon:hover {
+  opacity: 1 !important;
+  transform: translateY(-1px);
+  transition: all .15s ease;
+}
+
+/* Keep the (i) consistent everywhere */
+.metric-info-icon {
+    margin-left: 6px;
+    opacity: 0.8;
+    cursor: help;
+  }
+  
+  /* Never underline metric/bucket labels on hover */
+  .subcat-label,
+  .bucket-label,
+  .metricModelHeader {
+    text-decoration: none;
+  }
+  .subcat-label:hover,
+  .bucket-label:hover,
+  .metricModelHeader:hover {
+    text-decoration: none !important;
+  }
+
+  /* Scope: any metrics content */
+.accuracy-grid,
+.visualization-overall,
+.nl-overall,
+.metrics-table {
+  /* nuke text-decoration in this area only */
+}
+.accuracy-grid a,
+.accuracy-grid a:hover,
+.visualization-overall a,
+.visualization-overall a:hover,
+.nl-overall a,
+.nl-overall a:hover,
+.metrics-table .ant-typography a,
+.metrics-table .ant-typography a:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* labels like “Precision”, “Recall”, etc. */
+.accuracy-grid .subcat-label,
+.accuracy-grid .subcat-label:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* safety: never underline when hovering the (i) */
+.metric-info-icon {
+  text-decoration: none !important;
+}
+
+/* scope: visualization metrics grid */
+.visualization-overall a,
+.visualization-overall a:hover,
+.visualization-overall .ant-typography a,
+.visualization-overall .ant-typography a:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* labels that were showing the long underline on hover */
+.visualization-overall .viz-overall-label,
+.visualization-overall .bucket-label,
+.visualization-overall .subcat-label,
+.visualization-overall .viz-overall-label:hover,
+.visualization-overall .bucket-label:hover,
+.visualization-overall .subcat-label:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* just in case any score pill is wrapped by a link */
+.visualization-overall .metric-popover-trigger,
+.visualization-overall .metric-popover-trigger:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Ensure fixed columns work properly */
+.metrics-table .ant-table-fixed-left {
+  z-index: 2;
+}
+
+/* Ensure proper spacing for star rating cells to prevent overlapping */
+.metrics-table .ant-table-cell {
+  padding: 8px 12px !important;
+}
+
+/* Additional spacing for star rating components */
+.metrics-table .ant-rate {
+  margin: 0 4px;
+}
+
+/* Specific styling for star rating cells in the metrics grid */
+.nl-overall .ant-rate {
+  margin: 0 8px;
+}
+
+/* Ensure star rating containers have proper spacing */
+.nl-overall > div:nth-child(n+3) {
+  padding: 0 8px;
+}
+
+/* Target the grid cells that contain star ratings specifically */
+.nl-overall > div:nth-child(3n+3),
+.nl-overall > div:nth-child(3n+4),
+.nl-overall > div:nth-child(3n+5) {
+  padding: 0 12px;
+  min-width: 120px;
+}
+
+/* Ensure proper spacing for all grid cells in the metrics layout */
+.nl-overall {
+  gap: 20px 20px !important;
+}
+
+/* Additional spacing for star rating grid cells */
+.nl-overall > div:nth-child(3n+3),
+.nl-overall > div:nth-child(3n+4),
+.nl-overall > div:nth-child(3n+5) {
+  padding: 0 16px;
+  min-width: 120px;
+  box-sizing: border-box;
+}
+
+/* Constrain tooltip width and ensure proper text wrapping */
+.metric-expl-popover {
+  max-width: 400px !important;
+}
+
+.metric-expl-popover .ant-popover-inner {
+  max-width: 400px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.metric-expl-popover .ant-popover-inner-content {
+  max-width: 400px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+/* Ensure text content in tooltips wraps properly */
+.metric-expl-popover p,
+.metric-expl-popover ul,
+.metric-expl-popover li {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+  max-width: 100% !important;
+}
+
+.metrics-table .ant-table-fixed-left .ant-table-header {
+  z-index: 3;
+}
+
+.metrics-table .ant-table-fixed-left .ant-table-body {
+  z-index: 2;
+}
+
+/* Ensure proper table layout for fixed columns */
+.metrics-table {
+  table-layout: fixed;
+}
+
+.metrics-table .ant-table-container {
+  overflow-x: auto;
+}

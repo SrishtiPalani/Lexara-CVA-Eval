@@ -1,0 +1,13 @@
+.diff-btn {
+    background-color: #fffbe6; /* Very pale gold background */
+    border-color: #ffe7ba;     /* Light gold border */
+    color: #d46b08;            /* Warm orange text */
+    transition: all 0.2s ease;
+  }
+  
+  /* On hover, change text color to orange and keep the same border */
+  .diff-btn:hover {
+    background-color: #ffd666 !important;
+    color: #ad6800 !important;
+    border-color: #fa8c16 !important;
+  }

@@ -1,0 +1,46 @@
+stages: [build, deploy]
+image: python:3.11
+
+variables:
+  GIT_DEPTH: "0"              # full history so merge-base checks work
+
+build:
+  stage: build
+  script:
+    - echo "Heroku will build – nothing here"
+  tags: [docker]
+
+deploy:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache git openssh curl
+  script:
+    - |
+      set -e
+
+      # Point "heroku" remote at the app using the API key (masked in CI vars)
+      git remote add heroku "https://heroku:${HEROKU_API_KEY}@git.heroku.com/${HEROKU_APP_NAME}.git" \
+        || git remote set-url heroku "https://heroku:${HEROKU_API_KEY}@git.heroku.com/${HEROKU_APP_NAME}.git"
+
+      # Make sure we have both tips locally
+      git fetch --prune origin main
+      git fetch --prune heroku main || true   # ok if app is empty
+
+      # Ensure we have a local branch that matches origin/main
+      git checkout -B main origin/main
+
+      # If Heroku is behind or equal -> plain push (fast-forward)
+      if git merge-base --is-ancestor heroku/main main 2>/dev/null; then
+        echo "Fast-forwarding Heroku main to origin/main"
+        git push heroku main:main
+      else
+        echo "Heroku main has commits not in origin/main:"
+        git log --oneline main..heroku/main || true
+        echo "Overriding Heroku (deploy target) with origin/main using --force-with-lease"
+        git push --force-with-lease heroku main:main
+      fi
+  only:
+    - main
+  tags: [docker]
+  retry: 1
