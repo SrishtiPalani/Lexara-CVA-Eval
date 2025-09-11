@@ -62,7 +62,6 @@ Create a `.env` file in the `backend` directory with your API keys:
 ANTHROPIC_API_KEY="insert-your-own"
 OPENAI_API_KEY="insert-your-own"
 HUGGINGFACE_API_KEY="insert-your-own"
-SALESFORCE_API_KEY="insert-your-own"
 ```
 
 ### Manual Setup (Alternative)
