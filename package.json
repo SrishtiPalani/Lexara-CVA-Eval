@@ -1,6 +1,10 @@
 {
   "name": "lexara-root",
+  "version": "1.0.0",
+  "description": "Language Model Comparison App (Lexara) - Root Package",
   "private": true,
+  "author": "Research Team",
+  "license": "MIT",
   "engines": {
     "node": ">=18"
   },

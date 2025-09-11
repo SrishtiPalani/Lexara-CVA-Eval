@@ -1,3 +1,19 @@
+"""
+Language Model Comparison App - Backend API Server
+
+This Flask application provides a REST API for comparing and evaluating different
+language models with real-time streaming capabilities and detailed metrics.
+
+Key Features:
+- Asynchronous model evaluation with Redis job queue
+- Real-time progress streaming via Server-Sent Events
+- Support for multiple model providers (OpenAI, Anthropic, HuggingFace, Salesforce)
+- Custom prompt evaluation and judge model scoring
+- Visualization specification conversion and validation
+
+Author: Research Team
+"""
+
 from __future__ import annotations
 import os
 import re
@@ -26,29 +42,36 @@ from rq.job import Job
 import time
 from datetime import timedelta
 
-
-# Load environment variables from .env
+# Load environment variables from .env file
 load_dotenv()  
 
-
-
-# Path to the directory *this* file lives in
-HERE = Path(__file__).resolve().parent        # …/backend
-# Go up to the project root and build the rest
-ROOT =  Path(__file__).resolve().parents[1]  
+# Application Configuration and Paths
+# Path to the directory this file lives in (backend directory)
+HERE = Path(__file__).resolve().parent
+# Go up to the project root directory
+ROOT = Path(__file__).resolve().parents[1]  
+# Frontend build directory for serving static files
 BUILD_DIR = ROOT / "frontend" / "build"                  
+# Data directory containing test cases and datasources
 DATA_DIR = ROOT / "data"         
 
+# Custom model mappings file path
 CUSTOM_MAP_FILE = DATA_DIR / "custom_mappings.json"
 
+# Judge model timeout in seconds (configurable via environment variable)
 JUDGE_TIMEOUT = int(os.getenv("JUDGE_TIMEOUT", "60"))
 
 
 
 def load_custom_mappings() -> dict[str, str]:
     """
-   Read any previously-saved custom mappings.  If the file is missing or
-    corrupt we just return an empty dict (and log the error).
+    Load custom model mappings from the persistent storage file.
+    
+    Reads any previously-saved custom mappings from the custom_mappings.json file.
+    If the file is missing or corrupt, returns an empty dictionary and logs the error.
+    
+    Returns:
+        dict[str, str]: Dictionary mapping custom model names to their actual model IDs
     """
     if CUSTOM_MAP_FILE.exists():
         try:
@@ -57,33 +80,50 @@ def load_custom_mappings() -> dict[str, str]:
             logging.exception("Corrupt custom_mappings.json – starting fresh")
     return {}
 
+# Default setting for granular progress reporting (configurable via environment variable)
 GRANULAR_PROGRESS_DEFAULT = os.getenv("GRANULAR_PROGRESS", "1") in ("1","true","True")
+
 async def _run_evaluation_job(job_id: str, data: dict):
     """
-    Run the whole evaluation in the background.
-    Publishes per-run NDJSON events to Redis Pub/Sub and updates a progress JSON state.
+    Execute the complete evaluation job in the background.
+    
+    This is the main evaluation orchestrator that:
+    - Loads and validates configuration parameters
+    - Processes test cases and model combinations
+    - Executes model evaluations with progress tracking
+    - Publishes real-time updates via Redis Pub/Sub
+    - Handles error conditions and job cancellation
+    
+    Args:
+        job_id (str): Unique identifier for this evaluation job
+        data (dict): Configuration data containing models, test cases, prompts, etc.
     """
-    # FIRST pull mappings sent with the job, then augment from disk
+    # Load custom model mappings from job data and persistent storage
     MAPPINGS.update(data.get("mappings") or {})
     MAPPINGS.update(load_custom_mappings())
 
+    # Extract and validate configuration parameters
     user_api_keys: Dict[str, str] = data.get("api_keys", {})
+    
+    # Process system prompts (support both single prompt and list of prompts)
     incoming_list = data.get("system_prompts")
     if incoming_list and isinstance(incoming_list, list):
         system_prompts = [clean_prompt(p) or default_system_prompt for p in incoming_list]
     else:
         system_prompts = [clean_prompt(data.get("system_prompt")) or default_system_prompt]
 
+    # Extract evaluation parameters
     selected_test_cases = data.get("test_cases")
     models = data.get("models")
     test_limit = data.get("testLimit")
     judge_model = data.get("judgeModel")
+    # Limit runs per instance to prevent excessive API usage (1-5 range)
     runs_per_instance = max(1, min(int(data.get("runs_per_instance", 3)), 5))
     granular_progress = bool(data.get("granularProgress", GRANULAR_PROGRESS_DEFAULT))
     prompts_count = len(system_prompts)
-    models_count  = len(models or [])
+    models_count = len(models or [])
 
-    # quick validation mirrors your route checks
+    # Validate input parameters (mirrors route validation)
     if judge_model and judge_model in models:
         write_state(job_id, status="failed", error="Judge model must be different")
         await rpub(job_id, {"type": "error", "error": "Judge model must be different from generation models"})
@@ -93,7 +133,8 @@ async def _run_evaluation_job(job_id: str, data: dict):
         await rpub(job_id, {"type": "error", "error": "Please provide test cases and models."})
         return
 
-    # Pre-count total work (for progress). We count "runs per utterance".
+    # Pre-calculate total work for progress tracking
+    # We count "runs per utterance" to provide accurate progress estimates
     requested_test_ids: set[int] = set()
     raw_ids = data.get("test_ids", [])
     if isinstance(raw_ids, list):
@@ -1980,7 +2021,7 @@ def pick_key(name: str, user_keys: Dict[str, str]) -> Tuple[Optional[str], str]:
 def get_models():
     models = [
         {"provider": "OpenAI", "models": list(OPENAI_MODEL_IDS.keys())},
-        {"provider": "Salesforce", "models": ["anthropic-claude-3.7-sonnet", "deepseek-r1", "SFR-Tableau-Finetuned"]}
+        {"provider": "Salesforce", "models": ["anthropic-claude-3.7-sonnet", "deepseek-r1", "my-finetuned"]}
     ]
     return jsonify(models)
     
@@ -2470,7 +2511,7 @@ async def call_model_api(session, model, input_text, datasource=None, system_pro
     api_keys = api_keys or {}
     """
     Call the appropriate model API based on the specified model.
-    Generate a notional spec JSON for Tableau visualization rendering.
+    Generate a notional spec JSON for visualization rendering.
     """
     # Add rate limiting delay to prevent API rate limits
     await asyncio.sleep(0.5)  # 500ms delay between API calls
@@ -2777,7 +2818,7 @@ async def call_model_api(session, model, input_text, datasource=None, system_pro
           }
           return json.dumps(result_obj, indent=2, default=str)
 
-        elif model == "SFR-Tableau-Finetuned":
+        elif model == "my-finetuned":
             url = "https://bot-svc-llm.sfproxy.einstein.aws-dev4-uswest2.aws.sfdc.cl/v1.0/generations"
             
             headers = {
@@ -2805,7 +2846,7 @@ async def call_model_api(session, model, input_text, datasource=None, system_pro
                 "stop_sequences": None,
                 "frequency_penalty": None,
                 "presence_penalty": None,
-                "model": "llmgateway__EinsteinTableauGPT",
+                "model": "llmgateway__EinsteinCustomGPT",
                 "localization": None,
                 "parameters": {
                     "top_p": 0.99,
@@ -2814,7 +2855,7 @@ async def call_model_api(session, model, input_text, datasource=None, system_pro
                         "datasourceFields": datasource_fields_str,
                         "notional_spec_in": {"version": "0.2.0", "fields": []}
                     },
-                    "llm_service_name": "einstein_for_tableau"
+                    "llm_service_name": "einstein_for_custom"
                 },
                 "tags": {"present": False},
                 "turn_id": None

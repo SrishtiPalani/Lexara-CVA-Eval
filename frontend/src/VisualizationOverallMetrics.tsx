@@ -469,7 +469,7 @@ export const bucketKeyMap: Record<
 // maps the bucket keys to their definitions
 const bucketDefinitions: Record<'data' | 'semantics' | 'functionality' | 'design', string> = {
   data:          'Composite score of Data Fidelity and Field Similarity',
-  semantics:     'How logical is the chart type compared to expected - based on Tableau Show Me Logic',
+  semantics:     'How logical is the chart type compared to expected - based on visualization best practices',
   functionality: 'Average correctness of filters, sort, and axes',
   design:        'Average correctness of encodings and tooltips',
 };

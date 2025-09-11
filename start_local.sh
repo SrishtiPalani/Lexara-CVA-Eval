@@ -1,11 +1,31 @@
 #!/bin/bash
 
-# Start Local Development Environment (matches Heroku)
-# This script starts all services needed to run the app locally
+# =============================================================================
+# Language Model Comparison App (Lexara) - Local Development Startup Script
+# =============================================================================
+# 
+# This script starts all services needed to run the Lexara application locally.
+# It matches the Heroku production environment configuration and includes:
+# - Redis server for job queue and pub/sub messaging
+# - RQ worker for background job processing
+# - Flask backend API server
+# - React frontend development server
+#
+# Usage: ./start_local.sh
+#
+# Author: Research Team
+# License: MIT
+# =============================================================================
 
-echo "Starting LM Comparison App locally..."
+echo "Starting Language Model Comparison App (Lexara) locally..."
 
-# Function to check if a port is in use
+# =============================================================================
+# Utility Functions
+# =============================================================================
+
+# Check if a specific port is already in use
+# Args: $1 - port number to check
+# Returns: 0 if port is in use, 1 if port is available
 check_port() {
     if lsof -Pi :$1 -sTCP:LISTEN -t >/dev/null ; then
         echo "Port $1 is already in use"
@@ -16,7 +36,8 @@ check_port() {
     fi
 }
 
-# Function to start service in background
+# Start a service in the background with port checking
+# Args: $1 - service name, $2 - command to execute, $3 - port number
 start_service() {
     local name=$1
     local command=$2

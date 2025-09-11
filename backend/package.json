@@ -1,4 +1,10 @@
 {
+  "name": "lexara-backend",
+  "version": "1.0.0",
+  "description": "Language Model Comparison App (Lexara) - Backend Node.js Dependencies",
+  "private": true,
+  "author": "Research Team",
+  "license": "MIT",
   "dependencies": {
     "deep-diff": "^1.0.2",
     "lodash": "^4.17.21",

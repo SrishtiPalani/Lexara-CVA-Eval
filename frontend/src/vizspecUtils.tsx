@@ -1,5 +1,5 @@
 /**
- * This module contains utility functions for converting a Tableau notional specification 
+ * This module contains utility functions for converting a notional specification 
  * into a Vega-Lite specification, applying data filters, and describing
  * the resulting visualization.
  **/

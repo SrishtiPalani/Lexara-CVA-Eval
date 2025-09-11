@@ -1,73 +1,137 @@
-# --- background jobs & redis ---
+# Language Model Comparison App (Lexara) - Python Dependencies
+# 
+# This file contains all Python dependencies required for the Lexara backend application.
+# Dependencies are organized by category for better maintainability.
+#
+# Author: Research Team
+# License: MIT
+
+# =============================================================================
+# Background Jobs and Redis
+# =============================================================================
+# Redis server and job queue dependencies for asynchronous processing
 redis>=5.0,<6
 rq>=1.15,<2
-hiredis>=2.0,<3        # optional, faster Redis client parser
+hiredis>=2.0,<3        # Optional: Faster Redis client parser
 
-aiohappyeyeballs==2.4.3
+# =============================================================================
+# Web Framework and HTTP
+# =============================================================================
+# Flask web framework and related components
+Flask==3.0.3
+Flask-Cors==4.0.0
+gunicorn==22.0.0       # WSGI HTTP server for production
+Werkzeug==3.1.3        # WSGI toolkit
+
+# HTTP client libraries
 aiohttp==3.9.5
-aiosignal==1.3.1
-annotated-types==0.7.0
+httpx==0.27.2
+requests==2.32.3
+httpcore==1.0.6
+
+# =============================================================================
+# Language Model APIs
+# =============================================================================
+# Anthropic Claude API client
 anthropic==0.25.6
-anyio==4.6.2.post1
-asgiref==3.8.1
+
+# OpenAI API client
+openai==1.30.5
+tiktoken==0.8.0        # Tokenizer for OpenAI models
+
+# HuggingFace API client
+huggingface-hub==0.34.3
+hf-xet==1.1.5
+
+# =============================================================================
+# Data Processing and Analysis
+# =============================================================================
+# Core data processing libraries
+pandas==2.2.3
+numpy==2.0.2
+
+# Excel file processing
+openpyxl==3.1.5
+et_xmlfile==2.0.0
+
+# =============================================================================
+# Configuration and Environment
+# =============================================================================
+# Environment variable management
+python-dotenv==1.0.1
+
+# Configuration file parsing
+PyYAML==6.0.1
+
+# =============================================================================
+# Validation and Schema
+# =============================================================================
+# JSON schema validation
+jsonschema==4.22.0
+jsonschema-specifications==2024.10.1
+referencing==0.35.1
+rpds-py==0.21.0
+
+# Data validation
+pydantic==2.9.2
+pydantic_core==2.23.4
+
+# =============================================================================
+# Text Processing and Utilities
+# =============================================================================
+# Text processing utilities
+python-slugify==8.0.4
+text-unidecode==1.3
+regex==2024.11.6
+tokenizers==0.21.4
+
+# =============================================================================
+# Async and Concurrency
+# =============================================================================
+# Asynchronous programming support
+asyncio
+aiohappyeyeballs==2.4.3
+aiosignal==1.3.1
 async-timeout==4.0.3
+anyio==4.6.2.post1
+sniffio==1.3.1
+
+# Gevent for async support
+gevent==24.2.1
+greenlet==3.2.3
+
+# =============================================================================
+# Core Python Libraries
+# =============================================================================
+# Standard library extensions and utilities
+annotated-types==0.7.0
 attrs==24.2.0
 blinker==1.9.0
 certifi==2024.8.30
 charset-normalizer==3.4.0
 click==8.1.7
 distro==1.9.0
-et_xmlfile==2.0.0
 exceptiongroup==1.2.2
 filelock==3.18.0
-Flask==3.0.3
-Flask-Cors==4.0.0
 frozenlist==1.5.0
 fsspec==2025.7.0
-gevent==24.2.1
-greenlet==3.2.3
-gunicorn==22.0.0
 h11==0.14.0
-hf-xet==1.1.5
-httpcore==1.0.6
-httpx==0.27.2
-huggingface-hub==0.34.3
 idna==3.10
 importlib_metadata==8.5.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
 jiter==0.7.1
-jsonschema==4.22.0
-jsonschema-specifications==2024.10.1
 MarkupSafe==3.0.2
 multidict==6.1.0
-numpy==2.0.2
-openai==1.30.5
-openpyxl==3.1.5
 packaging==25.0
-pandas==2.2.3
 propcache==0.2.0
-pydantic==2.9.2
-pydantic_core==2.23.4
 python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
-python-slugify==8.0.4
 pytz==2024.2
-PyYAML==6.0.1
-referencing==0.35.1
-regex==2024.11.6
-requests==2.32.3
-rpds-py==0.21.0
 six==1.16.0
-sniffio==1.3.1
-text-unidecode==1.3
-tiktoken==0.8.0
-tokenizers==0.21.4
 tqdm==4.67.0
 typing_extensions==4.12.2
 tzdata==2024.2
 urllib3==1.26.20
-Werkzeug==3.1.3
 yarl==1.17.2
 zipp==3.21.0
 zope.event==5.1.1

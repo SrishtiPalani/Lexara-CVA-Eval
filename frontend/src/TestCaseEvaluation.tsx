@@ -72,7 +72,7 @@ export const modelNameMap: Record<string, string> = {
   "anthropic-claude-3.7-sonnet" : "claude-sonnet",
   "anthropic-claude-opus-4"     : "claude-opus",
   "deepseek-r1"                 : "deepseek-r1",
-  "SFR-Tableau-Finetuned"       : "einstein-tableau-gpt",
+  "my-finetuned"                : "einstein-custom-gpt",
 };
 
 
@@ -391,7 +391,7 @@ export const metricsToDisplay: {
     key: 'chartSimilarity',
     label: 'Chart Similarity',
     displayFn: ms => ms.chart_similarity,
-    definition: 'Alignment of chosen mark type with Tableau Show Me recommendations for the same fields.',
+    definition: 'Alignment of chosen mark type with visualization best practices for the same fields.',
     unit: '%',
     range: [0, 100],
   },
@@ -690,7 +690,7 @@ const ApiKeySection: React.FC<ApiKeySectionProps> = ({
 // Visualization bucket definitions
 export const vizBucketDefinitions: Record<'data'|'semantics'|'functionality'|'design',string> = {
   data:          'Composite score of Data Fidelity and Field Similarity',
-  semantics:     'How logical the chart type is vs. expected (Tableau Show Me logic)',
+  semantics:     'How logical the chart type is vs. expected (visualization best practices)',
   functionality: 'Average correctness of filters, sort, and axes',
   design:        'Average correctness of encodings and tooltips',
 };
@@ -2419,7 +2419,7 @@ const generateUniqueUserId = () => {
             try {
               const parsed = safeJsonParse<any>(modelOutput);
     
-              // If the model's JSON has a 'content' field (like SFR-Tableau-Finetuned or your newly updated models),
+              // If the model's JSON has a 'content' field (like my-finetuned or your newly updated models),
               // we only want to compare that to the expected output.
               // Otherwise, we assume the top-level parsed object *is* the notional spec.
               actualObj = parsed.content ?? parsed;
