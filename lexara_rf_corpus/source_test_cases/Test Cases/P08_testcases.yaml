@@ -1,0 +1,251 @@
+- description: Conversation for P08 on life-expectancy-who-datasource.yaml
+  requirement-id: P08-HEALTHCARE
+  test-number: 1
+  utterances:
+  - canonical: Keep this view; sort countries by Life expectancy descending and add labels.
+    labels:
+    - InferGranularity
+    - 'Context Handling: Spec-Edit Carryover'
+    - Semantic Ambiguity
+    - Syntactic Ambiguity
+    - Pragmatic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Country
+        by: 'Life expectancy '
+        aggregation: avg
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep this view; sort countries by Life expectancy descending and add labels.
+    labels:
+    - InferFilter
+    - 'Context Handling: Reference Resolution'
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Country
+        by: 'Life expectancy '
+        aggregation: avg
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Multi-line: Life expectancy by Year colored by Country; restrict to top 5 by latest value.'
+    labels:
+    - Multi-Line Chart
+    - InferSort
+    - 'Context Handling: Reference Resolution'
+    - Pragmatic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Year
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: year
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      categoricalFilters:
+      - type: categorical
+        field: Country
+        limit:
+          type: top
+          limit: 5
+          field: 'Life expectancy '
+          aggregation: avg
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Line chart: average Life expectancy by Year since 2000; color by Status; label latest.'
+    labels:
+    - Line Chart
+    - InferSort
+    - 'Context Handling: Reference Resolution'
+    - Syntactic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Year
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: year
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: Status
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Line chart: average Life expectancy by Year since 2000; color by Status; label latest.'
+    labels:
+    - Line Chart
+    - InferDateTimeField
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Pragmatic Ambiguity
+    - Semantic Ambiguity
+    - Syntactic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Year
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: year
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: Status
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4

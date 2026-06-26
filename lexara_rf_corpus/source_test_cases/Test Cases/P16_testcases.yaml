@@ -1,0 +1,260 @@
+- description: Conversation for P16 on patient-billing-anon-participant-datasource.yaml
+  requirement-id: P16-HEALTHCARE
+  test-number: 1
+  utterances:
+  - canonical: 'Scatter: system-wise average cycle time vs case volume; color by Sales Region.'
+    labels:
+    - Scatter Chart
+    - Pragmatic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: System
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      - caption: Cycle Time (days)
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: x
+      - caption: Case Count
+        data: number
+        type: continuous
+        role: measure
+        aggregation: count
+        encoding: y
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Line: monthly count of cases by Case State for the last year; filter Billing Type = REGULAR and TAM-Covered = ''TAM Covered''; label counts.'
+    labels:
+    - Line Chart
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Created Timestamp Local
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: month
+        encoding: x
+      - caption: Case Count
+        data: number
+        type: continuous
+        role: measure
+        aggregation: count
+        encoding: y
+      - caption: Case State
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      - caption: Case Count
+        data: number
+        type: continuous
+        role: measure
+        aggregation: count
+        encoding: text
+      categoricalFilters:
+      - type: categorical
+        field: Billing Type
+        values:
+        - REGULAR
+      - type: categorical
+        field: TAM-Covered
+        values:
+        - TAM Covered
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep the view; now sort Sales Region ascending by cycle time and annotate values.
+    labels:
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Sales Region
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: Cycle Time (days)
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: Cycle Time (days)
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Sales Region
+        by: Cycle Time (days)
+        aggregation: avg
+        direction: asc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Line: monthly count of cases by Case State for the last year; filter Billing Type = REGULAR and TAM-Covered = ''TAM Covered''; label counts.'
+    labels:
+    - Line Chart
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Created Timestamp Local
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: month
+        encoding: x
+      - caption: Case Count
+        data: number
+        type: continuous
+        role: measure
+        aggregation: count
+        encoding: y
+      - caption: Case State
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      - caption: Case Count
+        data: number
+        type: continuous
+        role: measure
+        aggregation: count
+        encoding: text
+      categoricalFilters:
+      - type: categorical
+        field: Billing Type
+        values:
+        - REGULAR
+      - type: categorical
+        field: TAM-Covered
+        values:
+        - TAM Covered
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Bar: Top 5 Sales Region by average cycle time (Created to Billing); keep prior filters; sort descending; label bars.'
+    labels:
+    - Bar Chart
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Sales Region
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: Cycle Time (days)
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: Cycle Time (days)
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Sales Region
+        by: Cycle Time (days)
+        aggregation: avg
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: Billing Type
+        values:
+        - REGULAR
+      - type: categorical
+        field: TAM-Covered
+        values:
+        - TAM Covered
+      - type: categorical
+        field: Sales Region
+        limit:
+          type: top
+          limit: 5
+          field: Cycle Time (days)
+          aggregation: avg
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4

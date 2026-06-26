@@ -1,0 +1,248 @@
+- description: Conversation for P10 on american-university-ipeds-datasource.yaml
+  requirement-id: P10-EDUCATION
+  test-number: 1
+  utterances:
+  - canonical: Keep the bars; filter to Public control and show the top 10 institutions by Total enrollment with labels.
+    labels:
+    - InferDateTimeField
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Name
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: y
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: text
+      sort:
+        field: Name
+        by: Total  enrollment
+        aggregation: sum
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: Control of institution
+        values:
+        - Public
+      - type: categorical
+        field: Name
+        limit:
+          type: top
+          limit: 10
+          field: Total  enrollment
+          aggregation: sum
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Line: total enrollment by year for public institutions; highlight the latest value.'
+    labels:
+    - Line Chart
+    - InferFilter
+    - 'Context Handling: Spec-Edit Carryover'
+    - Semantic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: year
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: year
+        encoding: x
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: y
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: text
+      categoricalFilters:
+      - type: categorical
+        field: Control of institution
+        values:
+        - Public
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Bar chart total enrollment by Sector of institution for 2013; sort descending; label bars.
+    labels:
+    - Bar Chart
+    - InferGranularity
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Semantic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Sector of institution
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: y
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: text
+      sort:
+        field: Sector of institution
+        by: Total  enrollment
+        aggregation: sum
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Bar chart total enrollment by Sector of institution for 2013; sort descending; label bars.
+    labels:
+    - Bar Chart
+    - InferGranularity
+    - Pragmatic Ambiguity
+    - Syntactic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Sector of institution
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: y
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: text
+      sort:
+        field: Sector of institution
+        by: Total  enrollment
+        aggregation: sum
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Scatter: rank institutions by Total enrollment vs year (jittered), colored by sector.'
+    labels:
+    - Scatter Chart
+    - InferDateTimeField
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: year
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: year
+        encoding: x
+      - caption: Total  enrollment
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: y
+      - caption: Sector of institution
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4

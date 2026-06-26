@@ -1,0 +1,1905 @@
+title: Tc2025 Heartflow Agentictestdataset
+containerName: Uploaded Datasets
+description: Converted from source on 2025-09-17
+datasourceFields:
+- name: Hfid
+  fieldValues:
+  - MSOED-25XVCG-NCNF
+  - ATI-252HRF-KLHT
+  - MLBGH-25JBX8-HWBC
+  - STMMC-25TGFM-KGGT
+  - MCPL-25XNJV-NNCY
+  - GCMC-259CPW-JPWH
+  - NHIM-25RRNF-CLXH
+  - SHVI-25T6QT-NWYF
+  - FHCP-25GNHD-RXNQ
+  - NSUGH-25GX2Q-MYXJ
+  - CCHS-25GV6H-DFLG
+  - SMGDH-25X7GF-DGHM
+  - ORIC-25NLK9-NXKT
+  - STANF-25VRQ2-RWXH
+  - SMTI-25HCRK-LRCC
+  - DHCL-25BRHD-WFJG
+  - HCAVR-25CRDW-JHXL
+  - DIND-252VCF-VVCV
+  - MCI-257DZ9-PGDJ
+  - MHNWA-25XYHK-CVYH
+  - CISBR-25T6H6-NGQX
+  - UNVED-25Z687-HGVC
+  - CAMC-25727Y-RVZN
+  - BHIP-25H7PL-RBPC
+  - DHCL-258YTV-ZQRP
+  - HEHS-25BZRL-CKBK
+  - AHK-25DBK9-MCYY
+  - NHHVI-258L6W-FMNY
+  - HHIS-256HGB-TRCR
+  - KBGMC-25PRYC-JKKB
+  - HRH-25CP69-GVMC
+  - MCMH-25PJMV-PJZG
+  - PWOSH-257XPF-MCHQ
+  - NY1ST-252K2W-BNLL
+  - SMGR-25THPM-HLDL
+  - CHMP-25MMPF-JXDB
+  - OSFSF-25YFC8-QDNQ
+  - AHUW-25Z2RT-JBWV
+  - CHIHC-252TZ2-DXYN
+  - MTSI-25GZBG-BVZC
+  - BHP-25FPMR-ZHFL
+  - EAWW-259NL6-GFMW
+  - NYPBM-2522P2-RJLF
+  - STFRH-25KWDY-RLCR
+  - MIEH-2566ZC-BCQX
+  - AMICM-25NVJC-HDBF
+  - MTSI-25MMK7-ZLQT
+  - MTMED-259BDP-RWJF
+  - SHVIN-25MGHK-DXXD
+  - MEMRH-25LTPV-JWKK
+  - VRTMH-25P22X-WMPX
+  - NCH-25M6MH-BGBL
+  - SUTPA-259Z2H-LBMJ
+  - SMISS-25YD6P-TBMM
+  - KDMC-25R6RR-XXWJ
+  - TGH-25TQ8Z-CBWP
+  - STH-25G98B-XZRH
+  - SORM-259TYB-WBFG
+  - BMHGT-25V2NH-DRDY
+  - HCAKC-25K9DQ-PMFH
+  - MIF-25YDF6-RPVQ
+  - EEH-25JYRH-WFBQ
+  - NSEH-25TRPF-QPHC
+  - AHH-25RHQ9-PFRH
+  - WBMNT-25HBHW-CVCB
+  - BUMCP-2577P7-FHQG
+  - DMC-25YBJF-JVWX
+  - PRMC-25FZC2-CXHG
+  - RRWK-25LXHK-XDCB
+  - LNXGV-25YFML-MWCN
+  - SUTPA-25NBLH-FLVQ
+  - VUHV-25T8XC-XHJJ
+  - DHCL-25VWPB-JZVN
+  - DCH-25RPWK-MKGB
+  - NY1ST-2599GX-YCHQ
+  - WISWH-25HLFW-JJCG
+  - SMIMV-25KB29-TLHW
+  - MHSJH-25MGNB-VYYK
+  - MLBGH-256JHW-PNRD
+  - GMCM-25WJB6-GQTX
+  - YNSMC-2587BT-FKKY
+  - LHRR-25F6H7-QWHG
+  - SORM-25NK9D-MFWC
+  - CPMC-25D7KN-WYPC
+  - CRH-258DYN-WXCX
+  - AIMMC-25LB2H-GVZJ
+  - VOHOI-2562TR-NBBV
+  - EEH-25GDFB-CGMB
+  - SCSMC-25W8FQ-ZFPT
+  - NWDCH-25Y2M7-KXYG
+  - HVIW-25KGLK-HHZQ
+  - UCSD-25Y8CD-YNDG
+  - ASVHC-25TCTC-KMPC
+  - BIPII-25ZFVM-JPQK
+  - VCS-25QMTF-BBKW
+  - SIUHV-25GFC9-QNBT
+  - BJWCH-257FJG-QRLD
+  - MHMMC-25VVQG-BCPD
+  - LGHA-25BJ6W-TBRB
+  - SVMC-25GYBF-JBJN
+  - BSWSS-25MNT8-JKGD
+  - ICFL-25VBBX-FWNQ
+  - ASVHC-25MZ99-FQMP
+  - SMTI-25WTNY-HFYV
+  - IORA-25KWNR-YTJH
+  - PHTAC-25ZX7R-VXMJ
+  - IBMC-25PC6Y-PGTY
+  - BAXMC-25GDDC-MZFP
+  - CHIHC-25RR8Y-VGKG
+  - CISBR-2597VF-QBBB
+  - AHOMC-25ZHWB-WZFK
+  - MCPL-25QN72-LNMM
+  - NCH-25B62R-ZRJX
+  - IUHN-25WD69-NWPY
+  - TMHPP-25TLMH-NXMB
+  - VCS-25LMND-XWZK
+  - TEXMC-25YDBG-LKPJ
+  - PARH-25K7KL-JPRD
+  - NHIM-252HXX-WCRH
+  - MONG-25HCH2-GYHH
+  - GSRMC-25KDG8-XKZG
+  - AHNFH-25W9DM-KZCF
+  - NYASQ-25QJDT-XWDN
+  - DGH-25DD6D-WHQR
+  - ASPWH-25LV97-DJQF
+  - SVMC-25TGYX-BDJF
+  - BHCS-25VYWR-VJTQ
+  - MATHE-256RPY-BMVC
+  - FLLN-258CX8-XPQL
+  - SHS95-25DLYR-KMVR
+  - NGHS-25YZXL-GBWH
+  - STFCS-25B8V6-XXMQ
+  - UHSV-25JYTV-WLQT
+  - MONG-25B6KK-RDWG
+  - STFRH-25Q2CF-HNMY
+  - SORM-25QWHR-CWKV
+  - HCAM-25WFCJ-GXBK
+  - PAMFB-257HNK-XWFN
+  - NFOI-259KRX-GGPV
+  - AHN-25CYQP-ZRYW
+  - RGRH-25ZVC9-DQYT
+  - RRGL-25YV92-XXKW
+  - STER-25FJMH-LNVZ
+  - SMOKC-25CNMF-ZHWP
+  - GRW-25GT7N-DYNG
+  - STNWI-25Z8HL-DJMP
+  - BJH-257F9W-RLBW
+  - PARH-25QZT7-MZLY
+  - BAXMC-25Q9FW-MGKJ
+  - NJIN-25DVRC-GWMP
+  - TVHP-2598NJ-YNJM
+  - SORM-25NRWP-CGRZ
+  - CMK34-25CPL7-QWQJ
+  - MAYOR-2528XY-HWPV
+  - LHPMC-25GXGG-TLQM
+  - OHPMC-25HPQ7-LPYZ
+  - SUTPA-25VQL8-ZCCV
+  - CRH-25BZNJ-KWMY
+  - CRM-25KWXG-RJXK
+  - HNMC-25WLTH-BCFR
+  - OHI-25CRJF-FHKG
+  - CHSCH-25H86Q-JMYR
+  - AMCH-25VND9-HZRN
+  - LABC-25XGYB-ZRZP
+  - CHR-25Y7VN-DPLT
+  - HCH-25P7CH-CTQW
+  - THRFW-2582XF-CMLT
+  - AHNNF-25QVCH-HGYB
+  - MSONE-25L6Q9-TRTR
+  - PHCC-25F2R8-WNTR
+  - UCD-2598MP-YZZK
+  - AMCH-25RCCL-KLBQ
+  - SHVKW-252LQZ-NMFJ
+  - ICM-25L2YJ-MLVZ
+  - SUTPA-257Z9L-XCQK
+  - HCH-25L7GN-FPPV
+  - WWGH-25T7R7-GHDY
+  - SIUH-25BMW2-TPCN
+  - SJMAA-25DQZL-MRMP
+  - MBI-257X67-PYFN
+  - ORIC-25DMHQ-JGQR
+  - STH-25P8YT-GJQG
+  - AGHED-25Q7DB-TJXC
+  - DMCVH-25H8H6-VFXJ
+  - OHGCM-25KCG7-RTKF
+  - PHSCH-25H98R-DCXG
+  - ICFL-257DRJ-WCLQ
+  - SVMCR-25GNHX-QPWH
+  - CHIHC-25H2TD-BGHM
+  - MARH-25V2MK-RRWF
+  - REGO-25HV8W-JNPD
+  - SHVKW-25DNW9-CPLC
+  - STANF-25W8ND-HNXY
+  - SIUHV-25KVCH-KXQM
+  - DGH-252R9L-VGJQ
+  - AHK-25KWH8-QCRQ
+  - BUMCP-25CBQZ-MQZN
+  - BHVMC-25JYHN-XLRT
+  - HETCC-25CJRK-BKGZ
+  - UCSD-25FJYZ-CDJW
+- name: Case State
+  fieldValues:
+  - COMPLETED
+  - RETURNED
+  - ASSESSING_CTQ
+  - MODELING
+  - REVIEWING_REPORT
+  - CANCELED
+  - RCAG_HOLDING
+  - CANCELING
+- name: Billing Type
+  fieldValues:
+  - REGULAR
+  - FREE
+- name: Created Timestamp Local
+  fieldValues:
+  - 4/16/2025 9:08:57?PM
+  - 4/16/2025 1:34:10?PM
+  - 4/16/2025 11:43:13?AM
+  - 4/16/2025 10:15:10?AM
+  - 4/16/2025 9:22:18?AM
+  - 4/16/2025 7:47:30?AM
+  - 4/15/2025 3:59:06?PM
+  - 4/15/2025 2:27:50?PM
+  - 4/15/2025 12:49:11?PM
+  - 4/15/2025 11:30:36?AM
+  - 4/15/2025 10:22:02?AM
+  - 4/15/2025 9:37:31?AM
+  - 4/15/2025 8:25:38?AM
+  - 4/14/2025 5:57:52?PM
+  - 4/14/2025 3:07:37?PM
+  - 4/14/2025 1:21:38?PM
+  - 4/14/2025 11:50:42?AM
+  - 4/14/2025 10:39:57?AM
+  - 4/14/2025 9:47:52?AM
+  - 4/14/2025 8:58:10?AM
+  - 4/14/2025 5:52:03?AM
+  - 4/12/2025 9:35:03?AM
+  - 4/11/2025 3:49:45?PM
+  - 4/11/2025 2:33:25?PM
+  - 4/11/2025 1:23:00?PM
+  - 4/11/2025 11:55:00?AM
+  - 4/11/2025 10:58:12?AM
+  - 4/11/2025 10:04:05?AM
+  - 4/11/2025 9:00:47?AM
+  - 4/11/2025 7:43:21?AM
+  - 4/10/2025 4:17:34?PM
+  - 4/10/2025 2:47:14?PM
+  - 4/10/2025 1:39:13?PM
+  - 4/10/2025 12:28:44?PM
+  - 4/10/2025 11:36:05?AM
+  - 4/10/2025 10:41:46?AM
+  - 4/10/2025 9:55:21?AM
+  - 4/10/2025 9:06:54?AM
+  - 4/10/2025 7:36:42?AM
+  - 4/9/2025 4:07:28?PM
+  - 4/9/2025 2:18:45?PM
+  - 4/9/2025 1:10:05?PM
+  - 4/9/2025 12:06:29?PM
+  - 4/9/2025 11:17:34?AM
+  - 4/9/2025 10:25:50?AM
+  - 4/9/2025 9:43:12?AM
+  - 4/9/2025 8:55:29?AM
+  - 4/9/2025 6:55:04?AM
+  - 4/8/2025 3:57:59?PM
+  - 4/8/2025 2:43:45?PM
+  - 4/8/2025 1:25:01?PM
+  - 4/8/2025 12:06:55?PM
+  - 4/8/2025 11:11:06?AM
+  - 4/8/2025 10:17:24?AM
+  - 4/8/2025 9:26:37?AM
+  - 4/8/2025 8:36:23?AM
+  - 4/8/2025 5:40:04?AM
+  - 4/7/2025 3:34:09?PM
+  - 4/7/2025 2:23:02?PM
+  - 4/7/2025 1:11:07?PM
+  - 4/7/2025 11:57:22?AM
+  - 4/7/2025 10:57:23?AM
+  - 4/7/2025 9:58:10?AM
+  - 4/7/2025 9:21:02?AM
+  - 4/7/2025 8:29:33?AM
+  - 4/6/2025 12:09:18?PM
+  - 4/4/2025 5:31:20?PM
+  - 4/4/2025 3:19:00?PM
+  - 4/4/2025 1:38:39?PM
+  - 4/4/2025 12:24:13?PM
+  - 4/4/2025 11:04:26?AM
+  - 4/4/2025 10:07:47?AM
+  - 4/4/2025 9:16:05?AM
+  - 4/4/2025 8:04:06?AM
+  - 4/3/2025 4:22:41?PM
+  - 4/3/2025 2:52:04?PM
+  - 4/3/2025 1:56:39?PM
+  - 4/3/2025 12:50:03?PM
+  - 4/3/2025 11:38:55?AM
+  - 4/3/2025 10:38:40?AM
+  - 4/3/2025 9:49:49?AM
+  - 4/3/2025 9:03:14?AM
+  - 4/3/2025 7:54:48?AM
+  - 4/2/2025 5:03:03?PM
+  - 4/2/2025 3:08:29?PM
+  - 4/2/2025 1:59:25?PM
+  - 4/2/2025 1:02:52?PM
+  - 4/2/2025 11:44:42?AM
+  - 4/2/2025 11:00:09?AM
+  - 4/2/2025 10:11:48?AM
+  - 4/2/2025 9:20:02?AM
+  - 4/2/2025 8:31:21?AM
+  - 4/1/2025 7:11:43?PM
+  - 4/1/2025 3:17:37?PM
+  - 4/1/2025 2:08:22?PM
+  - 4/1/2025 1:07:34?PM
+  - 4/1/2025 11:45:43?AM
+  - 4/1/2025 10:48:16?AM
+  - 4/1/2025 9:55:00?AM
+  - 4/1/2025 9:10:21?AM
+  - 4/1/2025 7:56:43?AM
+  - 3/31/2025 4:46:42?PM
+  - 3/31/2025 2:47:19?PM
+  - 3/31/2025 1:47:01?PM
+  - 3/31/2025 12:38:41?PM
+  - 3/31/2025 11:35:27?AM
+  - 3/31/2025 10:45:31?AM
+  - 3/31/2025 9:54:42?AM
+  - 3/31/2025 8:56:02?AM
+  - 3/31/2025 6:42:38?AM
+  - 3/28/2025 9:45:27?PM
+  - 3/28/2025 3:30:10?PM
+  - 3/28/2025 1:42:19?PM
+  - 3/28/2025 12:33:03?PM
+  - 3/28/2025 11:22:22?AM
+  - 3/28/2025 10:28:18?AM
+  - 3/28/2025 9:29:24?AM
+  - 3/28/2025 8:25:50?AM
+  - 3/27/2025 6:18:33?PM
+  - 3/27/2025 3:28:34?PM
+  - 3/27/2025 2:17:15?PM
+  - 3/27/2025 1:07:55?PM
+  - 3/27/2025 11:59:02?AM
+  - 3/27/2025 11:00:03?AM
+  - 3/27/2025 10:12:26?AM
+  - 3/27/2025 9:28:58?AM
+  - 3/27/2025 8:30:27?AM
+  - 3/27/2025 5:57:04?AM
+  - 3/26/2025 3:36:27?PM
+  - 3/26/2025 2:21:34?PM
+  - 3/26/2025 1:26:23?PM
+  - 3/26/2025 12:14:14?PM
+  - 3/26/2025 11:12:19?AM
+  - 3/26/2025 10:19:03?AM
+  - 3/26/2025 9:28:15?AM
+  - 3/26/2025 8:25:22?AM
+  - 3/26/2025 4:51:29?AM
+  - 3/25/2025 3:28:48?PM
+  - 3/25/2025 2:14:59?PM
+  - 3/25/2025 1:06:46?PM
+  - 3/25/2025 11:59:25?AM
+  - 3/25/2025 11:01:00?AM
+  - 3/25/2025 10:10:03?AM
+  - 3/25/2025 9:30:11?AM
+  - 3/25/2025 8:48:28?AM
+  - 3/25/2025 6:46:25?AM
+  - 3/24/2025 3:55:21?PM
+  - 3/24/2025 2:25:06?PM
+  - 3/24/2025 1:21:31?PM
+  - 3/24/2025 12:01:54?PM
+  - 3/24/2025 11:05:28?AM
+  - 3/24/2025 10:14:33?AM
+  - 3/24/2025 9:26:23?AM
+  - 3/24/2025 8:28:46?AM
+  - 3/23/2025 11:27:40?AM
+  - 3/21/2025 5:28:42?PM
+  - 3/21/2025 2:57:01?PM
+  - 3/21/2025 1:30:38?PM
+  - 3/21/2025 12:03:29?PM
+  - 3/21/2025 10:54:03?AM
+  - 3/21/2025 10:06:56?AM
+  - 3/21/2025 9:12:33?AM
+  - 3/21/2025 8:01:11?AM
+  - 3/20/2025 4:31:09?PM
+  - 3/20/2025 3:12:38?PM
+  - 3/20/2025 1:56:16?PM
+  - 3/20/2025 12:52:17?PM
+  - 3/20/2025 11:33:52?AM
+  - 3/20/2025 10:50:41?AM
+  - 3/20/2025 10:10:51?AM
+  - 3/20/2025 9:30:51?AM
+  - 3/20/2025 8:28:00?AM
+  - 3/19/2025 6:29:06?PM
+  - 3/19/2025 3:18:04?PM
+  - 3/19/2025 1:59:27?PM
+  - 3/19/2025 12:52:28?PM
+  - 3/19/2025 11:47:26?AM
+  - 3/19/2025 10:57:34?AM
+  - 3/19/2025 10:03:51?AM
+  - 3/19/2025 9:20:31?AM
+  - 3/19/2025 8:35:46?AM
+  - 3/18/2025 6:16:48?PM
+  - 3/18/2025 3:27:16?PM
+  - 3/18/2025 2:15:52?PM
+  - 3/18/2025 1:01:25?PM
+  - 3/18/2025 12:04:01?PM
+  - 3/18/2025 11:03:27?AM
+  - 3/18/2025 10:15:02?AM
+  - 3/18/2025 9:31:26?AM
+  - 3/18/2025 8:39:04?AM
+  - 3/18/2025 3:53:38?AM
+  - 3/17/2025 3:55:10?PM
+  - 3/17/2025 2:18:48?PM
+  - 3/17/2025 1:12:01?PM
+  - 3/17/2025 11:57:25?AM
+  - 3/17/2025 10:56:15?AM
+  - 3/17/2025 9:56:42?AM
+  - 3/17/2025 9:13:05?AM
+  - 3/17/2025 8:14:39?AM
+  - 3/16/2025 7:42:56?AM
+- name: Completed Timestamp Local
+  fieldValues:
+  - 4/16/2025 10:25:56?PM
+  - 4/16/2025 4:44:44?PM
+  - 4/16/2025 3:29:32?PM
+  - 4/16/2025 1:07:47?PM
+  - 4/16/2025 12:11:17?PM
+  - 4/16/2025 10:14:25?AM
+  - 4/15/2025 7:48:57?PM
+  - 4/15/2025 5:18:15?PM
+  - 4/15/2025 3:04:38?PM
+  - 4/15/2025 2:17:17?PM
+  - 4/15/2025 12:23:04?PM
+  - 4/15/2025 11:26:28?AM
+  - 4/15/2025 10:26:44?AM
+  - 4/15/2025 6:07:07?AM
+  - 4/14/2025 5:54:02?PM
+  - 4/14/2025 3:45:58?PM
+  - 4/14/2025 2:31:33?PM
+  - 4/14/2025 12:59:02?PM
+  - 4/14/2025 11:36:04?AM
+  - 4/14/2025 10:37:24?AM
+  - 4/14/2025 7:43:39?AM
+  - 4/12/2025 10:35:48?AM
+  - 4/11/2025 5:00:43?PM
+  - 4/11/2025 5:35:40?PM
+  - 4/11/2025 4:24:14?PM
+  - 4/11/2025 2:52:28?PM
+  - 4/11/2025 1:22:08?PM
+  - 4/11/2025 11:55:34?AM
+  - 4/11/2025 11:46:22?AM
+  - 4/11/2025 10:32:02?AM
+  - 4/11/2025 7:44:20?AM
+  - 4/10/2025 8:47:50?PM
+  - 4/10/2025 4:24:26?PM
+  - 4/10/2025 3:31:10?PM
+  - 4/10/2025 1:50:32?PM
+  - 4/10/2025 1:06:03?PM
+  - 4/10/2025 11:35:34?AM
+  - 4/10/2025 10:49:10?AM
+  - 4/10/2025 10:21:39?AM
+  - 4/9/2025 5:54:05?PM
+  - 4/9/2025 4:57:07?PM
+  - 4/9/2025 3:49:30?PM
+  - 4/9/2025 2:39:48?PM
+  - 4/9/2025 2:39:54?PM
+  - 4/9/2025 1:25:03?PM
+  - 4/9/2025 11:18:23?AM
+  - 4/9/2025 10:36:34?AM
+  - 4/9/2025 8:53:14?AM
+  - 4/9/2025 4:59:40?AM
+  - 4/8/2025 5:52:22?PM
+  - 4/8/2025 4:27:10?PM
+  - 4/8/2025 2:38:20?PM
+  - 4/8/2025 1:44:24?PM
+  - 4/8/2025 11:51:25?AM
+  - 4/8/2025 10:59:36?AM
+  - 4/8/2025 10:38:03?AM
+  - 4/8/2025 9:16:31?AM
+  - 4/7/2025 6:48:13?PM
+  - 4/7/2025 4:01:49?PM
+  - 4/7/2025 2:20:36?PM
+  - 4/7/2025 1:50:58?PM
+  - 4/7/2025 12:51:12?PM
+  - 4/7/2025 12:24:41?PM
+  - 4/7/2025 11:33:40?AM
+  - 4/7/2025 10:47:29?AM
+  - 4/6/2025 3:48:27?PM
+  - 4/5/2025 8:28:25?AM
+  - 4/5/2025 5:58:38?AM
+  - 4/4/2025 4:46:50?PM
+  - 4/4/2025 3:06:42?PM
+  - 4/4/2025 1:20:31?PM
+  - 4/4/2025 1:13:55?PM
+  - 4/4/2025 10:45:34?AM
+  - 4/4/2025 9:28:54?AM
+  - 4/3/2025 11:34:11?PM
+  - 4/4/2025 5:10:32?AM
+  - 4/3/2025 4:42:29?PM
+  - 4/3/2025 2:19:11?PM
+  - 4/3/2025 1:17:39?PM
+  - 4/3/2025 12:41:20?PM
+  - 4/3/2025 1:05:48?PM
+  - 4/3/2025 10:34:11?AM
+  - 4/3/2025 9:22:41?AM
+  - 4/2/2025 8:30:11?PM
+  - 4/2/2025 5:11:26?PM
+  - 4/2/2025 4:20:19?PM
+  - 4/2/2025 3:02:36?PM
+  - 4/2/2025 2:02:14?PM
+  - 4/2/2025 12:41:42?PM
+  - 4/2/2025 12:02:29?PM
+  - 4/2/2025 11:29:38?AM
+  - 4/2/2025 9:53:32?AM
+  - 4/2/2025 8:12:23?AM
+  - 4/1/2025 4:40:35?PM
+  - 4/1/2025 4:17:06?PM
+  - 4/1/2025 3:04:58?PM
+  - 4/1/2025 2:02:25?PM
+  - 4/1/2025 1:12:37?PM
+  - 4/1/2025 11:38:01?AM
+  - 4/1/2025 10:48:57?AM
+  - 4/1/2025 9:47:02?AM
+  - 4/1/2025 5:47:25?AM
+  - 3/31/2025 5:22:06?PM
+  - 3/31/2025 4:09:22?PM
+  - 3/31/2025 2:52:30?PM
+  - 3/31/2025 1:53:51?PM
+  - 3/31/2025 1:28:35?PM
+  - 3/31/2025 11:13:23?AM
+  - 3/31/2025 10:11:16?AM
+  - 3/31/2025 8:57:40?AM
+  - 3/29/2025 1:32:12?PM
+  - 3/28/2025 5:40:17?PM
+  - 3/28/2025 3:40:23?PM
+  - 3/28/2025 2:20:03?PM
+  - 3/28/2025 1:26:18?PM
+  - 3/28/2025 12:23:28?PM
+  - 3/28/2025 10:59:10?AM
+  - 3/28/2025 9:57:15?AM
+  - 3/28/2025 5:30:57?AM
+  - 3/27/2025 5:38:04?PM
+  - 3/27/2025 5:57:40?PM
+  - 3/27/2025 3:06:29?PM
+  - 3/27/2025 1:39:21?PM
+  - 3/27/2025 12:25:44?PM
+  - 3/27/2025 11:42:36?AM
+  - 3/27/2025 10:49:27?AM
+  - 3/27/2025 9:28:14?AM
+  - 3/27/2025 8:38:35?AM
+  - 3/26/2025 5:47:59?PM
+  - 3/26/2025 3:52:45?PM
+  - 3/26/2025 3:09:57?PM
+  - 3/26/2025 1:48:22?PM
+  - 3/26/2025 12:51:50?PM
+  - 3/26/2025 11:52:54?AM
+  - 3/26/2025 10:51:38?AM
+  - 3/26/2025 9:35:52?AM
+  - 3/26/2025 8:08:36?AM
+  - 3/25/2025 5:57:31?PM
+  - 3/25/2025 3:57:58?PM
+  - 3/25/2025 3:03:28?PM
+  - 3/25/2025 2:20:04?PM
+  - 3/25/2025 12:33:54?PM
+  - 3/25/2025 12:08:03?PM
+  - 3/25/2025 10:48:32?AM
+  - 3/25/2025 10:02:59?AM
+  - 3/25/2025 8:31:22?AM
+  - 3/24/2025 5:33:22?PM
+  - 3/24/2025 4:05:25?PM
+  - 3/24/2025 3:28:58?PM
+  - 3/24/2025 1:44:45?PM
+  - 3/24/2025 12:55:46?PM
+  - 3/24/2025 11:56:18?AM
+  - 3/24/2025 10:50:29?AM
+  - 3/24/2025 10:33:30?AM
+  - 3/24/2025 1:13:13?AM
+  - 3/21/2025 7:37:39?PM
+  - 3/21/2025 4:20:22?PM
+  - 3/21/2025 2:57:39?PM
+  - 3/21/2025 2:35:23?PM
+  - 3/21/2025 12:19:17?PM
+  - 3/21/2025 11:11:16?AM
+  - 3/21/2025 10:38:41?AM
+  - 3/21/2025 9:49:21?AM
+  - 3/20/2025 7:12:56?PM
+  - 3/20/2025 4:43:31?PM
+  - 3/20/2025 3:45:37?PM
+  - 3/20/2025 2:06:50?PM
+  - 3/20/2025 1:28:21?PM
+  - 3/20/2025 12:27:35?PM
+  - 3/20/2025 11:27:01?AM
+  - 3/20/2025 11:11:48?AM
+  - 3/20/2025 10:45:23?AM
+  - 3/19/2025 10:18:37?PM
+  - 3/19/2025 4:49:59?PM
+  - 3/19/2025 3:24:31?PM
+  - 3/19/2025 2:38:52?PM
+  - 3/19/2025 1:33:19?PM
+  - 3/19/2025 12:38:00?PM
+  - 3/19/2025 11:25:29?AM
+  - 3/19/2025 10:45:30?AM
+  - 3/19/2025 9:32:51?AM
+  - 3/18/2025 8:25:28?PM
+  - 3/18/2025 4:51:25?PM
+  - 3/18/2025 4:22:07?PM
+  - 3/18/2025 3:03:45?PM
+  - 3/18/2025 1:48:33?PM
+  - 3/18/2025 12:14:59?PM
+  - 3/18/2025 11:14:06?AM
+  - 3/18/2025 10:55:25?AM
+  - 3/18/2025 10:16:43?AM
+  - 3/18/2025 6:39:06?AM
+  - 3/17/2025 5:27:37?PM
+  - 3/17/2025 3:43:15?PM
+  - 3/17/2025 2:39:49?PM
+  - 3/17/2025 1:21:40?PM
+  - 3/17/2025 12:44:09?PM
+  - 3/17/2025 11:20:16?AM
+  - 3/17/2025 10:03:37?AM
+  - 3/17/2025 9:29:08?AM
+  - 3/16/2025 1:18:53?PM
+- name: Billing Timestamp Local
+  fieldValues:
+  - 4/16/2025 11:32:57?PM
+  - 4/16/2025 5:27:49?PM
+  - 4/16/2025 4:16:41?PM
+  - 4/16/2025 4:31:43?PM
+  - 4/16/2025 11:46:06?AM
+  - 4/16/2025 9:44:32?AM
+  - 4/15/2025 9:19:21?PM
+  - 4/16/2025 4:37:13?AM
+  - 4/15/2025 3:20:53?PM
+  - 4/15/2025 1:39:15?PM
+  - 4/15/2025 2:09:25?PM
+  - 4/15/2025 12:58:53?PM
+  - 4/16/2025 4:49:57?PM
+  - 4/15/2025 6:09:02?AM
+  - 4/16/2025 9:47:10?AM
+  - 4/14/2025 3:45:58?PM
+  - 4/14/2025 2:39:46?PM
+  - 4/14/2025 6:41:23?PM
+  - 4/14/2025 12:02:47?PM
+  - 4/14/2025 11:21:37?AM
+  - 4/14/2025 6:40:12?AM
+  - 4/12/2025 10:35:48?AM
+  - 4/14/2025 10:28:58?PM
+  - 4/11/2025 3:09:02?PM
+  - 4/11/2025 2:34:47?PM
+  - 4/14/2025 10:09:50?AM
+  - 4/11/2025 1:53:17?PM
+  - 4/11/2025 2:00:11?PM
+  - 4/12/2025 10:05:41?AM
+  - 4/11/2025 10:15:55?AM
+  - 4/11/2025 7:38:22?AM
+  - 4/10/2025 6:07:14?PM
+  - 4/14/2025 9:12:21?AM
+  - 4/10/2025 1:24:53?PM
+  - 4/10/2025 5:34:33?PM
+  - 4/10/2025 12:56:56?PM
+  - 4/10/2025 2:10:20?PM
+  - 4/10/2025 10:12:54?AM
+  - 4/13/2025 11:20:35?AM
+  - 4/10/2025 8:43:00?AM
+  - 4/9/2025 5:45:09?PM
+  - 4/9/2025 4:24:21?PM
+  - 4/9/2025 2:15:16?PM
+  - 4/9/2025 1:30:35?PM
+  - 4/9/2025 1:40:51?PM
+  - 4/15/2025 12:39:40?PM
+  - 4/9/2025 11:57:30?AM
+  - 4/9/2025 10:11:34?AM
+  - 4/9/2025 8:12:35?AM
+  - 4/8/2025 5:56:47?PM
+  - 4/8/2025 5:21:20?PM
+  - 4/8/2025 3:02:14?PM
+  - 4/8/2025 1:35:34?PM
+  - 4/8/2025 12:46:48?PM
+  - 4/8/2025 10:32:55?AM
+  - 4/8/2025 9:31:47?AM
+  - 4/8/2025 8:17:50?AM
+  - 4/7/2025 5:29:35?PM
+  - 4/7/2025 3:59:13?PM
+  - 4/7/2025 3:15:51?PM
+  - 4/7/2025 3:23:35?PM
+  - 4/10/2025 3:47:15?PM
+  - 4/7/2025 11:49:25?AM
+  - 4/7/2025 1:17:40?PM
+  - 4/8/2025 10:15:55?AM
+  - 4/15/2025 3:00:58?PM
+  - 4/5/2025 12:40:11?AM
+  - 4/4/2025 6:16:12?PM
+  - 4/8/2025 12:35:59?PM
+  - 4/4/2025 2:59:35?PM
+  - 4/8/2025 12:39:44?AM
+  - 4/4/2025 1:18:49?PM
+  - 4/4/2025 12:01:56?PM
+  - 4/7/2025 10:28:01?AM
+  - 4/3/2025 4:41:48?PM
+  - 4/8/2025 4:36:20?PM
+  - 4/5/2025 12:22:08?PM
+  - 4/3/2025 3:02:52?PM
+  - 4/3/2025 2:21:36?PM
+  - 4/3/2025 3:07:07?PM
+  - 4/3/2025 5:09:51?PM
+  - 4/4/2025 8:07:50?AM
+  - 4/3/2025 9:23:20?AM
+  - 4/3/2025 4:20:39?PM
+  - 4/2/2025 4:58:29?PM
+  - 4/2/2025 6:09:17?PM
+  - 4/4/2025 8:00:11?AM
+  - 4/2/2025 11:51:52?AM
+  - 4/2/2025 3:48:28?PM
+  - 4/2/2025 11:50:38?AM
+  - 4/2/2025 10:48:17?AM
+  - 4/7/2025 4:00:54?PM
+  - 4/2/2025 10:00:19?AM
+  - 4/1/2025 4:36:08?PM
+  - 4/2/2025 11:33:03?AM
+  - 4/2/2025 8:29:10?AM
+  - 4/1/2025 3:06:11?PM
+  - 4/7/2025 3:55:14?PM
+  - 4/1/2025 11:28:23?AM
+  - 4/1/2025 4:19:47?PM
+  - 4/1/2025 9:23:44?AM
+  - 4/1/2025 9:19:26?AM
+  - 3/31/2025 4:53:40?PM
+  - 3/31/2025 3:53:12?PM
+  - 3/31/2025 1:41:52?PM
+  - 4/1/2025 10:27:00?AM
+  - 3/31/2025 2:18:25?PM
+  - 4/1/2025 10:01:13?AM
+  - 3/31/2025 10:58:18?AM
+  - 3/31/2025 3:08:07?PM
+  - 4/1/2025 7:45:04?AM
+  - 3/28/2025 3:56:44?PM
+  - 3/28/2025 3:45:43?PM
+  - 4/1/2025 3:08:59?PM
+  - 3/28/2025 12:36:53?PM
+  - 3/28/2025 5:12:37?PM
+  - 3/31/2025 3:43:07?PM
+  - 4/11/2025 4:03:32?PM
+  - 3/27/2025 7:33:02?PM
+  - 3/27/2025 4:50:39?PM
+  - 3/27/2025 2:23:27?PM
+  - 3/27/2025 2:08:54?PM
+  - 3/27/2025 1:54:05?PM
+  - 3/27/2025 1:47:04?PM
+  - 3/27/2025 10:13:42?AM
+  - 3/27/2025 11:07:55?AM
+  - 3/31/2025 9:28:39?AM
+  - 3/28/2025 6:55:15?AM
+  - 3/26/2025 3:57:11?PM
+  - 3/26/2025 3:49:00?PM
+  - 3/26/2025 3:01:26?PM
+  - 3/26/2025 1:50:10?PM
+  - 3/26/2025 1:33:16?PM
+  - 3/27/2025 11:13:27?AM
+  - 4/15/2025 1:36:39?PM
+  - 3/26/2025 9:13:31?AM
+  - 3/26/2025 7:16:43?AM
+  - 3/25/2025 5:16:43?PM
+  - 3/26/2025 10:55:26?AM
+  - 3/26/2025 8:50:47?AM
+  - 3/25/2025 2:27:17?PM
+  - 3/26/2025 7:14:12?AM
+  - 3/25/2025 4:36:55?PM
+  - 3/25/2025 11:23:30?AM
+  - 3/31/2025 9:30:23?AM
+  - 3/31/2025 2:59:19?PM
+  - 3/24/2025 8:21:13?PM
+  - 3/24/2025 4:06:40?PM
+  - 3/24/2025 3:17:16?PM
+  - 3/24/2025 2:17:57?PM
+  - 3/24/2025 4:09:30?PM
+  - 3/24/2025 11:06:21?AM
+  - 3/24/2025 8:56:37?PM
+  - 3/24/2025 9:49:11?AM
+  - 3/23/2025 2:32:59?PM
+  - 3/21/2025 6:45:55?PM
+  - 3/24/2025 8:33:00?AM
+  - 3/21/2025 4:58:34?PM
+  - 3/24/2025 6:39:25?PM
+  - 3/24/2025 1:53:56?PM
+  - 3/21/2025 2:03:53?PM
+  - 3/21/2025 10:37:57?AM
+  - 3/24/2025 9:54:13?AM
+  - 3/20/2025 4:50:47?PM
+  - 3/25/2025 2:54:37?PM
+  - 3/20/2025 3:50:39?PM
+  - 3/20/2025 2:13:24?PM
+  - 3/20/2025 2:23:07?PM
+  - 3/20/2025 12:53:59?PM
+  - 3/20/2025 3:21:39?PM
+  - 3/20/2025 3:44:57?PM
+  - 3/25/2025 10:23:45?AM
+  - 3/19/2025 8:30:37?PM
+  - 3/20/2025 3:58:40?PM
+  - 3/19/2025 6:10:22?PM
+  - 3/27/2025 10:51:18?AM
+  - 3/27/2025 10:05:03?AM
+  - 4/3/2025 11:25:06?AM
+  - 3/20/2025 12:16:14?PM
+  - 3/19/2025 10:35:47?AM
+  - 3/19/2025 9:51:39?AM
+  - 3/18/2025 9:37:14?PM
+  - 3/20/2025 5:40:30?PM
+  - 3/18/2025 4:23:08?PM
+  - 3/21/2025 7:01:00?PM
+  - 3/23/2025 11:20:57?AM
+  - 3/18/2025 6:01:27?PM
+  - 3/23/2025 1:52:38?PM
+  - 3/18/2025 2:10:29?PM
+  - 3/18/2025 9:34:17?AM
+  - 3/18/2025 7:53:25?AM
+  - 3/17/2025 5:27:43?PM
+  - 3/17/2025 3:58:00?PM
+  - 3/17/2025 3:22:53?PM
+  - 3/17/2025 1:37:48?PM
+  - 3/17/2025 2:42:24?PM
+  - 3/17/2025 11:41:47?AM
+  - 3/17/2025 10:23:42?AM
+  - 3/17/2025 1:55:06?PM
+  - 3/16/2025 1:18:53?PM
+- name: Customer Name
+  fieldValues:
+  - HCA - Methodist Hospital Stone Oak ED
+  - Delray Medical Center
+  - Piedmont - Atlanta Healthcare
+  - Baylor Scott & White Medical Center - Temple
+  - Chesapeake Regional Medical Center - Emergency
+  - Atrium Health - Kannapolis
+  - Wellspan Heart and Vascular Center
+  - Kelsey-Seybold - Springwoods Village APEX
+  - New York-Presbyterian Columbia
+  - Aurora Medical Center - Oshkosh
+  - Texas Health Presbyterian Hospital Plano
+  - Baylor Scott & White Heart & Vascular Hospital - Dallas/Fort Wor
+  - Prisma - Cardiology (8 Med)
+  - Aspirus Wausau Hospital
+  - RadNet LHR - Plainview Radiology
+  - HCA Valley Regional Medical Center
+  - Atrium Health - Union West
+  - WVU Thomas Memorial Hospital
+  - Ascension Seton Medical Center Austin
+  - Methodist Le Bonheur Germantown Hospital
+  - New York-Presbyterian Queens
+  - Cookeville Regional Medical Center
+  - The Christ Hospital
+  - Holy Cross Hospital - Fort Lauderdale
+  - NorthShore University Health - Glenbrook Hospital
+  - Broward Health Imperial Point
+  - HSHS St. John's Hospital
+  - RadNet CRA - Rockville Shady Grove
+  - Monument Health Rapid City Hospital
+  - Presbyterian Rust Medical Center
+  - Summit Medical Group - Deane Hill
+  - Inland Imaging - Holy Family Center
+  - Atlantic Medical Imaging - Egg Harbor Township
+  - Baylor Scott & White Medical Center - Irving
+  - University of Miami - The Lennar Foundation Medical Center
+  - Baptist Memorial Hospital - Union County
+  - MaineHealth Mid Coast - Parkview
+  - Franciscan Health - Crown Point
+  - University Hospitals Cleveland Medical Center - Emergency
+  - Mercy Health West
+  - The Mount Sinai Hospital
+  - Adventhealth Hendersonville
+  - Missouri Baptist Medical Center
+  - Corewell Health - Butterworth Hospital
+  - Lee Health - Health Park Medical Center
+  - Community Health Network - Hospital South
+  - NYU Langone Health - 41st Street
+  - Northwell - Staten Island University Hospital Verrazano
+  - HCA Grand Strand Regional Medical Center
+  - Owensboro Health Regional Hospital
+  - University Hospitals Avon Health Center
+  - RWJBH Newark Beth Israel Medical Center
+  - Mercy Hospital - Coon Rapids
+  - Reid Health
+  - Cox Hospital
+  - WVU J.W. Ruby Memorial Hospital
+  - Hackensack Meridian Hackensack University Medical Center
+  - Vanderbilt University Bedford Hospital
+  - Virtua Marne Highway
+  - University Of Colorado Hospital
+  - New York-Presbyterian Brooklyn Methodist
+  - SSM St Anthony Hospital
+  - One Hundred Oaks Imaging (VIS)
+  - Corewell Health Gerber
+  - Promedica Toledo Hospital
+  - Spartanburg Regional Medical Center
+  - Novant Health - Forsyth Medical Center
+  - Bryan Medical Center - East Campus
+  - St. Francis Hospital - Roslyn
+  - Natividad Medical Center
+  - Powers Health - St. Mary Medical Center
+  - Swedish Covenant Hospital
+  - Lee Health - Lee Memorial Hospital
+  - North Hawaii Community Hospital
+  - Renaissance Imaging Medical Assoc (RIMA) Northridge
+  - Atlantic Medical Imaging - Cape May Court House
+  - Aurora St. Luke's Medical Center
+  - Atrium Health - Huntersville
+  - Atrium Health - Navicent
+  - Piedmont - Augusta Hospital
+  - UNC - Eastowne
+  - Kaleida Health Buffalo General Medical Center
+  - Novant Health - Huntersville Medical Center
+  - My Heart Vision
+  - Hackensack Meridian JFK University Medical Center
+  - Northwell - Peconic Bay Medical Center
+  - Chesapeake Medical Imaging - Glen Burnie (Elvaton)
+  - Edward Hospital
+  - Avera Heart Hospital Of South Dakota
+  - Prohealth Care - Syosset
+  - Boulder Community Hospital
+  - Archbold Medical Center
+  - HCA Research Medical Center
+  - RadNet LHR - Ridgewood
+  - NorthShore University Health System - Evanston Hospital
+  - Simonmed Imaging - Ahwatukee
+  - CommonSpirit St. Francis Hospital
+  - University of Miami - Uhealth Tower
+  - Midwest Cardiovascular Institute
+  - IU Health Arnett
+  - Simonmed Imaging - Parker
+  - Franciscan Health - Olympia Fields
+  - United Hospital - Allina
+  - AHN West Penn Hospital
+  - Ascension Borgess Hospital
+  - Umass Memorial Medical Center - University Campus OutPT
+  - Memorial Healthcare - Memorial West
+  - Atrium Health - Cabarrus
+  - Mercy Hospital
+  - Poudre Valley Hospital
+  - Mercy Hospital Anderson
+  - Corewell Beaumont Hospital - Sterling Heights
+  - Simonmed Imaging - First Colony
+  - Orlando Health - Orlando Regional Medical Center
+  - Bradenton Cardiology Center
+  - Image One - Cash Pay
+  - Lakewood Ranch Medical Center
+  - Wellstar Paulding Hospital
+  - Mary Washington Hospital
+  - Medical Center Of The Rockies
+  - RadNet LHR - Bay Ridge
+  - RMI Novi
+  - Community Health Network - Heart and Vascular Hospital
+  - Memorial Healthcare - Miramar
+  - Corewell Beaumont Hospital - Dearborn
+  - University Of Nebraska Medical Center
+  - RadNet LHR - Huntington
+  - Munson Grayling Hospital
+  - Olathe Medical Center
+  - The Imaging Center - Grand Rapids
+  - Novant Health - Thomasville Medical Center
+  - RMI Grand Blanc
+  - Advanced Imaging Center
+  - RadNet LHR - Great Neck
+  - Elmhurst Hospital
+  - "Christus Good Shepherd Medical Center \x96 Longview"
+  - Ballad Johnson City Medical Center
+  - AHN Allegheny Valley Hospital
+  - Scripps Memorial Hospital - La Jolla
+  - HCA Mercy Hospital East Florida
+  - Banner Imaging Ocotillo
+  - Connally Memorial Medical Center
+  - UCLA Health - Westwood Imaging Center & Iris Cantor Breast Imagi
+  - Houston Methodist Willowbrook Hospital
+  - UCHealth Radiology - Longs Peak Hospital
+  - RadNet NJIN - Toms River West
+  - Middletown Medical - Port Jervis
+  - Tampa General Hospital
+  - Ascension Seton Hays
+  - HCA Methodist Healthcare San Antonio
+  - St. Lukes Easton Campus
+  - Northwell - Great South Bay
+  - Northside Canton Outpatient Imaging
+  - Aurora Medical Center - BayCare
+  - Lutheran Hospital Of Indiana
+  - Atlantic Medical Imaging - Galloway
+  - Banner McKee Medical Center
+  - Northwestern Medicine Delnor Hospital
+  - Corewell Beaumont Hospital - Trenton
+  - Orlando Health - FHV Brownwood
+  - Simonmed Imaging - Naples
+  - Englewood Hospital Imaging at Fair Lawn
+  - RadNet NJIN - Woodbridge
+  - RadNet WC - Kern Radiology - Old River
+  - St. Luke's Hospital - Kansas City
+  - OhioHealth - Grove City Methodist Hospital
+  - St Francis Memorial Hospital
+  - Kaiser Oakland Medical Center
+  - Mount Sinai West
+  - Cooper University Hospital Cape Regional
+  - Baylor Scott & White Medical Center - Centennial
+  - Adventist Health And Rideout
+  - Yale New Haven Hospital - St Raphael Campus
+  - Banner Imaging East Mesa
+  - WVU Camden Clark Medical Center
+  - Texoma Medical Center
+  - RadNet B&I Imaging - Clinton Crossings
+  - Mayo Health Eau Claire
+  - CHI St. Luke's Health - The Woodlands Hospital
+  - Northwestern Medicine Kishwaukee Hospital
+  - Adventist Health St. Helena
+  - RadNet HMI - Pearland
+  - RadNet ADR - Stapley
+  - CommonSpirit Penrose Hospital
+  - WVU Wheeling Hospital
+  - Florida Cardiology
+  - Kelsey-Seybold - Main Campus APEX
+  - Northside Hospital - Atlanta
+  - Simonmed Imaging - Flagstaff
+  - Virtua Our Lady Of Lourdes Hospital
+  - El Camino Hospital Los Gatos
+  - HSHS St. Anthony's Hospital
+  - Thibodaux Regional Health System
+  - Ascension Borgess Hospital - Emergency
+  - Digital Medical Imaging
+  - Corewell Beaumont Hospital - Taylor
+  - Danbury Hospital
+  - Simonmed Imaging - Tampa
+  - Providence - Sacred Heart Medical Center & Children's Hospital
+  - HCA Centerpoint Medical Center
+- name: HCP Full Name
+  fieldValues:
+  - George-Thomas Pugh
+  - Charles Cliffe
+  - Victoria Udealer
+  - Sonia Mendez
+  - Turgut Tansel
+  - Mohammad Rajab
+  - James Field
+  - Rabor Donald Anthony
+  - Marc Levine
+  - William Bachinsky
+  - Glenford Robinson
+  - Tara N Cangello
+  - Jassimran Bainiwal
+  - Lawrence Lazar
+  - Ahmed Elkhouly
+  - Kishore Arcot
+  - Sreedhar Madireddy
+  - Sulman Hussain
+  - Hannah Rosenblum
+  - Reginald Low
+  - David Harding
+  - Kristen Buerstatte
+  - Tara Roberts
+  - Cara Hoke
+  - Geoffrey Southmayd
+  - Michael Jesinger
+  - Marian David
+  - Amber Fatima
+  - Patrick Valentino
+  - Rahul Bharucha
+  - Allison Schwall
+  - Saleen Khan
+  - Preetham Kumar
+  - Randel Bruney
+  - Joseph Prano
+  - Ramneet Wadehra
+  - Elmer Murdock
+  - Pelikan 8328
+  - Artin Bassel
+  - Nitin Mathur
+  - Chintan Patel
+  - Job Mogire
+  - James Marlys
+  - Jennifer Roach
+  - Jay Khambhati
+  - Constantina Kostka
+  - Megan Durkin Np Np
+  - Muhammad Arida
+  - Wagner
+  - Syed Zaidi
+  - Prianka Singapura
+  - Rogers Clifton R
+  - Attila Feher
+  - Jessica Barreto
+  - Judith Godwin
+  - Samantha Ziglar
+  - Malgorzata Mysliwiec
+  - Katherine Reynolds
+  - Stephen Frohwein
+  - Carlos Quintero
+  - Juwono Sutedjo
+  - Sang Kim
+  - Bradley Peden
+  - Ifeoma Ugonabo
+  - Timothy Scully
+  - Lawrence Inra
+  - Shari Lagodzinski
+  - Krishna Alluri
+  - Yasmin Masood
+  - Carrissa Butts
+  - Andrew Suplicki
+  - Marta Alhama-Belotto
+  - C  Martinez
+  - Jeremy Soeder
+  - Deborah Coupland
+  - Noel Kraus
+  - George Mueller
+  - Kaitlyn Shelton
+  - Lori Tam
+  - Lila Kaminsky
+  - Stephen Covey
+  - Gregory Johnsen
+  - Joseph Sivak
+  - Dipti Itchhaporia
+  - Steven Jacobs
+  - Stephanie O'Connor
+  - David Perkel
+  - Adam Blystra
+  - Christopher Madison
+  - Yu He
+  - Kristen Diamond
+  - Xuan Guan
+  - Jawad Trad
+  - Vidya Ponnathpur
+  - Kevser Akyuz Yesilyaprak
+  - Nafees Mohammed
+  - Bhavik Khatri
+  - Vidya Narayan
+  - Shofu Abimbola A.
+  - Susan Colpoys
+  - Muller Jean Maria
+  - Caldwell 1881954352
+  - Natalie Ostro
+  - Christina Alanis
+  - Catherine Carpenter
+  - Amber Gottman
+  - Mariam Ardehali
+  - Nicole Yeung
+  - Adam Leech
+  - Ahmad Al-Taweel
+  - Suppogu Nissi S
+  - Gurm Gagandeep Singh
+  - Ambareesh Bajpai
+  - Elizabeth Morrow
+  - Cassandra Morn
+  - Selby, Allison
+  - Adam Streb
+  - Danielle Stone
+  - Alina M. Robert
+  - Jessica Barber
+  - Pauline Cousineau
+  - Amanda Berry
+  - Brent Baker
+  - Ziad Abbud
+  - Ronald Lewis
+  - Bilal Ahmed
+  - Zahir Rahman
+  - Linda Gossett
+  - Spozmai Khan
+  - Murtaugh Thomas I
+  - Edward Baptista
+  - Maheshwar Jani
+  - Louis Snyder
+  - Erin Goerlich
+  - Garrett Spritzer
+  - Reed, Susan Np
+  - Hoang
+  - Mary Eversole
+  - Mohamed El-Haddad
+  - Tracy Mcintyre
+  - David Bohle
+  - Francis Colangelo
+  - Soraida Tamayo Leyva
+  - Benjamin Shepple
+  - Margarita Chernovolenko
+  - Dale Davies
+  - Arthur Szyniszewski
+  - Phillip Morrow
+  - Ji Can Yang
+  - Lisa Smith
+  - Brian Pearlman
+  - Joshua Baker
+  - Ajay Venkatanarayan
+  - Pablo Saavedra
+  - Kraft Phillip L
+  - Tessa Conte
+  - Jennifer Rymer
+  - Conor Morrison
+  - John Goad
+  - Stephen Raskin
+  - Somwail Rasla
+  - Michael P Konig
+  - C Newton
+  - Udaya Swarna
+  - Angela Brittsan
+  - Mathews S. Jay
+  - Vaibhav Amin
+  - Zi Lin
+  - Salim Shammo
+  - Graham Byrum Iii
+  - Terry Bowers
+  - Ivette Martinez
+  - Alex Perez
+  - Karen Wiarda
+  - Christopher End
+  - Pedro Martinez Clark
+  - Randolph Mitchell
+  - Fu
+  - Karen De Aquino
+  - Frye Lindsay
+  - David Lemay
+  - Bailey Gessler
+  - Hollynn Knight
+  - Dusan Knezevic
+  - Mehrette Maru
+  - Eshwar Ramadas
+  - David Tarkoff
+  - David Guarraia
+  - Maranda Vincent
+  - Arimie
+  - Sayena Azarbar
+  - Kevin Kheder
+  - Jurgensen Claudia L
+  - Jerry Ash
+  - Donald Mahon
+  - William Buckley
+  - Anuj Gupta
+  - Philip Ovadia
+  - Kulaga 1134364367
+  - Dekrisha Lew
+- name: Customer SLUG
+  fieldValues:
+  - MSOED
+  - DMC
+  - PIED
+  - BSTEC
+  - CRMCE
+  - AHK
+  - WHVC
+  - KSSV
+  - NYPH
+  - AMCO
+  - THPHP
+  - BJJH
+  - PHC8M
+  - ASPWH
+  - LHRPV
+  - HCAVR
+  - AHUW
+  - WVUTM
+  - ASMCA
+  - MLBGH
+  - NYPQ
+  - CRM
+  - TCHHN
+  - HCH
+  - NSUGH
+  - BHIP
+  - HSHS
+  - CRAR
+  - MONUH
+  - PHSR
+  - SMGDH
+  - IIHFC
+  - AMIEH
+  - BSWIR
+  - LFMC
+  - BMHUC
+  - MHMCP
+  - FHCP
+  - UHHED
+  - MHW
+  - MTSI
+  - AHH
+  - MOBAP
+  - SPEC
+  - LHPMC
+  - CHS
+  - NY41S
+  - SIUHV
+  - GSRMC
+  - OHRH
+  - UHEMC
+  - NBIMC
+  - MHVI
+  - RHRH
+  - COXHS
+  - WVUM
+  - HUMC
+  - VUBH
+  - VRTMH
+  - UOC
+  - NYPBM
+  - SMOKC
+  - VOHOI
+  - CHWG
+  - PROTH
+  - SRSMC
+  - NHFMC
+  - BMC
+  - STFCS
+  - NATIV
+  - CHSSM
+  - SWDCH
+  - LMH
+  - QNHCH
+  - RIMR
+  - AMICM
+  - SLM
+  - SHVIH
+  - AHN
+  - UHCS
+  - UNCE
+  - KBGMC
+  - NHHMC
+  - MHVLA
+  - JFKMC
+  - PBMC
+  - CMIGB
+  - EEH
+  - AHHSD
+  - PHS
+  - BCH
+  - ARCH
+  - RMC
+  - LHRR
+  - NSEH
+  - SMIAH
+  - CSTFH
+  - UMH
+  - MCI
+  - IUHA
+  - SMIPK
+  - FHOF
+  - UHA
+  - AHNWP
+  - BHS
+  - UMMOP
+  - MHSMW
+  - SHVIN
+  - MHCAT
+  - PVH
+  - MHSAH
+  - WBHSH
+  - SMIFC
+  - ORMCH
+  - BCC
+  - IMOCP
+  - LRMC
+  - WPH
+  - MWH
+  - MCR
+  - LHRBR
+  - RMIN
+  - CHVH
+  - MHSMM
+  - BHDB
+  - UNMC
+  - LHRH
+  - MUNGH
+  - OMC
+  - ICGR
+  - NHTMC
+  - RMIGB
+  - AVDIC
+  - LHRGN
+  - ELH
+  - CHGS
+  - BJCMC
+  - AHNVH
+  - SHLJ
+  - HCAM
+  - BIOCO
+  - CONMM
+  - MPS
+  - HMHWB
+  - LPH
+  - NJITR
+  - PJMM
+  - TGH
+  - ASH
+  - MHMH
+  - SLHEC
+  - GSBI
+  - NCOI
+  - AMCBC
+  - LHN
+  - AMI
+  - BHMMC
+  - NWDCH
+  - BHTR
+  - OHFHV
+  - SMIN
+  - EHIFL
+  - NJIWB
+  - RKOR
+  - SLHK
+  - OHGCM
+  - SFMH
+  - CNOAK
+  - MSW
+  - CRHS
+  - BSCEN
+  - AHHR
+  - SRC
+  - BIEM
+  - WVUCC
+  - TEXMC
+  - RBICC
+  - NWWI
+  - CHIW
+  - NWKSH
+  - ADHSH
+  - RHMIP
+  - RAS
+  - AHCPH
+  - WVUWH
+  - FLCAR
+  - KSMC
+  - NHA
+  - SMIF
+  - VOLOL
+  - ECLG
+  - SAMH
+  - TRHS
+  - BHSED
+  - DMI
+  - WBHT
+  - NHDH
+  - SMITA
+  - WSH
+  - HCACM
+- name: Customer Workflow
+  fieldValues:
+  - Direct Only
+  - Standard
+  - HF ONE
+  - CCTA FPA
+- name: Sales Region
+  fieldValues:
+  - Southwest
+  - South Central
+  - Northeast
+  - North Central
+  - Southeast
+  - West
+  - MidAtlantic
+- name: Sales Territory
+  fieldValues:
+  - Central Texas
+  - Middle TN
+  - Long Island
+  - Indy
+  - South Central FL
+  - Atlanta
+  - NCAL 2 (SAC)
+  - LA1
+  - North Carolina 
+  - Colorado
+  - New England
+  - Ft Worth
+  - Greater NYC
+  - NCAL 1 (SF)
+  - Virginia
+  - Atrium
+  - Philadelphia/DE
+  - North New Jersey
+  - Minnesota
+  - AZ/NM
+  - LA 2
+  - Houston
+  - Wisconsin
+  - Cincinnati/KY
+  - Connecticut/RI
+  - South FL
+  - Pittsburgh/WV
+  - MGH KAM
+  - Dallas
+  - Detroit
+  - South Carolina
+  - Chicago 1
+  - Iowa/Nebraska 
+  - Memphis/Little Rock
+  - Kansas City
+  - Chicago 2
+  - Central Florida 
+  - Oklahoma
+  - St. Louis
+  - Pacific NW
+  - DC/Maryland
+  - South New Jersey
+  - GulfCoast
+  - North/Central Ohio
+  - Greater Michigan
+  - Upstate NY
+  - North FL
+  - San Diego
+- name: System
+  fieldValues:
+  - HCA San Antonio Division
+  - Ascension
+  - Tenet - Palm Beach Health Network
+  - Deaconess Health System
+  - Kaiser
+  - Piedmont Healthcare
+  - Intermountain Health
+  - Cone Health
+  - Baylor Scott & White Health
+  - NYU Langone Health
+  - Sutter Health
+  - Heart Of The Rockies Regional Medical Center
+  - Atrium Health
+  - Jefferson Health
+  - MHealth Fairview
+  - Franciscan Health
+  - WellSpan Health
+  - HCA Continental Division
+  - Advocate Health
+  - Lee Health
+  - New York-Presbyterian Healthcare
+  - Yale New Haven Health
+  - Memorial Healthcare System
+  - Mass General Brigham
+  - Christiana Care Health System
+  - Holy Cross Medical Center - TAOS
+  - Adventhealth
+  - University of Wisconsin Health
+  - CommonSpirit
+  - UPMC
+  - Radnet Ny Lenox Hill Radiology (lhr)
+  - Allegheny Health Network
+  - Akumin
+  - HCA Gulf Coast Division
+  - University of Kansas Health System
+  - MemorialCare Health System
+  - Roper St Francis Healthcare
+  - Main Line Health
+  - Nebraska Methodist Health System
+  - South Denver Cardiology Associates
+  - Lenox Hill Hospital (Northwell)
+  - Mount Sinai Health System
+  - Duly Health And Care
+  - The Christ Hospital Health Network
+  - Holy Cross Health
+  - Heart And Vascular Institute Of Wisconsin
+  - NorthShore Endeavor
+  - Banner Health
+  - Broward Health
+  - Hoag Health System
+  - Saint Francis Health System
+  - East River Medical Imaging
+  - Mt. Baker Imaging
+  - Radnet Maryland
+  - Deborah Heart And Lung
+  - Monument Health
+  - Middletown Medical
+  - UC Health
+  - Marshall Health Network
+  - CHRISTUS Health
+  - Summit Medical Group
+  - Inland Imaging
+  - Providence Health Oregon
+  - Atlantic Medical Imaging
+  - St. Luke's Boise Medical Center
+  - The Queens Health System
+  - Mercy Health (OH)
+  - Northeast Georgia Health System
+  - Houston Methodist
+  - Baptist Memorial Health Care
+  - Mainehealth
+  - HCA North Texas Division
+  - University Hospitals Health System
+  - Oregon Imaging Centers
+  - OhioHealth
+  - Froedtert & MCW Health Network
+  - Nuvance Health
+  - Loyola Health
+  - University of Kentucky Health
+  - Community Health Network
+  - HCA TriStar Division
+  - United Health Services
+  - Mercy Health (MO)
+  - RWJ Barnabas Health
+  - Baton Rouge Cardiology Center
+  - Providence Health Washington
+  - Reid Health
+  - CoxHealth
+  - ProMedica Health
+  - Northwestern Medicine
+  - Munson Healthcare
+  - Virtua Health
+  - Beacon Health
+  - Baptist Health (KY)
+  - SSM Health
+  - Hca North Carolina Division
+  - Independence Health System
+  - Radiology Regional Center
+  - University Of Tennessee Medical Center
+  - Hendrick Health
+  - Montage Health
+  - Charleston Area Medical Center
+  - Centracare
+  - Osf Healthcare
+  - Providence Health California
+  - IU Health
+  - Lutheran Health Network
+  - SDMI (In AWS Southwest Medical Associates)
+  - Atria
+  - Tallahassee Memorial Healthcare
+  - Banner Imaging
+  - Hartford Healthcare
+  - Stanford Health Care
+  - "St. Joseph\x92s Health"
+  - El Camino Health
+  - Ephraim McDowell Health
+  - HCA Far West Division
+  - Infirmary Health System
+  - WMCHealth
+  - Inova Health
+  - Cardiovascular Interventions PA
+  - UVA Health
+  - Chesapeake Medical Imaging
+  - Radnet New Jersey Imaging Network (njin)
+  - Avera Health
+  - University Of Toledo Health System
+  - Regional Medical Imaging (RMI)
+  - Radiology Associates Of Ridgewood
+  - University of Louisville Health
+  - The Woodlands Specialty Hospital
+  - Long Beach Memorial Medical Center
+  - HCA MidAmerica Division
+  - South Texas Radiology (STRIC)
+  - Steward Health Care
+  - Maury Regional Health
+  - Muscogee Creek Nation Health System
+  - Radnet Delaware Imaging Network (din)
+  - Midwest Cardiovascular Institute
+  - St. Luke's Hospital - St. Louis
+  - HCA East Florida Division
+  - Tufts Medicine
+  - Carle Health
+  - Lake Champlain Imaging
+  - Centra Health
+  - Baptist Health South Florida
+  - Sorin Medical
+  - HCA Mountain Division
+  - Heritage Valley Health System
+  - Cardiovascular Institute Of San Diego
+  - University Radiology Group
+  - Uvalde
+  - INTEGRIS Health
+  - MultiCare Health
+  - Cleveland Clinic
+  - Baptist Hospitals Of Southeast Texas
+  - RadNet Arizona Diagnostic Radiology Group (ADR)
+  - Montrose
+  - Henry Ford Health System
+  - The Imaging Center
+  - VCU Health
+  - Excela Health
+  - Advanced Imaging Center
+  - Highpoint Health
+  - Altru Health
+  - John Muir Health
+  - Mosaic Life Care
+  - Radnet West Coast (wc)
+  - Connally Memorial Medical Center
+  - University Of Washington (UW) Medicine
+  - Tennova Healthcare
+  - Stillwater Medical
+  - MyMichigan Health
+  - Beebe Healthcare
+  - University of Michigan Health
+  - Singing River Health System
+  - Vail Health
+  - Center For Orthopaedics
+  - Salinas Valley Health
+  - "Saint Luke\x92s Health System (BJC)"
+  - Marshfield Clinic
+  - Baystate Health
+  - Vandalia Health System
+  - Cooper University Health Care
+  - Mercy Health Services
+  - Adventist Health
+  - Ascend Imaging Center
+  - West Michigan Cardiology
+  - Radnet - Borg And Ide Imaging
+  - Medical University Of South Carolina
+  - Randolph Health
+  - Beverly Hills Medical Imaging
+  - Phoebe Putney Health System
+  - Guadalupe Regional
+  - Florida Cardiology, PA
+  - Hudson Regional Hospital
+  - Hillsdale Community Health Center
+  - Cheyenne Regional Medical Center
+  - Trinity Health Mid-Atlantic
+  - Digital Medical Imaging
+  - UAB Medicine
+- name: TAM-Covered
+  fieldValues:
+  - TAM Covered
+  - No TAM
+- name: SFDC Official Go Live Date
+  fieldValues:
+  - '2023-03-02'
+  - '2019-04-16'
+  - '2023-10-25'
+  - '2019-05-14'
+  - '2018-03-22'
+  - '2020-06-24'
+  - '2021-07-27'
+  - '2021-04-05'
+  - '2023-12-08'
+  - '2023-05-18'
+  - '2019-05-24'
+  - '2024-11-08'
+  - '2022-09-21'
+  - '2019-06-07'
+  - '2019-10-22'
+  - '2022-04-28'
+  - '2025-02-25'
+  - '2020-12-16'
+  - '2025-03-03'
+  - '2022-05-18'
+  - '2018-12-14'
+  - '2020-03-04'
+  - '2022-03-08'
+  - '2020-06-08'
+  - '2017-04-27'
+  - '2023-03-30'
+  - '2023-05-08'
+  - '2019-06-11'
+  - '2019-03-28'
+  - '2019-11-07'
+  - '2023-07-06'
+  - '2024-05-28'
+  - '2022-03-22'
+  - '2022-01-26'
+  - '2024-02-28'
+  - '2017-11-06'
+  - '2024-04-26'
+  - '2019-09-05'
+  - '2024-06-12'
+  - '2018-07-18'
+  - '2021-04-20'
+  - '2023-03-28'
+  - '2024-04-12'
+  - '2020-08-12'
+  - '2015-12-15'
+  - '2024-11-07'
+  - '2022-06-15'
+  - '2025-02-27'
+  - '2022-12-12'
+  - '2024-12-17'
+  - '2021-03-09'
+  - '2024-03-29'
+  - '2021-06-07'
+  - '2020-05-13'
+  - '2017-05-01'
+  - '2023-01-27'
+  - '2024-04-15'
+  - '2022-06-03'
+  - '2019-02-27'
+  - '2022-06-07'
+  - '2023-05-11'
+  - '2024-06-30'
+  - '2020-09-09'
+  - '2022-06-17'
+  - '2020-02-04'
+  - '2024-09-27'
+  - '2020-08-24'
+  - '2022-08-23'
+  - '2022-06-02'
+  - '2019-06-13'
+  - '2021-02-17'
+  - '2017-08-29'
+  - '2020-12-08'
+  - '2024-05-17'
+  - '2024-03-25'
+  - '2022-11-10'
+  - '2023-06-23'
+  - '2019-10-10'
+  - '2015-12-11'
+  - '2023-08-25'
+  - '2023-09-29'
+  - '2022-12-19'
+  - '2024-01-19'
+  - '2019-01-28'
+  - '2023-03-23'
+  - '2021-06-01'
+  - '2024-12-18'
+  - '2019-05-06'
+  - '2022-03-24'
+  - '2024-08-14'
+  - '2017-08-11'
+  - '2021-12-13'
+  - '2022-02-28'
+  - '2019-09-18'
+  - '2024-10-29'
+  - '2021-05-17'
+  - '2021-11-02'
+  - '2022-05-16'
+  - '2023-05-16'
+  - '2021-09-29'
+  - '2024-10-31'
+  - '2023-02-08'
+  - '2022-09-28'
+  - '2023-12-27'
+  - '2024-06-13'
+  - '2023-02-02'
+  - '2021-10-05'
+  - '2016-01-26'
+  - '2023-06-19'
+  - '2021-12-15'
+  - '2018-07-17'
+  - '2020-10-20'
+  - '2024-05-07'
+  - '2016-05-19'
+  - '2019-11-05'
+  - '2021-12-01'
+  - '2017-05-08'
+  - '2023-11-01'
+  - '2024-03-15'
+  - '2019-12-19'
+  - '2019-12-11'
+  - '2022-09-01'
+  - '2023-06-30'
+  - '2023-08-21'
+  - '2020-11-20'
+  - '2024-12-09'
+  - '2025-01-29'
+  - '2021-12-28'
+  - '2023-11-10'
+  - '2021-08-30'
+  - '2018-06-12'
+  - '2025-03-17'
+  - '2023-04-21'
+  - '2025-02-12'
+  - '2025-03-27'
+  - '2018-11-02'
+  - '2019-09-11'
+  - '2020-11-18'
+  - '2022-06-13'
+  - '2023-08-11'
+  - '2023-12-04'
+  - '2024-01-25'
+  - '2018-08-29'
+  - '2021-01-22'
+  - '2023-09-05'
+  - '2023-08-31'
+  - '2021-01-07'
+  - '2020-12-01'
+  - '2020-11-04'
+  - '2024-07-01'
+  - '2023-07-19'
+  - '2020-07-10'
+  - '2024-08-22'
+  - '2020-07-01'
+  - '2022-03-29'
+  - '2024-08-09'
+  - '2024-12-05'
+  - '2022-08-03'
+  - '2023-06-29'
+  - '2023-12-12'
+  - '2023-05-10'
+  - '2020-12-22'
+  - '2023-08-15'
+  - '2019-12-17'
+  - '2023-04-24'
+  - '2020-09-22'
+  - '2021-10-15'
+  - '2019-10-17'
+  - '2023-03-17'
+  - '2022-11-18'
+  - '2019-07-09'
+  - '2021-06-29'
+  - '2021-09-24'
+  - '2024-10-08'
+  - '2023-11-15'
+  - '2018-12-19'
+  - '2019-05-08'
+  - '2019-12-09'
+  - '2021-12-31'
+  - '2021-03-16'
+  - '2017-06-29'
+  - '2025-03-19'
+  - '2023-01-12'
+  - '2020-10-15'
+  - '2022-03-10'
+  - '2018-09-07'
+  - '2024-02-27'
+  - '2018-09-19'
+  - '2024-05-30'
+  - '2024-07-18'
+  - '2023-09-18'
+  - '2018-02-12'
+  - '2016-06-06'
+  - '2020-04-29'
+  - '2019-08-26'
+  - '2025-03-28'
+  - '2024-12-27'
+  - '2022-06-24'
+  - '2024-03-27'
+  - '2020-01-20'

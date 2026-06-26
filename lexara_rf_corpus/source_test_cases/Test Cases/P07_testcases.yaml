@@ -1,0 +1,238 @@
+- description: Conversation for P07 on life-expectancy-who-datasource.yaml
+  requirement-id: P07-HEALTHCARE
+  test-number: 1
+  utterances:
+  - canonical: Keep this view; sort countries by Life expectancy descending and add labels.
+    labels:
+    - InferDateTimeField
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Country
+        by: 'Life expectancy '
+        aggregation: avg
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep this view; sort countries by Life expectancy descending and add labels.
+    labels:
+    - InferDateTimeField
+    - 'Context Handling: Reference Resolution'
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Country
+        by: 'Life expectancy '
+        aggregation: avg
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep this view; sort countries by Life expectancy descending and add labels.
+    labels:
+    - InferFilter
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Semantic Ambiguity
+    - Pragmatic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Country
+        by: 'Life expectancy '
+        aggregation: avg
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep this view; sort countries by Life expectancy descending and add labels.
+    labels:
+    - InferDateTimeField
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Country
+        by: 'Life expectancy '
+        aggregation: avg
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep this view; sort countries by Life expectancy descending and add labels.
+    labels:
+    - InferGranularity
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Country
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: 'Life expectancy '
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: Country
+        by: 'Life expectancy '
+        aggregation: avg
+        direction: desc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4

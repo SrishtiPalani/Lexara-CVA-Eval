@@ -1,0 +1,270 @@
+- description: Conversation for P09 on cov-vac-uptake-2024-who-datasource.yaml
+  requirement-id: P09-HEALTHCARE
+  test-number: 1
+  utterances:
+  - canonical: "Line: COVID_VACCINE_COV_1D by DATE for 2024; color by GROUP \u2208 {all, male, female}; label latest."
+    labels:
+    - Line Chart
+    - InferSort
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Semantic Ambiguity
+    - Syntactic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: DATE
+        data: date
+        type: continuous
+        role: dimension
+        aggregation: month
+        encoding: x
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: GROUP
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      categoricalFilters:
+      - type: categorical
+        field: GROUP
+        values:
+        - all
+        - male
+        - female
+      dateRangeFilters:
+      - type: date-range
+        field: DATE
+        start: '2024-01-01'
+        end: '2025-01-01'
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Bar: Top 10 COUNTRY by COVID_VACCINE_COV_1D for 2024 Q4; sort descending; show % on bars.'
+    labels:
+    - Bar Chart
+    - InferDateTimeField
+    - 'Context Handling: Spec-Edit Carryover'
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: COUNTRY
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: COUNTRY
+        by: COVID_VACCINE_COV_1D
+        aggregation: avg
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: COUNTRY
+        limit:
+          type: top
+          limit: 10
+          field: COVID_VACCINE_COV_1D
+          aggregation: avg
+      dateRangeFilters:
+      - type: date-range
+        field: DATE
+        start: '2024-10-01'
+        end: '2025-01-01'
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep the ranking but switch sort ascending to examine laggards and add labels.
+    labels:
+    - InferDateTimeField
+    - 'Context Handling: Reference Resolution'
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: COUNTRY
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: COUNTRY
+        by: COVID_VACCINE_COV_1D
+        aggregation: avg
+        direction: asc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Scatter: coverage (COVID_VACCINE_COV_1D) vs administrations (COVID_VACCINE_ADM_1D) by COUNTRY; label top 15 by coverage.'
+    labels:
+    - Scatter Chart
+    - InferSort
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: x
+      - caption: COVID_VACCINE_ADM_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: COUNTRY
+        data: string
+        type: discrete
+        role: dimension
+        encoding: text
+      categoricalFilters:
+      - type: categorical
+        field: COUNTRY
+        limit:
+          type: top
+          limit: 15
+          field: COVID_VACCINE_COV_1D
+          aggregation: avg
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Keep the ranking but switch sort ascending to examine laggards and add labels.
+    labels:
+    - InferFilter
+    - Semantic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: COUNTRY
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: COVID_VACCINE_COV_1D
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: COUNTRY
+        by: COVID_VACCINE_COV_1D
+        aggregation: avg
+        direction: asc
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4

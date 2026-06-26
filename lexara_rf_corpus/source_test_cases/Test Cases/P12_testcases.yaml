@@ -1,0 +1,243 @@
+- description: Conversation for P12 on global-sport-finances-top-athlete-salaries-espn-datasource.yaml
+  requirement-id: P12-FINANCE
+  test-number: 1
+  utterances:
+  - canonical: Box plot of 2014 Pay grouped by Sport.
+    labels:
+    - Box Plot
+    - InferFilter
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Sport
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 2014 Pay
+        data: number
+        type: continuous
+        role: measure
+        encoding: y
+      chart: boxplot
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Bar: Top 15 athletes by 2014 Pay; label bars with Salary/Winnings; sort descending.'
+    labels:
+    - Bar Chart
+    - InferDateTimeField
+    - Semantic Ambiguity
+    - Pragmatic Ambiguity
+    - Syntactic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Athlete
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 2014 Pay
+        data: number
+        type: continuous
+        role: measure
+        encoding: y
+      - caption: Salary/Winnings
+        data: number
+        type: continuous
+        role: measure
+        encoding: text
+      sort:
+        field: Athlete
+        by: 2014 Pay
+        aggregation: sum
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: Athlete
+        limit:
+          type: top
+          limit: 15
+          field: 2014 Pay
+          aggregation: sum
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Bar: Top 15 athletes by 2014 Pay; label bars with Salary/Winnings; sort descending.'
+    labels:
+    - Bar Chart
+    - InferGranularity
+    - Pragmatic Ambiguity
+    - Semantic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Athlete
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 2014 Pay
+        data: number
+        type: continuous
+        role: measure
+        encoding: y
+      - caption: Salary/Winnings
+        data: number
+        type: continuous
+        role: measure
+        encoding: text
+      sort:
+        field: Athlete
+        by: 2014 Pay
+        aggregation: sum
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: Athlete
+        limit:
+          type: top
+          limit: 15
+          field: 2014 Pay
+          aggregation: sum
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: 'Bar: Top 15 athletes by 2014 Pay; label bars with Salary/Winnings; sort descending.'
+    labels:
+    - Bar Chart
+    - InferGranularity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Athlete
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: 2014 Pay
+        data: number
+        type: continuous
+        role: measure
+        encoding: y
+      - caption: Salary/Winnings
+        data: number
+        type: continuous
+        role: measure
+        encoding: text
+      sort:
+        field: Athlete
+        by: 2014 Pay
+        aggregation: sum
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: Athlete
+        limit:
+          type: top
+          limit: 15
+          field: 2014 Pay
+          aggregation: sum
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: "Scatter: Salary/Winnings vs Endorsements; color by Sport; filter 2014 Pay \u2265 $20M."
+    labels:
+    - Scatter Chart
+    - InferSort
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Salary/Winnings
+        data: number
+        type: continuous
+        role: measure
+        encoding: x
+      - caption: Endorsements
+        data: number
+        type: continuous
+        role: measure
+        encoding: y
+      - caption: Sport
+        data: string
+        type: discrete
+        role: dimension
+        encoding: color
+      rangeFilters:
+      - type: numeric-range
+        field: 2014 Pay
+        start: 20000000
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4

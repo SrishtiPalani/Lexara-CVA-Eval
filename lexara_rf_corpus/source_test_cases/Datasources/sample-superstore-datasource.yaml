@@ -1,0 +1,2557 @@
+title: Sample Superstore
+containerName: Uploaded Datasets
+description: Converted from source on 2025-09-17
+datasourceFields:
+- name: Row ID
+  fieldValues:
+  - 1
+  - 51
+  - 101
+  - 151
+  - 201
+  - 252
+  - 302
+  - 352
+  - 402
+  - 452
+  - 503
+  - 553
+  - 603
+  - 653
+  - 704
+  - 754
+  - 804
+  - 854
+  - 904
+  - 955
+  - 1005
+  - 1055
+  - 1105
+  - 1155
+  - 1206
+  - 1256
+  - 1306
+  - 1356
+  - 1407
+  - 1457
+  - 1507
+  - 1557
+  - 1607
+  - 1658
+  - 1708
+  - 1758
+  - 1808
+  - 1858
+  - 1909
+  - 1959
+  - 2009
+  - 2059
+  - 2110
+  - 2160
+  - 2210
+  - 2260
+  - 2310
+  - 2361
+  - 2411
+  - 2461
+  - 2511
+  - 2562
+  - 2612
+  - 2662
+  - 2712
+  - 2762
+  - 2813
+  - 2863
+  - 2913
+  - 2963
+  - 3013
+  - 3064
+  - 3114
+  - 3164
+  - 3214
+  - 3265
+  - 3315
+  - 3365
+  - 3415
+  - 3465
+  - 3516
+  - 3566
+  - 3616
+  - 3666
+  - 3716
+  - 3767
+  - 3817
+  - 3867
+  - 3917
+  - 3968
+  - 4018
+  - 4068
+  - 4118
+  - 4168
+  - 4219
+  - 4269
+  - 4319
+  - 4369
+  - 4420
+  - 4470
+  - 4520
+  - 4570
+  - 4620
+  - 4671
+  - 4721
+  - 4771
+  - 4821
+  - 4871
+  - 4922
+  - 4972
+  - 5022
+  - 5072
+  - 5123
+  - 5173
+  - 5223
+  - 5273
+  - 5323
+  - 5374
+  - 5424
+  - 5474
+  - 5524
+  - 5574
+  - 5625
+  - 5675
+  - 5725
+  - 5775
+  - 5826
+  - 5876
+  - 5926
+  - 5976
+  - 6026
+  - 6077
+  - 6127
+  - 6177
+  - 6227
+  - 6278
+  - 6328
+  - 6378
+  - 6428
+  - 6478
+  - 6529
+  - 6579
+  - 6629
+  - 6679
+  - 6729
+  - 6780
+  - 6830
+  - 6880
+  - 6930
+  - 6981
+  - 7031
+  - 7081
+  - 7131
+  - 7181
+  - 7232
+  - 7282
+  - 7332
+  - 7382
+  - 7432
+  - 7483
+  - 7533
+  - 7583
+  - 7633
+  - 7684
+  - 7734
+  - 7784
+  - 7834
+  - 7884
+  - 7935
+  - 7985
+  - 8035
+  - 8085
+  - 8136
+  - 8186
+  - 8236
+  - 8286
+  - 8336
+  - 8387
+  - 8437
+  - 8487
+  - 8537
+  - 8587
+  - 8638
+  - 8688
+  - 8738
+  - 8788
+  - 8839
+  - 8889
+  - 8939
+  - 8989
+  - 9039
+  - 9090
+  - 9140
+  - 9190
+  - 9240
+  - 9290
+  - 9341
+  - 9391
+  - 9441
+  - 9491
+  - 9542
+  - 9592
+  - 9642
+  - 9692
+  - 9742
+  - 9793
+  - 9843
+  - 9893
+  - 9943
+  - 9994
+- name: Order ID
+  fieldValues:
+  - CA-2016-152156
+  - CA-2016-105816
+  - CA-2016-129903
+  - CA-2014-104269
+  - CA-2017-126382
+  - US-2017-145366
+  - US-2016-141544
+  - CA-2017-101798
+  - CA-2016-147375
+  - CA-2014-113362
+  - CA-2014-140795
+  - CA-2014-135405
+  - CA-2016-103947
+  - CA-2014-112158
+  - CA-2017-117240
+  - CA-2014-134313
+  - CA-2014-133851
+  - CA-2017-160983
+  - US-2017-110576
+  - CA-2015-162537
+  - CA-2017-152702
+  - CA-2017-160423
+  - CA-2014-117709
+  - CA-2016-153682
+  - US-2015-149692
+  - CA-2016-128258
+  - CA-2015-120362
+  - CA-2017-128160
+  - CA-2016-121958
+  - CA-2014-111059
+  - CA-2016-126809
+  - CA-2017-116645
+  - CA-2016-128531
+  - CA-2015-145401
+  - CA-2015-130785
+  - CA-2015-131597
+  - CA-2014-151078
+  - CA-2016-140543
+  - CA-2016-112109
+  - CA-2017-165386
+  - CA-2016-129693
+  - CA-2017-158246
+  - CA-2016-101938
+  - CA-2017-107874
+  - CA-2015-117611
+  - CA-2016-106558
+  - CA-2015-111514
+  - CA-2014-162684
+  - CA-2017-138548
+  - CA-2015-102722
+  - CA-2015-147788
+  - CA-2017-147942
+  - CA-2017-132185
+  - CA-2014-100006
+  - CA-2016-146171
+  - CA-2017-143329
+  - US-2016-128293
+  - CA-2014-142727
+  - CA-2015-168564
+  - CA-2016-134376
+  - CA-2017-134173
+  - CA-2017-118773
+  - CA-2016-120558
+  - CA-2016-169026
+  - CA-2017-113355
+  - CA-2015-157770
+  - CA-2016-147536
+  - CA-2015-129700
+  - CA-2014-157609
+  - CA-2016-107328
+  - CA-2017-107832
+  - CA-2017-138310
+  - CA-2015-128083
+  - CA-2016-142370
+  - CA-2016-155530
+  - CA-2016-152471
+  - CA-2017-146360
+  - CA-2016-110044
+  - CA-2016-146010
+  - CA-2014-154963
+  - CA-2015-100685
+  - CA-2014-127299
+  - CA-2017-100601
+  - CA-2015-111234
+  - CA-2017-164819
+  - CA-2014-162278
+  - CA-2015-155600
+  - CA-2014-130624
+  - CA-2017-156895
+  - CA-2014-107454
+  - CA-2014-169460
+  - CA-2017-147228
+  - CA-2014-114510
+  - CA-2014-123323
+  - US-2014-167262
+  - CA-2014-152562
+  - US-2016-131891
+  - CA-2017-150931
+  - CA-2015-160696
+  - CA-2016-155166
+  - CA-2016-155138
+  - CA-2017-155607
+  - US-2015-120502
+  - CA-2014-115084
+  - US-2016-158309
+  - CA-2016-154060
+  - CA-2016-122017
+  - CA-2017-166856
+  - US-2017-108700
+  - CA-2017-127782
+  - CA-2017-116113
+  - CA-2015-168634
+  - CA-2015-104241
+  - CA-2016-125661
+  - CA-2016-118514
+  - CA-2014-166716
+  - US-2017-153255
+  - CA-2017-108000
+  - CA-2017-150602
+  - CA-2014-102652
+  - CA-2014-107524
+  - CA-2017-152660
+  - CA-2016-161025
+  - CA-2014-128538
+  - CA-2017-141425
+  - CA-2017-107314
+  - US-2015-161347
+  - CA-2017-154074
+  - US-2016-155404
+  - CA-2016-157791
+  - CA-2016-169887
+  - CA-2016-166275
+  - CA-2017-104108
+  - CA-2014-144029
+  - CA-2016-162348
+  - CA-2014-147543
+  - US-2017-149006
+  - CA-2015-139248
+  - CA-2015-109386
+  - CA-2014-150581
+  - CA-2015-124933
+  - CA-2017-142909
+  - CA-2014-116785
+  - US-2017-151127
+  - CA-2014-158281
+  - CA-2015-113152
+  - CA-2015-136224
+  - CA-2015-120446
+  - US-2017-118598
+  - US-2016-104815
+  - CA-2015-113740
+  - US-2016-140158
+  - CA-2016-113978
+  - CA-2014-155390
+  - CA-2015-102260
+  - CA-2015-144890
+  - CA-2016-167605
+  - CA-2015-113040
+  - CA-2016-158806
+  - CA-2016-106621
+  - CA-2015-131352
+  - CA-2017-149699
+  - CA-2016-162355
+  - CA-2014-156244
+  - CA-2016-153269
+  - CA-2014-103527
+  - CA-2017-150091
+  - CA-2015-144043
+  - CA-2016-109400
+  - CA-2014-140473
+  - CA-2017-101700
+  - CA-2017-118346
+  - CA-2016-155446
+  - CA-2016-168774
+  - US-2017-129224
+  - CA-2016-167983
+  - US-2017-115252
+  - CA-2016-102134
+  - CA-2015-150413
+  - CA-2015-165799
+  - CA-2016-101623
+  - CA-2014-132010
+  - CA-2014-102645
+  - US-2017-120908
+  - CA-2014-125759
+  - CA-2017-148642
+  - CA-2016-154998
+  - CA-2015-164777
+  - CA-2014-140032
+  - CA-2016-105207
+  - US-2017-169488
+  - US-2017-129203
+  - CA-2014-118192
+  - CA-2016-144785
+  - CA-2016-105781
+  - CA-2017-101959
+  - US-2017-152842
+  - CA-2014-146997
+  - CA-2016-164889
+  - CA-2017-119914
+- name: Order Date
+  fieldValues:
+  - '2016-11-08'
+  - '2015-11-22'
+  - '2015-09-25'
+  - '2017-09-10'
+  - '2015-04-18'
+  - '2016-09-18'
+  - '2015-09-03'
+  - '2015-01-31'
+  - '2016-12-01'
+  - '2014-08-25'
+  - '2017-02-02'
+  - '2014-10-22'
+  - '2016-05-11'
+  - '2014-09-14'
+  - '2014-08-26'
+  - '2014-08-03'
+  - '2016-10-28'
+  - '2017-11-12'
+  - '2014-09-19'
+  - '2017-09-16'
+  - '2015-05-04'
+  - '2014-11-04'
+  - '2014-07-12'
+  - '2016-09-01'
+  - '2014-07-23'
+  - '2015-12-03'
+  - '2017-10-17'
+  - '2016-04-14'
+  - '2016-04-15'
+  - '2016-12-13'
+  - '2016-12-16'
+  - '2014-07-22'
+  - '2016-05-30'
+  - '2015-03-22'
+  - '2016-05-29'
+  - '2015-12-18'
+  - '2014-03-03'
+  - '2015-09-10'
+  - '2016-04-28'
+  - '2015-10-04'
+  - '2016-10-23'
+  - '2016-11-04'
+  - '2014-07-05'
+  - '2014-04-05'
+  - '2014-10-07'
+  - '2014-05-27'
+  - '2015-02-08'
+  - '2015-08-21'
+  - '2016-08-18'
+  - '2017-05-14'
+  - '2016-07-23'
+  - '2016-05-28'
+  - '2014-04-06'
+  - '2017-11-30'
+  - '2017-06-26'
+  - '2017-10-29'
+  - '2015-04-11'
+  - '2017-11-28'
+  - '2014-01-16'
+  - '2015-03-10'
+  - '2015-10-28'
+  - '2017-08-01'
+  - '2015-06-13'
+  - '2015-03-23'
+  - '2017-09-23'
+  - '2016-06-14'
+  - '2016-12-06'
+  - '2014-09-01'
+  - '2014-12-27'
+  - '2017-09-09'
+  - '2017-03-10'
+  - '2016-05-02'
+  - '2017-02-03'
+  - '2017-10-15'
+  - '2017-04-02'
+  - '2016-05-05'
+  - '2014-08-04'
+  - '2016-07-09'
+  - '2017-12-19'
+  - '2015-07-19'
+  - '2015-09-24'
+  - '2014-11-29'
+  - '2015-08-01'
+  - '2017-08-31'
+  - '2015-11-23'
+  - '2014-04-04'
+  - '2014-12-15'
+  - '2017-05-08'
+  - '2015-12-19'
+  - '2014-05-12'
+  - '2017-04-24'
+  - '2017-09-08'
+  - '2014-06-06'
+  - '2015-09-05'
+  - '2016-11-11'
+  - '2016-08-08'
+  - '2016-12-22'
+  - '2017-01-12'
+  - '2015-06-25'
+  - '2017-12-29'
+  - '2017-10-03'
+  - '2015-11-08'
+  - '2017-03-16'
+  - '2015-12-14'
+  - '2017-04-11'
+  - '2015-06-18'
+  - '2016-07-21'
+  - '2014-11-17'
+  - '2014-06-23'
+  - '2017-03-13'
+  - '2014-11-28'
+  - '2017-07-31'
+  - '2017-02-06'
+  - '2017-11-17'
+  - '2017-03-21'
+  - '2017-01-24'
+  - '2016-09-27'
+  - '2017-05-13'
+  - '2016-11-05'
+  - '2014-07-25'
+  - '2014-10-24'
+  - '2015-03-17'
+  - '2014-12-16'
+  - '2015-02-20'
+  - '2016-08-28'
+  - '2014-12-06'
+  - '2015-06-20'
+  - '2015-04-02'
+  - '2017-01-26'
+  - '2017-08-12'
+  - '2016-10-18'
+  - '2016-11-23'
+  - '2017-12-16'
+  - '2014-05-17'
+  - '2015-06-11'
+  - '2014-01-28'
+  - '2016-03-21'
+  - '2016-01-09'
+  - '2014-05-22'
+  - '2015-08-13'
+  - '2016-03-25'
+  - '2016-07-29'
+  - '2016-11-25'
+  - '2016-08-09'
+  - '2016-07-03'
+  - '2016-06-13'
+  - '2017-02-25'
+  - '2016-09-04'
+  - '2014-10-28'
+  - '2015-06-15'
+  - '2016-06-28'
+  - '2015-12-22'
+  - '2017-07-27'
+  - '2016-06-16'
+  - '2015-01-05'
+  - '2017-08-23'
+  - '2017-05-20'
+  - '2016-07-04'
+  - '2014-11-02'
+  - '2014-04-19'
+  - '2016-04-26'
+  - '2015-04-24'
+  - '2016-01-02'
+  - '2016-05-24'
+  - '2017-08-04'
+  - '2017-05-05'
+  - '2015-05-21'
+  - '2014-01-06'
+  - '2017-08-24'
+  - '2015-10-08'
+  - '2017-10-04'
+  - '2016-07-28'
+  - '2014-11-08'
+  - '2015-07-18'
+  - '2016-07-19'
+  - '2014-03-02'
+  - '2014-03-19'
+  - '2016-10-06'
+  - '2015-03-07'
+  - '2015-08-29'
+  - '2015-06-05'
+  - '2014-09-06'
+  - '2015-02-16'
+  - '2014-10-17'
+  - '2016-09-16'
+  - '2015-05-13'
+  - '2016-10-10'
+  - '2017-11-29'
+  - '2014-01-07'
+  - '2016-02-14'
+  - '2016-07-20'
+  - '2016-06-30'
+  - '2017-03-14'
+  - '2016-01-28'
+  - '2014-05-08'
+  - '2016-02-28'
+  - '2015-09-16'
+  - '2015-05-11'
+  - '2017-02-28'
+  - '2014-01-21'
+- name: Ship Date
+  fieldValues:
+  - '2016-11-11'
+  - '2015-11-26'
+  - '2016-01-20'
+  - '2016-03-13'
+  - '2015-11-30'
+  - '2017-12-11'
+  - '2017-11-02'
+  - '2017-06-20'
+  - '2017-12-30'
+  - '2017-02-05'
+  - '2016-12-09'
+  - '2016-11-20'
+  - '2014-12-09'
+  - '2017-11-13'
+  - '2017-12-14'
+  - '2015-03-04'
+  - '2015-12-04'
+  - '2016-01-28'
+  - '2016-12-20'
+  - '2014-10-03'
+  - '2017-11-05'
+  - '2015-12-24'
+  - '2017-10-01'
+  - '2016-10-29'
+  - '2014-09-23'
+  - '2014-04-20'
+  - '2017-03-09'
+  - '2016-04-21'
+  - '2016-04-03'
+  - '2016-07-19'
+  - '2014-06-13'
+  - '2017-11-27'
+  - '2016-01-02'
+  - '2017-09-08'
+  - '2014-05-16'
+  - '2015-12-09'
+  - '2017-12-05'
+  - '2014-03-19'
+  - '2017-05-23'
+  - '2017-06-15'
+  - '2016-08-28'
+  - '2017-12-08'
+  - '2016-11-08'
+  - '2014-01-14'
+  - '2016-07-12'
+  - '2015-12-12'
+  - '2016-05-24'
+  - '2015-06-30'
+  - '2017-04-24'
+  - '2017-08-28'
+  - '2015-10-17'
+  - '2016-01-07'
+  - '2017-12-02'
+  - '2014-12-16'
+  - '2016-04-12'
+  - '2015-04-15'
+  - '2016-06-20'
+  - '2017-11-19'
+  - '2016-05-31'
+  - '2016-08-27'
+  - '2015-07-10'
+  - '2016-04-26'
+  - '2015-04-08'
+  - '2016-05-02'
+  - '2016-08-20'
+  - '2016-07-24'
+  - '2015-04-04'
+  - '2014-03-08'
+  - '2016-12-05'
+  - '2017-09-13'
+  - '2017-12-24'
+  - '2017-06-08'
+  - '2016-11-26'
+  - '2015-09-24'
+  - '2017-10-10'
+  - '2014-02-21'
+  - '2016-03-31'
+  - '2017-03-12'
+  - '2016-07-13'
+  - '2017-06-16'
+  - '2016-03-15'
+  - '2016-12-08'
+  - '2014-12-19'
+  - '2014-02-06'
+  - '2015-11-27'
+  - '2017-06-30'
+  - '2015-08-12'
+  - '2017-05-12'
+  - '2014-12-02'
+  - '2014-08-20'
+  - '2016-05-04'
+  - '2015-09-09'
+  - '2014-03-26'
+  - '2014-10-04'
+  - '2015-09-18'
+  - '2017-08-07'
+  - '2017-09-10'
+  - '2016-10-17'
+  - '2015-03-05'
+  - '2017-07-06'
+  - '2017-03-13'
+  - '2017-05-11'
+  - '2014-11-21'
+  - '2014-08-23'
+  - '2016-06-28'
+  - '2014-10-05'
+  - '2017-04-05'
+  - '2016-08-04'
+  - '2014-11-16'
+  - '2017-07-14'
+  - '2017-02-09'
+  - '2017-01-11'
+  - '2016-09-26'
+  - '2015-09-02'
+  - '2015-12-10'
+  - '2015-06-09'
+  - '2017-06-01'
+  - '2017-08-21'
+  - '2015-07-02'
+  - '2017-08-18'
+  - '2015-03-30'
+  - '2016-03-10'
+  - '2016-02-09'
+  - '2015-02-23'
+  - '2015-07-19'
+  - '2015-11-18'
+  - '2016-12-31'
+  - '2017-08-17'
+  - '2017-12-19'
+  - '2014-07-04'
+  - '2014-01-16'
+  - '2014-05-21'
+  - '2017-03-07'
+  - '2014-07-03'
+  - '2014-09-04'
+  - '2017-10-30'
+  - '2015-02-16'
+  - '2015-11-11'
+  - '2017-07-08'
+  - '2014-09-14'
+  - '2015-07-06'
+  - '2016-04-02'
+  - '2017-10-07'
+  - '2015-03-17'
+  - '2016-08-18'
+  - '2017-02-20'
+  - '2014-04-15'
+  - '2014-07-12'
+  - '2016-06-30'
+  - '2015-02-24'
+  - '2014-06-27'
+  - '2016-08-06'
+  - '2017-01-03'
+  - '2014-11-02'
+  - '2015-10-28'
+  - '2014-10-30'
+  - '2014-04-30'
+  - '2017-03-20'
+  - '2016-11-18'
+  - '2015-06-15'
+  - '2014-06-05'
+  - '2016-05-22'
+  - '2017-02-01'
+  - '2015-04-11'
+  - '2014-10-17'
+  - '2014-11-10'
+  - '2015-08-13'
+  - '2016-02-02'
+  - '2015-01-18'
+  - '2017-12-16'
+  - '2014-09-27'
+  - '2015-05-10'
+  - '2014-07-28'
+  - '2015-03-01'
+  - '2014-08-07'
+  - '2014-07-22'
+  - '2017-08-24'
+  - '2015-05-18'
+  - '2015-05-06'
+  - '2014-08-01'
+  - '2015-08-01'
+  - '2017-08-09'
+  - '2016-09-15'
+  - '2015-04-05'
+  - '2014-03-13'
+  - '2017-02-17'
+  - '2015-02-27'
+  - '2014-11-01'
+  - '2017-09-16'
+  - '2015-01-12'
+  - '2016-02-15'
+  - '2014-03-20'
+  - '2014-07-13'
+  - '2017-04-16'
+  - '2015-05-22'
+  - '2015-02-01'
+  - '2017-01-24'
+  - '2017-01-07'
+  - '2014-08-19'
+  - '2017-03-03'
+- name: Ship Mode
+  fieldValues:
+  - Second Class
+  - Standard Class
+  - First Class
+  - Same Day
+- name: Customer ID
+  fieldValues:
+  - CG-12520
+  - BH-11710
+  - PK-19075
+  - SF-20065
+  - MA-17560
+  - RA-19885
+  - LH-16900
+  - KM-16720
+  - HM-14980
+  - DN-13690
+  - GM-14455
+  - PN-18775
+  - GZ-14470
+  - CV-12805
+  - GG-14650
+  - TS-21610
+  - JD-15895
+  - MG-17680
+  - NK-18490
+  - EM-13960
+  - CS-12130
+  - DK-13150
+  - AM-10360
+  - VM-21685
+  - LC-17140
+  - MS-17980
+  - DS-13180
+  - KL-16645
+  - DL-13315
+  - SB-20290
+  - CA-12310
+  - JO-15280
+  - AS-10225
+  - TS-21205
+  - FA-14230
+  - JL-15850
+  - TD-20995
+  - KW-16435
+  - AG-10900
+  - AS-10285
+  - NG-18430
+  - VP-21730
+  - RF-19840
+  - PB-19150
+  - KH-16630
+  - BB-11545
+  - SC-20095
+  - JP-15520
+  - EM-14065
+  - AJ-10960
+  - MD-17350
+  - BN-11515
+  - PH-18790
+  - RL-19615
+  - BD-11500
+  - GT-14710
+  - CA-12775
+  - JF-15415
+  - CC-12145
+  - MS-17830
+  - AS-10240
+  - CK-12595
+  - MO-17800
+  - ME-17725
+  - CC-12430
+  - EH-14125
+  - RB-19570
+  - MC-17845
+  - JO-15550
+  - TH-21550
+  - CK-12325
+  - JF-15355
+  - SS-20875
+  - DC-13285
+  - CS-12250
+  - BM-11785
+  - RH-19495
+  - GM-14440
+  - PG-18820
+  - AF-10885
+  - BK-11260
+  - LS-16945
+  - AG-10765
+  - EL-13735
+  - GB-14530
+  - RW-19630
+  - JJ-15760
+  - KC-16255
+  - JA-15970
+  - BS-11800
+  - TS-21340
+  - RA-19945
+  - KM-16225
+  - JJ-15445
+  - NS-18640
+  - TS-21160
+  - EH-14005
+  - DW-13540
+  - PS-19045
+  - CS-12355
+  - AA-10315
+  - AT-10435
+  - LH-16750
+  - KT-16480
+  - NP-18700
+  - CC-12220
+  - GM-14500
+  - QJ-19255
+  - LW-16825
+  - GZ-14545
+  - AB-10255
+  - CM-12115
+  - LB-16735
+  - SZ-20035
+  - YS-21880
+  - BT-11305
+  - ST-20530
+  - TS-21085
+  - MB-18085
+  - CS-12505
+  - TS-21370
+  - AR-10540
+  - GH-14425
+  - DB-13270
+  - JW-16075
+  - AW-10840
+  - MY-18295
+  - JC-15385
+  - TB-21280
+  - TH-21100
+  - SW-20455
+  - HZ-14950
+  - ED-13885
+  - ML-17755
+  - TB-21175
+  - BT-11680
+  - BF-10975
+  - ME-18010
+  - AC-10450
+  - EH-13765
+  - JD-16015
+  - SC-20800
+  - MC-17590
+  - BF-11080
+  - SW-20245
+  - TB-21625
+  - JH-15820
+  - AW-10930
+  - DK-13375
+  - BF-11005
+  - MW-18220
+  - JK-15625
+  - BC-11125
+  - KW-16570
+  - TM-21010
+  - AZ-10750
+  - GM-14695
+  - LS-17200
+  - LO-17170
+  - CM-12235
+  - AG-10300
+  - TT-21265
+  - NL-18310
+  - BE-11410
+  - MS-17530
+  - Dp-13240
+  - DR-12940
+  - DM-13345
+  - HG-14845
+  - AY-10555
+  - SR-20425
+  - SW-20350
+  - JG-15310
+  - CS-11845
+  - AH-10030
+  - BG-11740
+  - TS-21505
+  - DH-13075
+  - MH-17455
+  - FC-14335
+  - MF-17665
+  - NC-18415
+  - PF-19120
+  - CS-12175
+  - DD-13570
+  - CR-12820
+  - BS-11365
+  - GR-14560
+  - DB-13360
+  - LW-17125
+  - LR-17035
+  - DM-13525
+  - TH-21115
+  - BW-11065
+  - TS-21655
+  - SS-20515
+  - IM-15055
+  - LC-16960
+  - CJ-11875
+  - SM-20905
+- name: Customer Name
+  fieldValues:
+  - Claire Gute
+  - Brosina Hoffman
+  - Pete Kriz
+  - Sandra Flanagan
+  - Matt Abelman
+  - Ruben Ausman
+  - Lena Hernandez
+  - Kunst Miller
+  - Henry MacAllister
+  - Duane Noonan
+  - Gary Mitchum
+  - Parhena Norris
+  - Gary Zandusky
+  - Cynthia Voltz
+  - Greg Guthrie
+  - Troy Staebel
+  - Jonathan Doherty
+  - Maureen Gastineau
+  - Neil Knudson
+  - Eric Murdock
+  - Chad Sievert
+  - David Kendrick
+  - Alice McCarthy
+  - Valerie Mitchum
+  - Logan Currie
+  - Michael Stewart
+  - David Smith
+  - Ken Lonsdale
+  - Delfina Latchford
+  - Sean Braxton
+  - Christine Abelman
+  - Jas O'Carroll
+  - Alan Schoenberger
+  - Thomas Seio
+  - Frank Atkinson
+  - John Lucas
+  - Tamara Dahlen
+  - Katrina Willman
+  - Arthur Gainer
+  - Alejandro Savely
+  - Nathan Gelder
+  - Victor Preis
+  - Roy Französisch
+  - Philip Brown
+  - Ken Heidel
+  - Brenda Bowman
+  - Sanjit Chand
+  - Jeremy Pistek
+  - Erin Mull
+  - Astrea Jones
+  - Maribeth Dona
+  - Bradley Nguyen
+  - Patricia Hirasaki
+  - Rob Lucas
+  - Bradley Drucker
+  - Greg Tran
+  - Cynthia Arntzen
+  - Jennifer Ferguson
+  - Charles Crestani
+  - Melanie Seite
+  - Alan Shonely
+  - Clytie Kelty
+  - Meg O'Connel
+  - Max Engle
+  - Chuck Clark
+  - Eugene Hildebrand
+  - Rob Beeghly
+  - Michael Chen
+  - Jesus Ocampo
+  - Tracy Hopkins
+  - Christine Kargatis
+  - Jay Fein
+  - Sung Shariari
+  - Debra Catini
+  - Chris Selesnick
+  - Bryan Mills
+  - Rick Hansen
+  - Gary McGarr
+  - Patrick Gardner
+  - Art Foster
+  - Berenike Kampe
+  - Linda Southworth
+  - Anthony Garverick
+  - Ed Ludwig
+  - George Bell
+  - Rob Williams
+  - Joel Jenkins
+  - Karen Carlisle
+  - Joseph Airdo
+  - Bryan Spruell
+  - Toby Swindell
+  - Ryan Akin
+  - Kalyca Meade
+  - Jennifer Jackson
+  - Noel Staavos
+  - Theresa Swint
+  - Erica Hernandez
+  - Don Weiss
+  - Penelope Sewall
+  - Christine Sundaresam
+  - Alex Avila
+  - Alyssa Tate
+  - Larry Hughes
+  - Kean Thornton
+  - Nora Preis
+  - Chris Cortes
+  - Gene McClure
+  - Quincy Jones
+  - Laurel Workman
+  - George Zrebassa
+  - Alejandro Ballentine
+  - Chad McGuire
+  - Larry Blacks
+  - Sam Zeldin
+  - Yana Sorensen
+  - Beth Thompson
+  - Shui Tom
+  - Thais Sissman
+  - Mick Brown
+  - Cindy Stewart
+  - Todd Sumrall
+  - Andy Reiter
+  - Gary Hwang
+  - Deborah Brumfield
+  - Julia West
+  - Anthony Witt
+  - Muhammed Yedwab
+  - Jenna Caffey
+  - Toby Braunhardt
+  - Thea Hendricks
+  - Shaun Weien
+  - Henia Zydlo
+  - Emily Ducich
+  - Max Ludwig
+  - Thomas Boland
+  - Brian Thompson
+  - Barbara Fisher
+  - Michelle Ellison
+  - Amy Cox
+  - Edward Hooks
+  - Joy Daniels
+  - Stuart Calhoun
+  - Matt Collister
+  - Bart Folk
+  - Scot Wooten
+  - Trudy Brown
+  - John Huston
+  - Arthur Wiediger
+  - Dennis Kane
+  - Barry Franz
+  - Mitch Webber
+  - Jim Karlsson
+  - Becky Castell
+  - Kelly Williams
+  - Tamara Manning
+  - Annie Zypern
+  - Greg Maxwell
+  - Luke Schmidt
+  - Lori Olson
+  - Chris McAfee
+  - Aleksandra Gannaway
+  - Tim Taslimi
+  - Nancy Lomonaco
+  - Bobby Elias
+  - MaryBeth Skach
+  - Dean percer
+  - Daniel Raglin
+  - Denise Monton
+  - Harry Greene
+  - Andy Yotov
+  - Sharelle Roach
+  - Sean Wendt
+  - Jason Gross
+  - Cari Sayre
+  - Aaron Hawkins
+  - Bruce Geld
+  - Tony Sayre
+  - Dave Hallsten
+  - Mark Hamilton
+  - Fred Chung
+  - Maureen Fritzler
+  - Nathan Cano
+  - Peter Fuller
+  - Charles Sheldon
+  - Dorothy Dickinson
+  - Cyra Reiten
+  - Bill Shonely
+  - Georgia Rosenberg
+  - Dennis Bolton
+  - Liz Willingham
+  - Lisa Ryan
+  - Don Miller
+  - Thea Hudgings
+  - Barry Weirich
+  - Trudy Schmidt
+  - Shirley Schmidt
+  - Ionia McGrath
+  - Lindsay Castell
+  - Carl Jackson
+  - Susan MacKendrick
+- name: Segment
+  fieldValues:
+  - Consumer
+  - Corporate
+  - Home Office
+- name: Country
+  fieldValues:
+  - United States
+- name: City
+  fieldValues:
+  - Henderson
+  - Fort Lauderdale
+  - Fort Worth
+  - West Jordan
+  - Philadelphia
+  - Richardson
+  - Melbourne
+  - Dover
+  - Troy
+  - Gilbert
+  - Memphis
+  - Columbia
+  - Minneapolis
+  - Aurora
+  - Urbandale
+  - Bristol
+  - Phoenix
+  - Pasadena
+  - Franklin
+  - Edmond
+  - Monroe
+  - Grand Prairie
+  - Westfield
+  - Dallas
+  - Saginaw
+  - Detroit
+  - Lakeville
+  - Brentwood
+  - Cincinnati
+  - Colorado Springs
+  - Taylor
+  - Arvada
+  - Long Beach
+  - Murfreesboro
+  - Lowell
+  - Tucson
+  - Pembroke Pines
+  - Las Vegas
+  - Huntington Beach
+  - Louisville
+  - New Rochelle
+  - Auburn
+  - Park Ridge
+  - Huntsville
+  - Parker
+  - Gladstone
+  - Montgomery
+  - Anaheim
+  - Salem
+  - Dearborn
+  - Mission Viejo
+  - Plainfield
+  - Cleveland
+  - Waynesboro
+  - Cary
+  - Hialeah
+  - Trenton
+  - Bossier City
+  - Lake Elsinore
+  - Santa Ana
+  - Florence
+  - Salinas
+  - Norwich
+  - Toledo
+  - Torrance
+  - Virginia Beach
+  - Olympia
+  - Saint Peters
+  - Yonkers
+  - Clinton
+  - Jonesboro
+  - La Porte
+  - Cuyahoga Falls
+  - Escondido
+  - Coral Springs
+  - Boynton Beach
+  - Greenville
+  - Providence
+  - Deltona
+  - Freeport
+  - Pleasant Grove
+  - Parma
+  - Irving
+  - Niagara Falls
+  - Westminster
+  - North Las Vegas
+  - Laguna Niguel
+  - Everett
+  - Bellevue
+  - Grapevine
+  - Kent
+  - Skokie
+  - Indianapolis
+  - Greensboro
+  - Olathe
+  - Raleigh
+  - Meriden
+  - Spokane
+  - Medford
+  - Missoula
+  - Broomfield
+  - Oklahoma City
+  - Johnson City
+  - Bozeman
+  - Ontario
+  - Mesquite
+  - Sunnyvale
+  - College Station
+  - San Angelo
+  - Little Rock
+  - Marion
+  - Southaven
+  - Sioux Falls
+  - Clarksville
+  - Malden
+  - Sparks
+  - Elmhurst
+  - Newport News
+  - La Quinta
+  - Nashville
+  - Haltom City
+  - Hot Springs
+  - Las Cruces
+  - Vacaville
+  - Pompano Beach
+  - Redondo Beach
+  - Lake Charles
+  - Noblesville
+  - Mount Pleasant
+  - Pharr
+  - Chattanooga
+  - Bolingbrook
+  - Missouri City
+  - Grand Rapids
+  - Overland Park
+  - Revere
+  - Dubuque
+  - Santa Fe
+  - Saint Cloud
+  - Port Saint Lucie
+  - Odessa
+  - Manhattan
+  - Champaign
+  - Edinburg
+  - Woonsocket
+  - Covington
+  - Miramar
+  - Wichita
+  - Boise
+  - Port Arthur
+  - Daytona Beach
+  - Fargo
+  - San Gabriel
+  - Mentor
+  - Rome
+  - Lewiston
+  - Logan
+  - Avondale
+  - Yuma
+  - Oak Park
+  - Gaithersburg
+  - Tuscaloosa
+  - Loveland
+  - Kirkwood
+  - Frankfort
+  - Woodbury
+  - Jupiter
+  - Cedar Hill
+  - Ann Arbor
+  - Holland
+  - Buffalo Grove
+  - Chico
+  - Cheyenne
+  - Caldwell
+  - Bartlett
+  - Santa Maria
+  - Longview
+  - Cambridge
+  - Eugene
+  - Renton
+  - Commerce City
+  - Rio Rancho
+  - Montebello
+  - West Palm Beach
+  - Saint Charles
+  - Hillsboro
+  - Garden City
+  - Davis
+  - Clifton
+  - Rapid City
+  - Shelton
+  - Sanford
+  - Mansfield
+  - Coral Gables
+  - Marlborough
+  - Pine Bluff
+  - East Orange
+  - Oswego
+  - San Luis Obispo
+  - Mason
+- name: State
+  fieldValues:
+  - Kentucky
+  - California
+  - Florida
+  - North Carolina
+  - Washington
+  - Texas
+  - Wisconsin
+  - Utah
+  - Nebraska
+  - Pennsylvania
+  - Illinois
+  - Minnesota
+  - Michigan
+  - Delaware
+  - Indiana
+  - New York
+  - Arizona
+  - Virginia
+  - Tennessee
+  - Alabama
+  - South Carolina
+  - Oregon
+  - Colorado
+  - Iowa
+  - Ohio
+  - Missouri
+  - Oklahoma
+  - New Mexico
+  - Louisiana
+  - Connecticut
+  - New Jersey
+  - Massachusetts
+  - Georgia
+  - Nevada
+  - Rhode Island
+  - Mississippi
+  - Arkansas
+  - Montana
+  - New Hampshire
+  - Maryland
+  - District of Columbia
+  - Kansas
+  - Vermont
+  - Maine
+  - South Dakota
+  - Idaho
+  - North Dakota
+  - Wyoming
+  - West Virginia
+- name: Postal Code
+  fieldValues:
+  - 42420
+  - 90032
+  - 76106
+  - 94109
+  - 84057
+  - 75080
+  - 32935
+  - 47150
+  - 90004
+  - 22153
+  - 38109
+  - 94122
+  - 29203
+  - 55106
+  - 60462
+  - 43229
+  - 61701
+  - 64055
+  - 53132
+  - 98115
+  - 19134
+  - 77036
+  - 6824
+  - 45011
+  - 44312
+  - 90604
+  - 43017
+  - 33614
+  - 92037
+  - 27514
+  - 94110
+  - 7109
+  - 22204
+  - 33710
+  - 92345
+  - 78745
+  - 6040
+  - 2038
+  - 61604
+  - 33180
+  - 40475
+  - 39212
+  - 28052
+  - 73071
+  - 79109
+  - 92024
+  - 72701
+  - 30318
+  - 48234
+  - 60653
+  - 92804
+  - 78041
+  - 10011
+  - 94591
+  - 7060
+  - 76017
+  - 44105
+  - 22980
+  - 32137
+  - 33012
+  - 60201
+  - 50315
+  - 28806
+  - 98026
+  - 41042
+  - 93905
+  - 3301
+  - 22304
+  - 92503
+  - 92054
+  - 92563
+  - 98502
+  - 63376
+  - 10701
+  - 20735
+  - 47374
+  - 46350
+  - 89502
+  - 48073
+  - 33437
+  - 27834
+  - 31204
+  - 81001
+  - 42071
+  - 90660
+  - 24153
+  - 2740
+  - 85301
+  - 92683
+  - 91767
+  - 19711
+  - 2149
+  - 98006
+  - 76051
+  - 98031
+  - 60076
+  - 46203
+  - 21215
+  - 98002
+  - 27604
+  - 42104
+  - 89015
+  - 45014
+  - 59801
+  - 97477
+  - 80020
+  - 73120
+  - 65203
+  - 92404
+  - 44107
+  - 91730
+  - 95207
+  - 3820
+  - 63116
+  - 44240
+  - 37918
+  - 43302
+  - 4401
+  - 48640
+  - 47905
+  - 91360
+  - 89431
+  - 7055
+  - 14701
+  - 92253
+  - 98226
+  - 60090
+  - 43130
+  - 75034
+  - 53186
+  - 45373
+  - 32839
+  - 60035
+  - 29464
+  - 78577
+  - 37421
+  - 60440
+  - 77489
+  - 49505
+  - 92399
+  - 60477
+  - 87505
+  - 56301
+  - 33317
+  - 79762
+  - 16602
+  - 47401
+  - 77520
+  - 2895
+  - 98042
+  - 33021
+  - 52240
+  - 61032
+  - 75056
+  - 86442
+  - 46514
+  - 30328
+  - 13440
+  - 39401
+  - 84321
+  - 4240
+  - 30062
+  - 99301
+  - 20877
+  - 92553
+  - 85224
+  - 76706
+  - 18018
+  - 55125
+  - 33458
+  - 68701
+  - 91941
+  - 6460
+  - 96003
+  - 72032
+  - 70065
+  - 94061
+  - 60016
+  - 50701
+  - 1915
+  - 98059
+  - 77590
+  - 27534
+  - 92020
+  - 79605
+  - 60174
+  - 91505
+  - 80501
+  - 95037
+  - 30344
+  - 34741
+  - 52302
+  - 80634
+  - 33134
+  - 20707
+  - 57401
+  - 60004
+  - 92672
+  - 72762
+  - 30188
+- name: Region
+  fieldValues:
+  - South
+  - West
+  - Central
+  - East
+- name: Product ID
+  fieldValues:
+  - FUR-BO-10001798
+  - OFF-AP-10002892
+  - OFF-AR-10003056
+  - FUR-FU-10004848
+  - FUR-BO-10002545
+  - TEC-AC-10002167
+  - FUR-CH-10003968
+  - OFF-AR-10002671
+  - FUR-FU-10000260
+  - TEC-AC-10001998
+  - FUR-FU-10000629
+  - OFF-BI-10002794
+  - OFF-PA-10004965
+  - FUR-TA-10004534
+  - OFF-AR-10001149
+  - TEC-PH-10001448
+  - TEC-PH-10004536
+  - OFF-AR-10002656
+  - OFF-SU-10002189
+  - OFF-ST-10001328
+  - OFF-PA-10002666
+  - OFF-ST-10001522
+  - FUR-FU-10000087
+  - FUR-TA-10003473
+  - FUR-FU-10002505
+  - TEC-PH-10001580
+  - OFF-ST-10004180
+  - OFF-PA-10004470
+  - OFF-BI-10000778
+  - OFF-FA-10004854
+  - OFF-BI-10001072
+  - OFF-PA-10001937
+  - FUR-CH-10003312
+  - OFF-BI-10003314
+  - FUR-BO-10002268
+  - OFF-SU-10001225
+  - OFF-AP-10000696
+  - OFF-AR-10004757
+  - OFF-ST-10001580
+  - OFF-PA-10002893
+  - TEC-AC-10004114
+  - OFF-ST-10000617
+  - OFF-ST-10003058
+  - TEC-PH-10002365
+  - FUR-TA-10001889
+  - TEC-PH-10002680
+  - FUR-BO-10001337
+  - OFF-EN-10001434
+  - OFF-AR-10001662
+  - OFF-ST-10004459
+  - FUR-CH-10000595
+  - TEC-PH-10002262
+  - OFF-ST-10001780
+  - TEC-PH-10002496
+  - FUR-FU-10001475
+  - FUR-FU-10001979
+  - OFF-PA-10001204
+  - OFF-ST-10001272
+  - OFF-BI-10001989
+  - OFF-AP-10002350
+  - FUR-FU-10002759
+  - OFF-BI-10003305
+  - OFF-LA-10002312
+  - OFF-AP-10001154
+  - OFF-EN-10001141
+  - OFF-LA-10003223
+  - OFF-LA-10004484
+  - OFF-AR-10004648
+  - FUR-CH-10004675
+  - FUR-FU-10000794
+  - FUR-CH-10001394
+  - OFF-AP-10003884
+  - OFF-BI-10001294
+  - OFF-SU-10002537
+  - OFF-BI-10000545
+  - TEC-AC-10000927
+  - OFF-BI-10001510
+  - OFF-ST-10001558
+  - OFF-BI-10004826
+  - FUR-TA-10004154
+  - OFF-PA-10001281
+  - OFF-BI-10004022
+  - OFF-BI-10002049
+  - OFF-EN-10003072
+  - OFF-BI-10003707
+  - OFF-PA-10001307
+  - OFF-FA-10003059
+  - OFF-PA-10003127
+  - OFF-BI-10004001
+  - OFF-PA-10004735
+  - OFF-ST-10001476
+  - TEC-CO-10004202
+  - OFF-PA-10003172
+  - TEC-PH-10003655
+  - OFF-AR-10004999
+  - OFF-AR-10001022
+  - OFF-EN-10004955
+  - TEC-PH-10004586
+  - TEC-AC-10004209
+  - OFF-BI-10004970
+  - FUR-FU-10004960
+  - TEC-PH-10002549
+  - OFF-ST-10000649
+  - OFF-AP-10003590
+  - FUR-TA-10001676
+  - TEC-PH-10002922
+  - OFF-PA-10001712
+  - FUR-TA-10002530
+  - OFF-PA-10002262
+  - OFF-PA-10003823
+  - OFF-FA-10004968
+  - OFF-LA-10002195
+  - OFF-EN-10003160
+  - OFF-PA-10004519
+  - TEC-PH-10000441
+  - TEC-PH-10000038
+  - OFF-FA-10000611
+  - OFF-AP-10002495
+  - FUR-BO-10003965
+  - OFF-AP-10002082
+  - FUR-FU-10001591
+  - FUR-CH-10001854
+  - OFF-LA-10001771
+  - TEC-MA-10000488
+  - OFF-AR-10003631
+  - FUR-TA-10004175
+  - OFF-BI-10004390
+  - TEC-PH-10001809
+  - OFF-BI-10002082
+  - OFF-BI-10001249
+  - OFF-PA-10002160
+  - FUR-CH-10003833
+  - FUR-TA-10003954
+  - OFF-AR-10004602
+  - OFF-AR-10004511
+  - OFF-PA-10000551
+  - OFF-AP-10003842
+  - FUR-FU-10004597
+  - OFF-PA-10002787
+  - FUR-TA-10001950
+  - OFF-AP-10001205
+  - FUR-CH-10001714
+  - TEC-CO-10000971
+  - FUR-TA-10002645
+  - OFF-PA-10000726
+  - TEC-PH-10001835
+  - TEC-AC-10002550
+  - TEC-AC-10000387
+  - TEC-MA-10003356
+  - OFF-PA-10000697
+  - OFF-PA-10004665
+  - OFF-AR-10003183
+  - TEC-AC-10004227
+  - TEC-AC-10003433
+  - OFF-PA-10000520
+  - OFF-ST-10002615
+  - OFF-BI-10000174
+  - TEC-MA-10004521
+  - OFF-AR-10001216
+  - OFF-PA-10001977
+  - FUR-CH-10004495
+  - OFF-ST-10002957
+  - TEC-PH-10004912
+  - FUR-FU-10002963
+  - FUR-FU-10000320
+  - TEC-AC-10000990
+  - OFF-PA-10000007
+  - OFF-BI-10003007
+  - OFF-AR-10002987
+  - TEC-AC-10001874
+  - TEC-AC-10004814
+  - TEC-AC-10002331
+  - FUR-FU-10001085
+  - TEC-AC-10001553
+  - FUR-BO-10004360
+  - OFF-BI-10003876
+  - OFF-BI-10000216
+  - OFF-LA-10000414
+  - OFF-EN-10003567
+  - OFF-PA-10004353
+  - OFF-AP-10004052
+  - TEC-PH-10001305
+  - FUR-FU-10002813
+  - OFF-FA-10003485
+  - TEC-PH-10000562
+  - TEC-PH-10002583
+  - OFF-AP-10000275
+  - TEC-MA-10002109
+  - OFF-EN-10002592
+  - OFF-PA-10001952
+  - OFF-PA-10001801
+  - OFF-BI-10004308
+  - OFF-PA-10003205
+  - TEC-PH-10002070
+  - FUR-FU-10003806
+  - FUR-FU-10002506
+  - TEC-MA-10000984
+  - OFF-PA-10001001
+  - FUR-CH-10002317
+  - OFF-ST-10001627
+- name: Category
+  fieldValues:
+  - Furniture
+  - Office Supplies
+  - Technology
+- name: Sub-Category
+  fieldValues:
+  - Bookcases
+  - Chairs
+  - Labels
+  - Tables
+  - Storage
+  - Furnishings
+  - Art
+  - Phones
+  - Binders
+  - Appliances
+  - Paper
+  - Accessories
+  - Envelopes
+  - Fasteners
+  - Supplies
+  - Machines
+  - Copiers
+- name: Product Name
+  fieldValues:
+  - Bush Somerset Collection Bookcase
+  - Belkin F5C206VTEL 6 Outlet Surge
+  - Newell 341
+  - Avery Recycled Flexi-View Covers for Binding Systems
+  - Atlantic Metals Mobile 3-Shelf Bookcases, Custom Colors
+  - Imation 8gb Micro Traveldrive Usb 2.0 Flash Drive
+  - Xerox 232
+  - Hunt BOSTON Model 1606 High-Volume Electric Pencil Sharpener, Beige
+  - 6" Cubicle Wall Clock, Black
+  - Novimex Swivel Fabric Task Chair
+  - Flexible Leather- Look Classic Collection Ring Binder
+  - Avery Trapezoid Ring Binder, 3" Capacity, Black, 1040 sheets
+  - 'Redi-Strip #10 Envelopes, 4 1/8 x 9 1/2'
+  - Global Deluxe High-Back Manager's Chair
+  - Xerox 1880
+  - Seth Thomas 14" Putty-Colored Wall Clock
+  - Newell 311
+  - Space Solutions HD Industrial Steel Shelving.
+  - Acco 7-Outlet Masterpiece Power Center, Wihtout Fax/Phone Line Protection
+  - Avery Poly Binder Pockets
+  - Decoflex Hanging Personal Folder File
+  - Panasonic KX-TG6844B Expandable Digital Cordless Telephone
+  - OIC Bulk Pack Metal Binder Clips
+  - Global Push Button Manager's Chair, Indigo
+  - Staple-based wall hangings
+  - Tyvek Side-Opening Peel & Seel Expanding Envelopes
+  - Microsoft Sculpt Comfort Mouse
+  - Ampad Gold Fibre Wirebound Steno Books, 6" x 9", Gregg Ruled
+  - Xerox 216
+  - Eldon ClusterMat Chair Mat with Cordless Antistatic Protection
+  - Electrix 20W Halogen Replacement Bulb for Zoom-In Desk Lamp
+  - AT&T 1070 Corded Phone
+  - Aastra 57i VoIP phone
+  - Hewlett Packard LaserJet 3310 Copier
+  - Acco Hanging Data Binders
+  - Eldon Wave Desk Accessories
+  - Xerox 1960
+  - Logitech Media Keyboard K200
+  - Xerox 1958
+  - Wirebound Message Book, 4 per Page
+  - Bevis Steel Folding Chairs
+  - GBC VeloBinder Manual Binding System
+  - Global Deluxe Steno Chair
+  - Fellowes Bankers Box Recycled Super Stor/Drawer
+  - 3M Office Air Cleaner
+  - SAFCO Boltless Steel Shelving
+  - Imation USB 2.0 Swivel Flash Drive USB flash drive - 4 GB - Pink
+  - Colored Envelopes
+  - Global Troy Executive Leather Low-Back Tilter
+  - Newell 317
+  - Global Commerce Series High-Back Swivel/Tilt Chairs
+  - Cardinal Poly Pocket Divider Pockets for Ring Binders
+  - HON 5400 Series Task Chairs for Big and Tall
+  - Sanitaire Vibra Groomer IR Commercial Upright Vacuum, Replacement Belts
+  - Newell 332
+  - Xerox 1894
+  - Angle-D Ring Binders
+  - Grandstream GXP1160 VoIP phone
+  - Imation 32GB Pocket Pro USB 3.0 Flash Drive - 32 GB - Black - 1 P ...
+  - Xerox 1993
+  - Acme Tagit Stainless Steel Antibacterial Scissors
+  - Hoover Portapower Portable Vacuum
+  - Recycled Eldon Regeneration Jumbo File
+  - Xerox 220
+  - Chromcraft Bull-Nose Wood Oval Conference Tables & Bases
+  - Logitech Illuminated - Keyboard
+  - Nu-Dell Leatherette Frames
+  - Electrix Halogen Magnifier Lamp
+  - Safco Value Mate Series Steel Bookcases, Baked Enamel Finish on Steel, Gray
+  - Smead Alpha-Z Color-Coded Second Alphabetical Labels and Starter Set
+  - Belkin F9G930V10-GRY 9 Outlet Surge
+  - Advantus Plastic Paper Clips
+  - Zebra GX420t Direct Thermal/Thermal Transfer Printer
+  - Maxell DVD-RAM Discs
+  - Logitech B530 USB Headset - headset - Full size, Binaural
+  - Acco Pressboard Covers with Storage Hooks, 14 7/8" x 11", Light Blue
+  - Things To Do Today Pad
+  - Polycom CX600 IP Phone VoIP phone
+  - Hypercom P1300 Pinpad
+  - Avery Trapezoid Extra Heavy Duty 4" Binders
+  - Avery File Folder Labels
+  - Samsung Galaxy S III - 16GB - pebble blue (T-Mobile)
+  - Portable Personal File Box
+  - 'Iceberg Mobile Mega Data/Printer Cart '
+  - Cisco SPA508G
+  - Belkin F9S820V06 8 Outlet Surge
+  - Stockwell Gold Paper Clips
+  - Belkin 8 Outlet SurgeMaster II Gold Surge Protector
+  - Fellowes Mobile File Cart, Black
+  - invisibleSHIELD by ZAGG Smudge-Free Screen Protector
+  - Tyvek  Top-Opening Peel & Seel  Envelopes, Gray
+  - Eldon Regeneration Recycled Desk Accessories, Smoke
+  - Xerox 1996
+  - Peel & Stick Add-On Corner Pockets
+  - Newell 315
+  - Blue String-Tie & Button Interoffice Envelopes, 10 x 13
+  - Hon Non-Folding Utility Tables
+  - Pencil and Crayon Sharpener
+  - Geemarc AmpliPOWER60
+  - GBC Binding covers
+  - Memorex Froggy Flash Drive 8 GB
+  - Rediform S.O.S. 1-Up Phone Message Bk, 4-1/4x3-1/16 Bk, 1 Form/Pg, 40 Messages/Bk,
+    3/Pk
+  - Xerox 1909
+  - Xerox 1934
+  - Hon 61000 Series Interactive Training Tables
+  - Petty Cash Envelope
+  - Global Super Steno Chair
+  - Wilson Jones Heavy-Duty Casebound Ring Binders with Metal Hinges
+  - X-Rack File for Hanging Folders
+  - Hon 2111 Invitation Series Corner Table
+  - Neat Ideas Personal Hanging Folder Files, Black
+  - Avery 518
+  - Conquest 14 Commercial Heavy-Duty Upright Vacuum, Collection System, Accessory
+    Kit
+  - Tenex 46" x 60" Computer Anti-Static Chairmat, Rectangular Shaped
+  - Wirebound Message Books, Four 2 3/4 x 5 White Forms per Page
+  - Multicolor Computer Printout Paper
+  - GBC VeloBind Cover Sets
+  - Memorex Micro Travel Drive 16 GB
+  - Avanti 4.4 Cu. Ft. Refrigerator
+  - Xerox 1962
+  - Blackstonian Pencils
+  - Mediabridge Sport Armband iPhone 5s
+  - Xerox 206
+  - Dana Fluorescent Magnifying Lamp, White, 36"
+  - Xerox 211
+  - Newell 309
+  - Xerox 1891
+  - O'Sullivan 2-Shelf Heavy-Duty Bookcases
+  - Acco 6 Outlet Guardian Standard Surge Suppressor
+  - Bevis Round Conference Table Top & Single Column Base
+  - Xerox 1922
+  - Hon 94000 Series Round Tables
+  - Boston KS Multi-Size Manual Pencil Sharpener
+  - DataProducts Ampli Magnifier Task Lamp, Black,
+  - Panasonic KP-350BK Electric Pencil Sharpener with Auto Stop
+  - Boston Model 1800 Electric Pencil Sharpener, Gray
+  - HTC One
+  - Wirebound Message Books, Four 2 3/4" x 5" Forms per Page, 600 Sets per Book
+  - Bionaire 99.97% HEPA Air Cleaner
+  - Tripp Lite Isotel 6 Outlet Surge Protector with Fax/Modem Protection
+  - Xerox 1926
+  - DAX Solid Wood Frames
+  - Panasonic KX-TG9541B DECT 6.0 Digital 2-Line Expandable Cordless Phone With Digital
+    Answering System
+  - 'Ampad #10 Peel & Seel Holiday Envelopes'
+  - Avery 50
+  - Panasonic KX TS3282B Corded phone
+  - Dell Slim USB Multimedia Keyboard
+  - Executive Impressions 14"
+  - Epson TM-T88V Direct Thermal Printer - Monochrome - Desktop
+  - Green Bar Computer Printout Paper
+  - Ibico Presentation Index for Binding Systems
+  - Computer Room Manger, 14"
+  - Advantus Rolling Drawer Organizers
+  - Xerox 1953
+  - GE 4 Foot Flourescent Tube, 40 Watt
+  - Tenex Carpeted, Granite-Look or Clear Contemporary Contour Shape Chair Mats
+  - Xerox 198
+  - Alliance Rubber Bands
+  - Perixx PERIBOARD-512B, Ergonomic Split Keyboard
+  - Strathmore Photo Frame Cards
+  - Ibico Ibimaster 300 Manual Binding System
+  - Avery White Multi-Purpose Labels
+  - Disposable Triple-Filter Dust Bags
+  - Fellowes Command Center 5-outlet power strip
+  - Eldon Executive Woodline II Cherry Finish Desk Accessories
+  - Bush Birmingham Collection Bookcase, Dark Cherry
+  - Okidata MB491 Multifunction Printer
+  - Premium Transparent Presentation Covers, No Pattern/Clear, 8 1/2" x 11"
+  - Adjustable Personal File Tote
+  - Acco Banker's Clasps, 5 3/4"-Long
+  - Executive Impressions 13" Chairman Wall Clock
+  - 'Economy #2 Pencils'
+  - RCA ViSYS 25423RE1 Corded phone
+  - Canon PC170 Desktop Personal Copier
+  - Holmes Visible Mist Ultrasonic Humidifier with 2.3-Gallon Output per Day, Replacement
+    Filter
+  - Green Canvas Binder for 8-1/2" x 14" Sheets
+  - 3D Systems Cube Printer, 2nd Generation, Magenta
+  - Holmes 99% HEPA Air Purifier
+  - Xerox 1992
+  - Avery 5
+  - Xerox 1937
+  - Xerox 19
+  - DAX Contemporary Wood Frame with Silver Metal Mat, Desktop, 11 x 14 Size
+  - Euro Pro Shark Stick Mini Vacuum
+  - Avery 491
+  - Avery Hi-Liter GlideStik Fluorescent Highlighter, Yellow Ink
+  - Sanyo Counter Height Refrigerator with Crisper, 3.6 Cubic Foot, Stainless Steel/Black
+  - Xerox 20
+  - Hon Comfortask Task/Swivel Chairs
+  - Xerox 1902
+  - Sony Micro Vault Click 4 GB USB 2.0 Flash Drive
+  - Acco Recycled 2" Capacity Laser Printer Hanging Data Binders
+  - Tensor Brushed Steel Torchiere Floor Lamp
+  - Belkin 7-Outlet SurgeMaster Home Series
+  - Black Avery Memo-Size 3-Ring Binder, 5 1/2" x 8 1/2"
+  - Tensor "Hersey Kiss" Styled Floor Lamp
+  - Dixon Ticonderoga Core-Lock Colored Pencils, 48-Color Set
+  - Snap-A-Way Black Print Carbonless Speed Message, No Reply Area, Duplicate
+  - Global Enterprise Series Seating Low-Back Swivel/Tilt Chairs
+  - Eldon Jumbo ProFile Portable File Boxes Graphite/Black
+- name: Sales
+  fieldValues:
+  - 261.96
+  - 124.2
+  - 14.56
+  - 158.368
+  - 30.84
+  - 1951.84
+  - 3.28
+  - 15.92
+  - 419.68
+  - 57.576
+  - 219.075
+  - 959.984
+  - 53.424
+  - 9.568
+  - 714.3
+  - 28.485
+  - 189.882
+  - 683.952
+  - 19.456
+  - 84.784
+  - 37.91
+  - 379.4
+  - 64.96
+  - 73.32
+  - 157.74
+  - 186.69
+  - 67.8
+  - 191.472
+  - 103.6
+  - 12.192
+  - 30.072
+  - 4.401
+  - 697.16
+  - 40.88
+  - 1.192
+  - 599.98
+  - 3.76
+  - 95.88
+  - 3.2
+  - 2.772
+  - 5.184
+  - 183.96
+  - 167.96
+  - 119.904
+  - 27.46
+  - 16.784
+  - 39.99
+  - 763.28
+  - 786.48
+  - 297.576
+  - 1931.04
+  - 11.168
+  - 6.58
+  - 170.136
+  - 106.75
+  - 24.784
+  - 88.768
+  - 166.44
+  - 29.68
+  - 38.864
+  - 5.76
+  - 10.584
+  - 9.264
+  - 832.93
+  - 541.44
+  - 13.52
+  - 45.92
+  - 23.688
+  - 7.52
+  - 492.835
+  - 99.68
+  - 121.6
+  - 15.02
+  - 122.71
+  - 57.69
+  - 3.98
+  - 629.958
+  - 1924.16
+  - 999.96
+  - 1628.82
+  - 52.4
+  - 671.984
+  - 33.376
+  - 517.9
+  - 31.68
+  - 67.992
+  - 18.76
+  - 32.544
+  - 28.99
+  - 128.82
+  - 160.96
+  - 1.81
+  - 286.79
+  - 6.912
+  - 7.476
+  - 135.516
+  - 148.288
+  - 439.992
+  - 10.9
+  - 16.032
+  - 2.368
+  - 108.784
+  - 9.4
+  - 257.499
+  - 556.665
+  - 10.024
+  - 26.032
+  - 6.874
+  - 20.808
+  - 11.696
+  - 107.97
+  - 68.97
+  - 7.98
+  - 917.9235
+  - 659.168
+  - 137.25
+  - 166.45
+  - 8.712
+  - 1.908
+  - 62.808
+  - 49.848
+  - 231.98
+  - 35.568
+  - 210.564
+  - 549.99
+  - 68.46
+  - 53.248
+  - 164.22
+  - 14.89
+  - 329.584
+  - 224.75
+  - 1478.272
+  - 67.4
+  - 843.9
+  - 21.44
+  - 177.55
+  - 638.288
+  - 363.92
+  - 38.432
+  - 770.352
+  - 646.272
+  - 2.088
+  - 274.8
+  - 71.376
+  - 9.856
+  - 650.352
+  - 286.15
+  - 589.41
+  - 279.86
+  - 3.808
+  - 199.99
+  - 12.16
+  - 116.98
+  - 241.17
+  - 73.344
+  - 713.88
+  - 366.744
+  - 175.92
+  - 776.85
+  - 756.8
+  - 799.92
+  - 1279.968
+  - 378.0
+  - 237.096
+  - 140.97
+  - 435.168
+  - 39.48
+  - 170.98
+  - 33.02
+  - 30.828
+  - 343.85
+  - 72.9
+  - 106.08
+  - 269.36
+  - 2036.86
+  - 357.0
+  - 376.509
+  - 29.74
+  - 431.94
+  - 30.336
+  - 475.944
+  - 517.405
+  - 3050.376
+  - 33.282
+  - 121.78
+  - 299.96
+  - 20.97
+  - 403.68
+  - 4476.8
+  - 946.764
+  - 47.904
+  - 2.04
+  - 164.688
+  - 55.616
+  - 197.72
+  - 64.68
+  - 10.984
+  - 9.0
+  - 207.35
+  - 243.16
+- name: Quantity
+  fieldValues:
+  - 2
+  - 3
+  - 5
+  - 7
+  - 4
+  - 6
+  - 9
+  - 1
+  - 8
+  - 14
+  - 11
+  - 13
+  - 10
+  - 12
+- name: Discount
+  fieldValues:
+  - 0.0
+  - 0.45
+  - 0.2
+  - 0.8
+  - 0.3
+  - 0.5
+  - 0.7
+  - 0.6
+  - 0.32
+  - 0.1
+  - 0.4
+  - 0.15
+- name: Profit
+  fieldValues:
+  - 41.9136
+  - -147.963
+  - 1.213
+  - 10.9096
+  - 103.8015
+  - 3.4368
+  - -13.8432
+  - 6.6465
+  - -24.5646
+  - 1.6038
+  - -29.94
+  - 31.4548
+  - 7.9248
+  - 341.994
+  - 10.434
+  - 45.0016
+  - 47.8152
+  - 3.1752
+  - 18.522
+  - 6.3684
+  - 5.3392
+  - 18.8972
+  - 8.7672
+  - 4.5318
+  - 12.936
+  - -0.792
+  - 36.852
+  - 27.7911
+  - 2.0416
+  - 5.5566
+  - 7.3386
+  - 3.6588
+  - 18.267
+  - 5.6628
+  - 25.098
+  - 28.3095
+  - 196.6132
+  - 19.5238
+  - 27.248
+  - 9.92
+  - 12.987
+  - -3.094
+  - 5.096
+  - 0.3822
+  - 14.9925
+  - 3.0558
+  - 60.5528
+  - 3.9906
+  - 26.3912
+  - 215.1198
+  - 25.176
+  - -1.294
+  - 20.0392
+  - 10.74
+  - 229.3018
+  - 15.2712
+  - 106.477
+  - 27.3528
+  - 45.7704
+  - -2.1504
+  - 5.1184
+  - 34.2848
+  - 213.6888
+  - 158.7519
+  - 67.4424
+  - 1.64
+  - 2.1762
+  - 24.2256
+  - 315.7404
+  - 9.2568
+  - 35.2872
+  - -1.9275
+  - 10.43
+  - 18.2112
+  - 2.772
+  - 90.8292
+  - -44.2782
+  - -4.7784
+  - 7.5768
+  - -1.9744
+  - 244.6155
+  - 78.672
+  - 1.651
+  - -19.8744
+  - -5.9808
+  - 8.5544
+  - 12.492
+  - 3.792
+  - 15.5092
+  - 13.128
+  - 318.3016
+  - 48.9902
+  - 15.5344
+  - 20.1248
+  - 1.551
+  - -6.0237
+  - -944.9946
+  - 160.1766
+  - 6.5754
+  - 68.04
+  - 6.6906
+  - 21.7355
+  - -71.2962
+  - 75.5937
+  - -2.9884
+  - 5.8887
+  - -28.9568
+  - 21.5928
+  - -0.8886
+  - -44.1462
+  - -54.882
+  - 30.3604
+  - 1.7876
+  - 3.556
+  - 38.976
+  - -0.6048
+  - 29.3284
+  - 43.736
+  - -52.9584
+  - 386.835
+  - 37.0782
+  - 8.409
+  - 13.7808
+  - 7.6869
+  - 8.9994
+  - 7.9218
+  - 17.5448
+  - 2.289
+  - 5.823
+  - -42.8
+  - 124.7808
+  - 6.5472
+  - 11.49
+  - 30.4416
+  - -186.5682
+  - 32.9817
+  - 459.9875
+  - 143.303
+  - 43.9
+  - 146.2405
+  - 14.7
+  - 4.4685
+  - 71.9928
+  - 23.7564
+  - -185.7168
+  - 1.239
+  - -19.47
+  - -2.688
+  - 21.384
+  - 25.2936
+  - 71.162
+  - 2.3686
+  - -43.4352
+  - 10.92
+  - 35.8644
+  - -2.73
+  - 112.224
+  - 5.4336
+  - 13.132
+  - 20.8568
+  - 72.8088
+  - 220.987
+  - 2.786
+  - 17.891
+  - -292.1
+  - 561.564
+  - 7.308
+  - 16.68
+  - -1.827
+  - -161.694
+  - 5.6112
+  - -4.6464
+  - 0.2996
+  - 10.449
+  - -173.3472
+  - 3.1248
+  - 0.2598
+  - 5.346
+  - -81.441
+  - 3.9424
+  - 0.3094
+  - 131.9868
+  - 33.777
+  - -13.433
+  - 1.3098
+  - 11.732
+  - 3.1382
+  - 6.912
+  - 40.97
+  - 1.122
+  - 286.3836
+  - -61.872
+  - 80.7772
+  - -378.4
+  - 83.7096
+  - 284.1855
+  - 6.9986
+  - 83.733
+  - 28.7952
+  - 72.948

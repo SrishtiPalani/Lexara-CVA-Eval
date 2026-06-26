@@ -1,0 +1,18 @@
+{
+  "P01_testcases.yaml": "sample-superstore-datasource.yaml",
+  "P02_testcases.yaml": "sample-superstore-datasource.yaml",
+  "P03_testcases.yaml": "2014-inc-500-datasource.yaml",
+  "P04_testcases.yaml": "2014-inc-500-datasource.yaml",
+  "P05_testcases.yaml": "american-university-ipeds-datasource.yaml",
+  "P06_testcases.yaml": "american-university-ipeds-datasource.yaml",
+  "P07_testcases.yaml": "life-expectancy-who-datasource.yaml",
+  "P08_testcases.yaml": "life-expectancy-who-datasource.yaml",
+  "P09_testcases.yaml": "cov-vac-uptake-2024-who-datasource.yaml",
+  "P10_testcases.yaml": "american-university-ipeds-datasource.yaml",
+  "P11_testcases.yaml": "global-sport-finances-top-athlete-salaries-espn-datasource.yaml",
+  "P12_testcases.yaml": "global-sport-finances-top-athlete-salaries-espn-datasource.yaml",
+  "P13_testcases.yaml": "global-sport-finances-top-teams-payroll-list-espn-datasource.yaml",
+  "P14_testcases.yaml": "global-sport-finances-top-teams-payroll-list-espn-datasource.yaml",
+  "P15_testcases.yaml": "patient-billing-anon-participant-datasource.yaml",
+  "P16_testcases.yaml": "patient-billing-anon-participant-datasource.yaml"
+}

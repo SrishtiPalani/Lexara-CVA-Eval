@@ -1,0 +1,263 @@
+- description: Conversation for P03 on 2014-inc-500-datasource.yaml
+  requirement-id: P03-FINANCE
+  test-number: 1
+  utterances:
+  - canonical: "Bar chart average growth by industry; limit to companies with revenue \u2265 $10M; show top 10 industries; label bars."
+    labels:
+    - Bar Chart
+    - InferGranularity
+    - Semantic Ambiguity
+    - Composite Intent
+    - Pragmatic Ambiguity
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: industry
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: growth
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: growth
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: industry
+        by: growth
+        aggregation: avg
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: industry
+        limit:
+          type: top
+          limit: 10
+          field: growth
+          aggregation: avg
+      rangeFilters:
+      - type: numeric-range
+        field: revenue
+        start: 10000000
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Switch to ranking industries by average revenue ascending; keep top 10 selection.
+    labels:
+    - InferFilter
+    - 'Context Handling: Spec-Edit Carryover'
+    - Syntactic Ambiguity
+    - Semantic Ambiguity
+    - Composite Intent
+    - Box Plot
+    - Pragmatic Ambiguity
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: Category
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: Profit
+        data: number
+        type: continuous
+        role: measure
+        aggregation: sum
+        encoding: y
+      chart: boxplot
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: Trend average revenue by rank over rank order; add a moving average to smooth noise.
+    labels:
+    - Line Chart
+    - InferDateTimeField
+    - Pragmatic Ambiguity
+    - Syntactic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: rank
+        data: number
+        type: continuous
+        role: dimension
+        encoding: x
+      - caption: revenue
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: "Bar chart average growth by industry; limit to companies with revenue \u2265 $10M; show top 10 industries; label bars."
+    labels:
+    - Bar Chart
+    - InferDateTimeField
+    - 'Context Handling: Reference Resolution'
+    - Syntactic Ambiguity
+    - Pragmatic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: industry
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: growth
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: growth
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: industry
+        by: growth
+        aggregation: avg
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: industry
+        limit:
+          type: top
+          limit: 10
+          field: growth
+          aggregation: avg
+      rangeFilters:
+      - type: numeric-range
+        field: revenue
+        start: 10000000
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
+  - canonical: "Bar chart average growth by industry; limit to companies with revenue \u2265 $10M; show top 10 industries; label bars."
+    labels:
+    - Bar Chart
+    - InferDateTimeField
+    - 'Context Handling: Spec-Edit Carryover'
+    - 'Context Handling: Reference Resolution'
+    - Semantic Ambiguity
+    - Composite Intent
+    notional-spec-out:
+      version: 0.2.0
+      fields:
+      - caption: industry
+        data: string
+        type: discrete
+        role: dimension
+        encoding: x
+      - caption: growth
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: y
+      - caption: growth
+        data: number
+        type: continuous
+        role: measure
+        aggregation: avg
+        encoding: text
+      sort:
+        field: industry
+        by: growth
+        aggregation: avg
+        direction: desc
+      categoricalFilters:
+      - type: categorical
+        field: industry
+        limit:
+          type: top
+          limit: 10
+          field: growth
+          aggregation: avg
+      rangeFilters:
+      - type: numeric-range
+        field: revenue
+        start: 10000000
+    expected-nl:
+      rationale: Follows the requested operation and reflects filters/sorts.
+      statements:
+      - text: The visualization matches the requested breakdown/filters.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+      - text: Sorting/granularity implied by the utterance are respected.
+        ratings:
+          clarity: 5
+          data-faithfulness: 5
+          relevance: 5
+          usefulness: 4
+          context-follow-up: 4
